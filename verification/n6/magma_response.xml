@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<calculator><headers><max_time>60</max_time><max_input>50000</max_input><seed>2369557064</seed><version>2.29-10</version><time>18.070</time><memory>32.09MB</memory></headers><results><line>GLOBAL_MODULAR false</line><line>Time: 18.050</line><line>DIMENSION 0 []</line><line>QUOTIENT_DIMENSION 35</line><line>GB_SIZE 35</line><line></line></results></calculator>

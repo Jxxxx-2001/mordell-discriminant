@@ -1,0 +1,527 @@
+{
+  "scope": "Selected source material for n=2..10; only M10>C10 is released for n=10.",
+  "files": [
+    {
+      "source": "research/n6_global_audit_20261023/GLOBAL_PROOF.txt",
+      "destination": "verification/n6/GLOBAL_PROOF.txt",
+      "source_sha256": "cacce89e5bbd5b014e31dd7c2ec5d64628445447d947984f8a6e9bd9bb75194c",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/SYMMETRIC_PROOF.md",
+      "destination": "verification/n6/SYMMETRIC_PROOF.md",
+      "source_sha256": "ab8045dca3bbcf1edbb5c7e48b2be44e4f82a834218e8028b3e41e0365219249",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/generic_system.py",
+      "destination": "verification/n6/generic_system.py",
+      "source_sha256": "f93bfc6e796b74c91a6c94d540dff7ffc54a9d5892a6874be3e7e171201e4e9b",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/generic_system.json",
+      "destination": "verification/n6/generic_system.json",
+      "source_sha256": "6e5a33d4107325fd163e1020d878114e4f61d7efa1994c3ba97e37c3efdd436b",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/prepare_generic.py",
+      "destination": "verification/n6/prepare_generic.py",
+      "source_sha256": "f360b81ea98de35271c42df2a3ae911ee0fc8f20f80ae071184222051b66c73f",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/quotient_system.json",
+      "destination": "verification/n6/quotient_system.json",
+      "source_sha256": "da0690d45e2e0b70146cd43e6c9cdedaab1f54da0390a807aac2febf7e0b8c1b",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/advance_generic.py",
+      "destination": "verification/n6/advance_generic.py",
+      "source_sha256": "1a4e9e9eeeb6d5f10c43b56d8e6fe34c9512ba7068295806b97894b467b8a7b3",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/quotient_modexact.sing",
+      "destination": "verification/n6/quotient_modexact.sing",
+      "source_sha256": "c1a58f2aad6b66ec095123559816398500c934a58d324a1ab866d37b06348e9c",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/run_singular.py",
+      "destination": "verification/n6/run_singular.py",
+      "source_sha256": "3344fc10f60becdf87d0483fb95fc19d0b9aaaa75d7c4aefa9f8e1f8b9793222",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/singular_modexact.log",
+      "destination": "verification/n6/singular_modexact.log",
+      "source_sha256": "39b7cb32fafc1cb0c7de0e15bb193b4267194a5f8b7c5373ad46831bb6eda378",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/singular_modexact_execution.json",
+      "destination": "verification/n6/singular_modexact_execution.json",
+      "source_sha256": "7431baa4ad40d0f02500938af1c9ab21e1ab896c25db68d91e02a9875c581ed4",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/quotient_basis_modexact.txt",
+      "destination": "verification/n6/quotient_basis_modexact.txt",
+      "source_sha256": "dcadc6a5b2e25592039d11c595fb95517c668e80998c265406c8da7d2a5846c1",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/quotient_lex_modexact.txt",
+      "destination": "verification/n6/quotient_lex_modexact.txt",
+      "source_sha256": "52d4cc1347c223a428ef06955d525db0dbcc1eae53f569923ac533859d33abdf",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/analyze_generic.py",
+      "destination": "verification/n6/analyze_generic.py",
+      "source_sha256": "f5d6b86824417e618a4556980be26ed266d20a99c947e029a385c4d136c5716e",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/generic_triangular.json",
+      "destination": "verification/n6/generic_triangular.json",
+      "source_sha256": "7bac1d84c5e64bcc198fde74f64c25a2d904d27eeba16ee1a81273169195cf8b",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/prepare_dual_check.py",
+      "destination": "verification/n6/prepare_dual_check.py",
+      "source_sha256": "7bd52c748b846c6719d143f42d94d8cbd0577c7bf6234f19b6065fd9798eae7c",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/dual_coefficients.json",
+      "destination": "verification/n6/dual_coefficients.json",
+      "source_sha256": "8b8ffd198f84edfd4928569041cf347b5515788a2eff648165461ab8be8de1b9",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/generic_branch_check.py",
+      "destination": "verification/n6/generic_branch_check.py",
+      "source_sha256": "8dba2f215eb128b5e20d67620d31861832d6372480b75f912ea35207246d635f",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/generic_branch_checks.json",
+      "destination": "verification/n6/generic_branch_checks.json",
+      "source_sha256": "6adaa0d93eeffae43475c77351abfba1b3fb69f83fee0256cf4c36fc1a6328d4",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/generic_compare.py",
+      "destination": "verification/n6/generic_compare.py",
+      "source_sha256": "51e66263acab17f2a7265dad56f7322f779351b46816bf8dc6748b0a288cfe72",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/generic_comparison.json",
+      "destination": "verification/n6/generic_comparison.json",
+      "source_sha256": "2a780b7d406975dc4bde8fd0a1ca151e006f7610be38db7a07f9faed33973143",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/exceptional_systems.py",
+      "destination": "verification/n6/exceptional_systems.py",
+      "source_sha256": "abc2b5fff6193ff280388118dd0bc3a8d84cf85f819c62f9ae3561a0c294b7ee",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/exceptional_results.json",
+      "destination": "verification/n6/exceptional_results.json",
+      "source_sha256": "da98d364aa52e59b2f47254924c68eaf93924a221ea658553a191543cc6903a9",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/even_branch.py",
+      "destination": "verification/n6/even_branch.py",
+      "source_sha256": "645a830d307c7d6f7302c9eff4f2e9dfa475c40d5d782d8dc6077ad652225957",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/even_branch_result.json",
+      "destination": "verification/n6/even_branch_result.json",
+      "source_sha256": "2dc48d0f5a52d65102b44fc81c097f29c26669febb68716c2a8af5aaba738880",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/even_branch_comparison.json",
+      "destination": "verification/n6/even_branch_comparison.json",
+      "source_sha256": "e0bbeb24866b3098f3261b1efde690eb434d8b125ce556b752c8cc417c275f84",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/verify_global.py",
+      "destination": "verification/n6/verify_global.py",
+      "source_sha256": "e6d464243bed4504c687ff4fdce386684f64a933dc8cdbbeafbf753bbb222f08",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/global_verification.json",
+      "destination": "verification/n6/global_verification.json",
+      "source_sha256": "53e3adc2d375a25060390e91cd7f4b21cab1c34e800ae3d595bb18030e2bc70f",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/proof_verification_steps.log",
+      "destination": "verification/n6/proof_verification_steps.log",
+      "source_sha256": "5cd7b550ceee37dd2913b53e814b21890c8978b45afa30acd6c1d88dfeffac78",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/magma_public_check.py",
+      "destination": "verification/n6/magma_public_check.py",
+      "source_sha256": "d90c148c34df0c774f2dbc05bcade5edb8e8fcc382c79e8ab63166d2ee449032",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/magma_input.txt",
+      "destination": "verification/n6/magma_input.txt",
+      "source_sha256": "8de9fe5b3d1acdeced1576e79420ef62234c4c597f31703ef8dd27675c0a53da",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/magma_response.xml",
+      "destination": "verification/n6/magma_response.xml",
+      "source_sha256": "a542ee819d5c0a93fff628cee7a47e519cbb2855eb688d1642d1da74de710005",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/magma_response.txt",
+      "destination": "verification/n6/magma_response.txt",
+      "source_sha256": "4fa7dec79c5b26254ef40bfec4f667068568769ba37f0a6b48d892cd1774389d",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/proof_manifest.json",
+      "destination": "verification/n6/source_manifest.json",
+      "source_sha256": "d97e1870895e0189f15606a80eada416c069173bafa73fa2906d21639879d7c9",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n6_global_audit_20261023/singular_runtime.json",
+      "destination": "verification/n6/singular_runtime.json",
+      "source_sha256": "d1ca00e8d6a52dc2bc996c3124d20892e3a20c4ae8cc8f284f02400e28b584f1",
+      "change": "Removed machine-specific installation path; package checksums unchanged."
+    },
+    {
+      "source": "research/n7_global_audit_20261023/GLOBAL_PROOF.txt",
+      "destination": "verification/n7/GLOBAL_PROOF.txt",
+      "source_sha256": "2f5bf3c96c398d85f9ce373cae7e49ba7ed3c7249b16c13263ce320a60a87976",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n7_global_audit_20261023/interval_certificate_inputs.json",
+      "destination": "verification/n7/interval_certificate_inputs.json",
+      "source_sha256": "1d715c1c4280cafe2054477f0a6c617caaf5c24ea2d73a32ffb1561aef3da206",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n7_global_audit_20261023/classification_based_certificate.json",
+      "destination": "verification/n7/classification_based_certificate.json",
+      "source_sha256": "399da6b731c38a07346a988037b0715d2cc173e7f1a509b5e2d5bb14a203a3fe",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n7_global_audit_20261023/arithmetic_self_check.json",
+      "destination": "verification/n7/arithmetic_self_check.json",
+      "source_sha256": "17d6e7d4d89223a0dc7833452c01cf53b253dc5edd7154e14a3de3d02e4003e6",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n7_global_audit_20261023/check_interval_arithmetic.py",
+      "destination": "verification/n7/check_interval_arithmetic.py",
+      "source_sha256": "06d1f7d61017b3c9444b26d62d35f6d67ed8d3f69ccb53f40de9c2a61d34a254",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n7_global_audit_20261023/proof_manifest.json",
+      "destination": "verification/n7/source_manifest.json",
+      "source_sha256": "7d0e1880b8cda8a8c7dc637efa3b0c665720d92753a9c198f913e149fe8bc387",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n7_global_audit_20261023/certify_twelve.py",
+      "destination": "verification/n7/original/certify_twelve.py",
+      "source_sha256": "1f4eebdb4df84d50a9f2756ca39e9dce01a1a53f5b56ac1191416347024613e6",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n7_global_audit_20261023/certify_twelve.py",
+      "destination": "verification/n7/certify_twelve.py",
+      "source_sha256": "1f4eebdb4df84d50a9f2756ca39e9dce01a1a53f5b56ac1191416347024613e6",
+      "change": "Only the optional source-PDF checksum I/O is adapted; exact interval computations are unchanged. Original verifier retained in original/."
+    },
+    {
+      "source": "research/n8_global_audit_20261023/global_certificate_20261024/PROOF_ZH.txt",
+      "destination": "verification/n8/PROOF_ZH.txt",
+      "source_sha256": "3b394d0b52e52a633cc41bfed3f3bc19bd3b09254de6c6d06855e36a038fb362",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n8_global_audit_20261023/global_certificate_20261024/README_ZH.txt",
+      "destination": "verification/n8/README_ZH.txt",
+      "source_sha256": "0d13caf427e51e63e8070347ab1e63f00987f7b9baac89bc7e7b4601d7cc1c01",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n8_global_audit_20261023/global_certificate_20261024/requirements.txt",
+      "destination": "verification/n8/requirements.txt",
+      "source_sha256": "77f584eec623be0b6e64b486a5d504dbe8d94b5e87db6c0d3d3f70ae94b8a850",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n8_global_audit_20261023/global_certificate_20261024/verify_all.py",
+      "destination": "verification/n8/verify_all.py",
+      "source_sha256": "e492a7eca0f1d3c33b6c6049bee73b7fd72bff2b5c2f505b3cc74c7c7472d88a",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n8_global_audit_20261023/global_certificate_20261024/verify_contact_neighborhoods.py",
+      "destination": "verification/n8/verify_contact_neighborhoods.py",
+      "source_sha256": "c35ab26e8ba0b8b99b7c6f36b5c60caac392eb9f1132ba9be56ce3c0a20465b9",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n8_global_audit_20261023/global_certificate_20261024/verify_exact_definition.py",
+      "destination": "verification/n8/verify_exact_definition.py",
+      "source_sha256": "30bca6602687cdccf1ae66da137d5d5c88d8d28c92e578bac05836f34ebc8ba0",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n8_global_audit_20261023/global_certificate_20261024/verify_global_cover.py",
+      "destination": "verification/n8/verify_global_cover.py",
+      "source_sha256": "e32ade961c1a317015ea09e3b86f6647e814e057edf885bdf751a27a4feae0fe",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n8_global_audit_20261023/global_certificate_20261024/verify_positive_definiteness.py",
+      "destination": "verification/n8/verify_positive_definiteness.py",
+      "source_sha256": "6128319f3908688efbb3456b622c4f2271500a9ea6c1e6f6938608101353cead",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n8_global_audit_20261023/global_certificate_20261024/verify_radius_bounds.py",
+      "destination": "verification/n8/verify_radius_bounds.py",
+      "source_sha256": "0afd4831db72f06f930a397912eea3cb01b1d191ff8d0a666a1742f5de8a7380",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n8_global_audit_20261023/global_certificate_20261024/data/FINAL_CERTIFICATE.json",
+      "destination": "verification/n8/data/FINAL_CERTIFICATE.json",
+      "source_sha256": "d1885126132dcc696348358fd8bdfa05bc88cdaefc177ad6e2970020c3f94944",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n8_global_audit_20261023/global_certificate_20261024/data/global_pair_bound_bernstein_frontier.json",
+      "destination": "verification/n8/data/global_pair_bound_bernstein_frontier.json",
+      "source_sha256": "fd239fa7ed45d36566fd829dcc0678ecb66e67bb08b2b00457e9aef45ee95589",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n8_global_audit_20261023/global_certificate_20261024/data/global_pair_bound_exact_contacts.json",
+      "destination": "verification/n8/data/global_pair_bound_exact_contacts.json",
+      "source_sha256": "405ebbccbe70b6da7c69f13e1fdbb130625f5aba98898729cb2cdf16153995d9",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n8_global_audit_20261023/global_certificate_20261024/data/global_pair_bound_exact_definition_certificate.json",
+      "destination": "verification/n8/data/global_pair_bound_exact_definition_certificate.json",
+      "source_sha256": "df9b29e41c729c070cd73b3dcf5eddf2477ea4f5dca662704dcd1785692cbd12",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n8_global_audit_20261023/global_certificate_20261024/data/global_pair_bound_local_certificate.json",
+      "destination": "verification/n8/data/global_pair_bound_local_certificate.json",
+      "source_sha256": "618e5b2c563fc2f555082b42a15a8b6408fee6338436a2d46dd738d1476c0ce7",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n8_global_audit_20261023/global_certificate_20261024/data/global_pair_bound_psd_certificate.json",
+      "destination": "verification/n8/data/global_pair_bound_psd_certificate.json",
+      "source_sha256": "b0fb4307b9109a28bac1a5d49a379f445f97c5eaa93024928f8556486dcd508b",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n8_global_audit_20261023/global_certificate_20261024/data/quantitative_bounds_exact_certificate.json",
+      "destination": "verification/n8/data/quantitative_bounds_exact_certificate.json",
+      "source_sha256": "2c72c931cf57343f220b60d3266771379b5551d471e8d2c5deb2235eb2cf0ab8",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/PROOF_ZH.txt",
+      "destination": "verification/n9/PROOF_ZH.txt",
+      "source_sha256": "73a348ff828c302a1cee2874cd463c350dac7c8c3b2a8e26ee6dfdef97d03439",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/BASIC_RESULTS.txt",
+      "destination": "verification/n9/BASIC_RESULTS.txt",
+      "source_sha256": "b069f0b962aaf8e97db28028a6da5a2eaf9968e70b982d4755b9f592ef0f812e",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/FOURTH_MOMENT_RADIUS_PROOF.txt",
+      "destination": "verification/n9/FOURTH_MOMENT_RADIUS_PROOF.txt",
+      "source_sha256": "0ba89aa9551886ead2facea048c56ad0682f013ff3f1f06d26eb1dfc84c7d0a9",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/QUARTIC_RADIAL_MOMENT_PROOF.txt",
+      "destination": "verification/n9/QUARTIC_RADIAL_MOMENT_PROOF.txt",
+      "source_sha256": "9424bc4ab545773fd5e804193fdba65e0a83246fc29be5e62e624b9201df2ca1",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/TWO_RADIUS_DOMAIN.txt",
+      "destination": "verification/n9/TWO_RADIUS_DOMAIN.txt",
+      "source_sha256": "3a30c640c9bebfa686c4b31d51faf4c42697d288159da73b9c6b4f6fbf530596",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/DISCRETE_RADIAL_REMAINDER_PROOF.txt",
+      "destination": "verification/n9/DISCRETE_RADIAL_REMAINDER_PROOF.txt",
+      "source_sha256": "dfd6e51b400e2d62433670d7b39fa73b16bebe3335ddb71abba9720ceaea59e8",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/arb_bernstein.py",
+      "destination": "verification/n9/arb_bernstein.py",
+      "source_sha256": "ff18dccd70f083cf5e7fb79ba1a2c9b75b38886f82cc239198407c0b2d85e751",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/cubic_log_bernstein.py",
+      "destination": "verification/n9/cubic_log_bernstein.py",
+      "source_sha256": "76fec5e1aacb5f9ce424bc0939187544643d5b9c3710669f8d268132c66e4331",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/physical_boundary_bernstein.py",
+      "destination": "verification/n9/physical_boundary_bernstein.py",
+      "source_sha256": "d2e8bd72e5cd8ac512d417ae50eefc4cc7d67a3c36598ba79f531f1ed2ae71e0",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/verify_basics.py",
+      "destination": "verification/n9/verify_basics.py",
+      "source_sha256": "69c4181839079856a1d2a7f817dd002ca4d97fbc4684d2f3fe0c545638ae6f6c",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/verify_fourth_moment_bound.py",
+      "destination": "verification/n9/verify_fourth_moment_bound.py",
+      "source_sha256": "2dab9e4947324d8fe027f89397a4d8fa8dc21ffc52d7e5b9dd54ec416230739e",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/verify_discrete_radial_remainder.py",
+      "destination": "verification/n9/verify_discrete_radial_remainder.py",
+      "source_sha256": "30a7ee94f1948907ccb38b07b50a6c83bf45069dbdd75c26de8178ddf6815aa9",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/check_arb_bernstein.py",
+      "destination": "verification/n9/check_arb_bernstein.py",
+      "source_sha256": "b78900e08bb3a2635ffe5c7a6b92dc69edda9086ee8390d478bd7cdb45a8cc7a",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/check_physical_boundary_bernstein.py",
+      "destination": "verification/n9/check_physical_boundary_bernstein.py",
+      "source_sha256": "cbcfe1ffe598022b1b721104185e52730c65d68a31ecb36ce564d917f41d17cb",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/verify_pair_bound_definition.py",
+      "destination": "verification/n9/verify_pair_bound_definition.py",
+      "source_sha256": "f3a8bdd53b99ef3319f1ea6f8b6fcabf4a271b75a9fa41ab06dacd76b05b1773",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/verify_pair_bound_local_preconditioned.py",
+      "destination": "verification/n9/verify_pair_bound_local_preconditioned.py",
+      "source_sha256": "de8f3ed4fa775ec700b95f8b08d4f9f2f063b65c6a3df577956a6a6b01398c18",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/verify_pair_bound_cover.py",
+      "destination": "verification/n9/verify_pair_bound_cover.py",
+      "source_sha256": "47bc40ca21f31c17bb5306bd5bebb20b0d64bca954169a568ef9d9a66ced2196",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/global_pair_bound_exact_contacts.json",
+      "destination": "verification/n9/global_pair_bound_exact_contacts.json",
+      "source_sha256": "1d1cef17749fcb242e6f09dffe3c26183ae672fe4707b2bad70bb0b12b0e9d88",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/global_pair_bound_exact_definition_certificate.json",
+      "destination": "verification/n9/global_pair_bound_exact_definition_certificate.json",
+      "source_sha256": "5f70ffdc994311a910bf9cbffc236ccb81506cdcfc0a9de5fa7620f98a33ceb0",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/global_pair_bound_local_preconditioned_certificate.json",
+      "destination": "verification/n9/global_pair_bound_local_preconditioned_certificate.json",
+      "source_sha256": "ee16355fbcc55272db57bf87c20c11fcad7722de57f936b20ba9178de566b5ab",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/global_pair_bound_bernstein_frontier.json",
+      "destination": "verification/n9/global_pair_bound_bernstein_frontier.json",
+      "source_sha256": "3144aa17e88766b9896afb9ac7f68ecf91326b03f91eec7c70ccf44173382eef",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/FRESH_VERIFICATION.json",
+      "destination": "verification/n9/FRESH_VERIFICATION.json",
+      "source_sha256": "6eb3fe0ee6f74a417c576aecb174c6c62e9287b1d358b75c493b47dc3b1e69c4",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/FINAL_CERTIFICATE_AUDIT.json",
+      "destination": "verification/n9/FINAL_CERTIFICATE_AUDIT.json",
+      "source_sha256": "f931fcf86bf5393b218a4365f12dfb83956ee2559c0d430772b26f3e63ca1041",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/requirements.txt",
+      "destination": "verification/n9/requirements.txt",
+      "source_sha256": "20cba329c835c28df7691b3088bee8a9f367b4e7622ffefe041fa9e4461e0c34",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n9_global_audit_20261024/global_certificate_verification/INPUT_MANIFEST.json",
+      "destination": "verification/n9/source_manifest.json",
+      "source_sha256": "11675a37e1a5323052e7b82755c94bfb51e7ba86b5f46024ba14df3ef423d365",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n10_global_audit_20261025/exact_counterexample.py",
+      "destination": "verification/n10/exact_counterexample.py",
+      "source_sha256": "0de2b32b3047110a386759f4ce2525a2183951b57e00b825242ea193d1ae4e68",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/n10_global_audit_20261025/exact_counterexample_certificate.json",
+      "destination": "verification/n10/exact_counterexample_certificate.json",
+      "source_sha256": "ce6b8dc5ef44cdd7ef0c433a50fcf6ebef523724f37d01408c1b34edb8fcce61",
+      "change": "byte-identical"
+    },
+    {
+      "source": "research/friedman_full_audit_20261023/interval_check.py",
+      "destination": "verification/n6/interval_check.py",
+      "source_sha256": "16be9e2dfc88384f7915a7a5b4a793007102b6deae7bd774ac56135f4b9c0332",
+      "change": "Byte-identical shared rational-interval helper placed next to its n6 consumers."
+    }
+  ]
+}

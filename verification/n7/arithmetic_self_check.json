@@ -1,0 +1,5 @@
+{
+  "checks_against_exact_fraction_endpoints": 1000,
+  "passed": true,
+  "seed": 20261023
+}

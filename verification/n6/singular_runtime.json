@@ -1,0 +1,13 @@
+{
+  "root": "<configure-local-Singular-installation>",
+  "packages": {
+    "singular-modules_1%3a4.3.2-p10+ds-1.1build1_amd64.deb": "e0a0f9639ffd01ae26a7c7c10735a975567a31865c32c94ff8f946638717de38",
+    "libsingular4m3n0t64_1%3a4.3.2-p10+ds-1.1build1_amd64.deb": "d072e717e0f09cdeacabe29a6b56f36a4fb0ed698bba903f68d950d997bbb606",
+    "singular-data_1%3a4.3.2-p10+ds-1.1build1_all.deb": "162f83de2e1acc19d1db7d15323b6c3b617183f91cabff0f48e4b65b36114558",
+    "libcdd0t64_094m-1.1build1_amd64.deb": "f4f9636837191c27af0400dfc07c21bddd57cac2dfb111cb3fbe7100cbf617a6",
+    "libntl44_11.5.1-1_amd64.deb": "4e87ada92ecd936cc7bbdbce972e02b23a246a9451cd437263738e924325eb69",
+    "libflint18t64_3.0.1-3.1build1_amd64.deb": "6a19b0ebc9b2367a605ccd2256052649ccde3ca23d6b821fc884715e1cdd70b7",
+    "singular-ui_1%3a4.3.2-p10+ds-1.1build1_amd64.deb": "d0acb9c0aee585200a7104557c6faa300f2ced6cbe42d7445e7effe7da0cfb50",
+    "libgf2x3_1.3.0-2build1_amd64.deb": "40dbc67475da23eb73e75bfcb04b2b279f1688fe5a32e3fc67a5f513fe69910d"
+  }
+}

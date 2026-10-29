@@ -1,0 +1,11 @@
+{
+  "proof_scope": "Published complete classification plus independently certified twelve-orbit comparison",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "sha256": {
+    "GLOBAL_PROOF.txt": "2f5bf3c96c398d85f9ce373cae7e49ba7ed3c7249b16c13263ce320a60a87976",
+    "certify_twelve.py": "1f4eebdb4df84d50a9f2756ca39e9dce01a1a53f5b56ac1191416347024613e6",
+    "interval_certificate_inputs.json": "1d715c1c4280cafe2054477f0a6c617caaf5c24ea2d73a32ffb1561aef3da206",
+    "classification_based_certificate.json": "399da6b731c38a07346a988037b0715d2cc173e7f1a509b5e2d5bb14a203a3fe",
+    "arithmetic_self_check.json": "17d6e7d4d89223a0dc7833452c01cf53b253dc5edd7154e14a3de3d02e4003e6"
+  }
+}

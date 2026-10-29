@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the release used, and cite the external results identified in the individual proofs."
+title: "Mordell's discriminant problem: a survey and extensions"
+type: software
+authors:
+  - family-names: "Jxxxx-2001"
+repository-code: "https://github.com/Jxxxx-2001/mordell-discriminant"
+url: "https://github.com/Jxxxx-2001/mordell-discriminant"
+version: 0.1.0
+license: MIT

@@ -1,0 +1,56 @@
+{
+  "global_upper_bound_certified": true,
+  "all_equality_cases_classified": true,
+  "method": "exact rational algebra plus real-root isolation; computer-assisted ordinary proof",
+  "maximum": "470184984576/9765625",
+  "maximum_decimal_for_display": 48146.9424205824,
+  "equality": "{0} union {sqrt(6/5)*exp(i*theta+2*pi*i*k/5): k=0,...,4}, up to relabeling",
+  "generic_algebraic_degree": 35,
+  "generic_irreducible_degrees": [
+    1,
+    1,
+    2,
+    6,
+    11,
+    14
+  ],
+  "generic_Ay_degrees": [
+    1,
+    1,
+    2,
+    6,
+    11,
+    7
+  ],
+  "generic_real_Ay_counts": [
+    1,
+    1,
+    2,
+    2,
+    3,
+    3
+  ],
+  "generic_admissible_roots_bounded": 4,
+  "generic_square_caps": [
+    350000000,
+    1803000000,
+    224000000,
+    10100000
+  ],
+  "even_real_branches_bounded": 4,
+  "all_zero_coefficient_charts_covered": true,
+  "collision_boundary_excluded_by_positive_candidate": true,
+  "centering_proved_analytically": true,
+  "numerical_optimization_used_as_proof": false,
+  "exact_Groebner_recomputed_by_this_verifier": false,
+  "exact_Groebner_source": "quotient_modexact.sing calls modStd(I,1); see exact execution log",
+  "independent_reverse_ideal_inclusion_certified": true,
+  "independent_completeness_method": "Magma GlobalModular=false: quotient dimension 35; exact containment I subset J; dim(Q[x]/J)=35 implies I=J",
+  "membership_evidence": [
+    "magma_public_check.py",
+    "magma_input.txt",
+    "magma_response.xml",
+    "magma_response.txt"
+  ],
+  "external_peer_review": "not claimed"
+}
