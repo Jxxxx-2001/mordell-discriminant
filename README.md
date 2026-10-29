@@ -4,7 +4,7 @@
 
 This project organizes the small-point cases of Mordell's discriminant problem, provides computer-assisted proofs for six through nine points, and gives an explicit ten-point configuration that strictly improves on a regular nonagon together with its center.
 
-**First public release: the actual publication time of [v0.1.0](https://github.com/Jxxxx-2001/mordell-discriminant/releases/tag/v0.1.0).**
+**First public release: 2026-10-29 17:11:42 (UTC+08:00, Asia/Shanghai) · [v0.1.0](https://github.com/Jxxxx-2001/mordell-discriminant/releases/tag/v0.1.0).**
 
 **Content updated: 2026-10-29 (Asia/Shanghai).**
 

@@ -1,7 +1,13 @@
 {
   "version": "0.1.0",
   "repository": "Jxxxx-2001/mordell-discriminant",
-  "first_public_release": null,
+  "first_public_release": {
+    "tag": "v0.1.0",
+    "url": "https://github.com/Jxxxx-2001/mordell-discriminant/releases/tag/v0.1.0",
+    "published_at_utc": "2026-10-29T09:11:42Z",
+    "published_at_shanghai": "2026-10-29T17:11:42+08:00",
+    "source_commit": "2a791bc8864b653858a518871d981f71460ec74c"
+  },
   "content_updated": "2026-10-29",
   "display_timezone": "Asia/Shanghai",
   "publication_note": "The first-public-release timestamp will be taken from GitHub's first public release; it is not a claim of mathematical priority."

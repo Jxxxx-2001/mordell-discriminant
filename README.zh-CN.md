@@ -4,7 +4,7 @@
 
 整理 Mordell 判别式极值问题的小点数结果，汇集六至九点的全局极值证明，并在十点情形下给出严格超过中心加正九边形的明确构型。
 
-**首次公开时间：以[首发版本 v0.1.0](https://github.com/Jxxxx-2001/mordell-discriminant/releases/tag/v0.1.0)的实际发布时间为准。**
+**首次公开：2026-10-29 17:11:42（UTC+08:00，Asia/Shanghai） · [v0.1.0](https://github.com/Jxxxx-2001/mordell-discriminant/releases/tag/v0.1.0)。**
 
 **内容更新：2026-10-29（Asia/Shanghai）。**
 
