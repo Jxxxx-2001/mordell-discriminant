@@ -4,13 +4,17 @@
 
 ## Theorem
 
-For $\sum|z_i|^2=6$,
+For $`\sum|z_i|^2=6`$,
 
-$$M_6=C_6=6^{15}/5^{10}.$$
+```math
+M_6=C_6=6^{15}/5^{10}.
+```
 
 Equality holds exactly for
 
-$$\{0\}\cup\left\{\sqrt{\frac{6}{5}}e^{i\theta+2\pi i k/5}:k=0,\ldots,4\right\},$$
+```math
+\{0\}\cup\left\{\sqrt{\frac{6}{5}}e^{i\theta+2\pi i k/5}:k=0,\ldots,4\right\},
+```
 
 up to rotation and relabeling. There is no additional translation freedom.
 

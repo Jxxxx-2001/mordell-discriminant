@@ -2,39 +2,47 @@
 
 [中文](README.zh-CN.md) · [Home](../../README.md)
 
-Let $\sum|z_i|^2=n$ and $\Delta=\prod_{i<j}|z_i-z_j|^2$. Equality descriptions below allow rotation and relabeling, but not arbitrary translation.
+Let $`\sum|z_i|^2=n`$ and $`\Delta=\prod_{i\lt j}|z_i-z_j|^2`$. Equality descriptions below allow rotation and relabeling, but not arbitrary translation.
 
 ## Two points
 
-$$|z_1-z_2|^2=2(|z_1|^2+|z_2|^2)-|z_1+z_2|^2\le4.$$
+```math
+|z_1-z_2|^2=2(|z_1|^2+|z_2|^2)-|z_1+z_2|^2\le4.
+```
 
-Equality requires $z_2=-z_1$ and hence $|z_1|=1$. Thus $M_2=4$, with precisely the configurations $\{u,-u\}$, $|u|=1$.
+Equality requires $`z_2=-z_1`$ and hence $`|z_1|=1`$. Thus $`M_2=4`$, with precisely the configurations $`\{u,-u\}`$, $`|u|=1`$.
 
 ## Three points
 
 The identity
 
-$$\sum_{i<j}|z_i-z_j|^2=n\sum_i|z_i|^2-\left|\sum_i z_i\right|^2$$
+```math
+\sum_{i\lt j}|z_i-z_j|^2=n\sum_i|z_i|^2-\left|\sum_i z_i\right|^2
+```
 
 and AM–GM give
 
-$$\Delta\le\left(\frac{\sum_{i<j}|z_i-z_j|^2}{3}\right)^3\le27.$$
+```math
+\Delta\le\left(\frac{\sum_{i\lt j}|z_i-z_j|^2}{3}\right)^3\le27.
+```
 
-Equality requires zero centroid and three equal distances. The maximizers are therefore exactly unit equilateral triangles, and $M_3=27$.
+Equality requires zero centroid and three equal distances. The maximizers are therefore exactly unit equilateral triangles, and $`M_3=27`$.
 
 ## Four points
 
-Kailiang Lin's 2011 result is $M_4=256$, with equality precisely for a unit square. This document records the theorem and equality condition; its full upper-bound proof is cited below.
+Kailiang Lin's 2011 result is $`M_4=256`$, with equality precisely for a unit square. This document records the theorem and equality condition; its full upper-bound proof is cited below.
 
 ## Five points
 
-The 2026 preprints prove $M_5=3125$, with equality precisely for a unit regular pentagon. Wang uses exact classification and comparison of stationary configurations. Xu, Dou, and Yu compare discriminant values using Wang's algebraic conditions and report a complete Lean formalization. These are cited results; their third-party verification and formalization are not presented as original work of this repository.
+The 2026 preprints prove $`M_5=3125`$, with equality precisely for a unit regular pentagon. Wang uses exact classification and comparison of stationary configurations. Xu, Dou, and Yu compare discriminant values using Wang's algebraic conditions and report a complete Lean formalization. These are cited results; their third-party verification and formalization are not presented as original work of this repository.
 
 ## Attainment
 
-For the roots of $p(X)=X^n-1$, one has $|p'(z_i)|=n$, so
+For the roots of $`p(X)=X^n-1`$, one has $`|p'(z_i)|=n`$, so
 
-$$\Delta=\prod_i|p'(z_i)|=n^n.$$
+```math
+\Delta=\prod_i|p'(z_i)|=n^n.
+```
 
 This proves attainment by regular polygons. The four- and five-point global upper bounds rely on the cited theorems, not just this calculation.
 
