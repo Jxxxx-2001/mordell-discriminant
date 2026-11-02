@@ -30,3 +30,5 @@ M_6=C_6=6^{15}/5^{10}.
 python verify.py --case n6
 python verify.py --level check --case n6
 ```
+
+复核程序先重建六次多项式的结果式、四条必要系数方程以及饱和商系统的输入，见[结果式核验程序](../../verification/n6/verify_resultant_bridge.py)。

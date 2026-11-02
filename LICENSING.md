@@ -7,4 +7,4 @@ Copyright 2026 Jxxxx-2001.
 - An external theorem remains attributed to its authors. In particular, the five-point proofs and the seven-vortex classification are cited results, not newly authored theorems of this repository.
 - No downloaded research-paper PDFs, third-party software distributions, or third-party Git repositories are included. Imported Python libraries and optional CAS tools retain their own licenses.
 
-The prose license applies to `README*.md`, the exposition in `proofs/`, and mathematical proof texts in `verification/`. It does not replace an explicit third-party license or attribution.
+The prose license applies to `README*.md`, the original configuration diagram in `assets/`, the exposition in `proofs/`, and mathematical proof texts in `verification/`. It does not replace an explicit third-party license or attribution.

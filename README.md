@@ -1,12 +1,10 @@
-# Mordell's discriminant problem: a survey and extensions
+# Optimal Configurations for Mordell’s Problem
 
 [English](README.md) · [中文](README.zh-CN.md)
 
-This project organizes the small-point cases of Mordell's discriminant problem, provides computer-assisted proofs for six through nine points, and gives an explicit ten-point configuration that strictly improves on a regular nonagon together with its center.
-
 **First public release: 2026-10-29 · [v0.1.0](https://github.com/Jxxxx-2001/mordell-discriminant/releases/tag/v0.1.0).**
 
-**Content updated: 2026-10-29.**
+**Content updated: 2026-11-02.**
 
 ## The problem
 
@@ -37,38 +35,25 @@ for the value of a regular $`(n-1)`$-gon together with its center.
 - **1958:** Birch conjectured that $`M_n=n^n`$, attained by a regular $`n`$-gon on the unit circle.
 - **1960:** Mordell proved the three-point case, with $`M_3=27`$ and equality precisely for a unit equilateral triangle.
 - **The same year:** Chalk disproved the conjecture for every $`n\ge6`$: the origin and a regular $`(n-1)`$-gon of radius $`\sqrt{n/(n-1)}`$ give $`C_n>n^n`$. Determining the actual maximum and its maximizers remains a further problem.
+- **1999:** Gueron and Shafrir reported numerical evidence for the centered polygon at six through nine points, gave ten-point coordinates improving on it, and proved its instability for every $n\ge11$. [Article, Theorem 1 and Figure 1](https://doi.org/10.1137/S0036139997315258)
 - **2011:** Kailiang Lin proved $`M_4=256`$, with equality precisely for a unit square.
 - **2026:** Preprints proved $`M_5=3125`$, with equality precisely for a unit regular pentagon. Jie Wang submitted a proof in September; Tiancheng Xu, Guowei Dou, and Wensheng Yu submitted a proof using Wang's algebraic results in October.
 
-## Results for two through ten points
+## Main results
 
-| Points | Result | Maximizer or statement | Proof |
-|---|---|---|---|
-| 2 | $`M_2=4`$ | Two antipodal unit points | [Two through five](proofs/n2-n5/README.md) |
-| 3 | $`M_3=27`$ | Unit equilateral triangle | [Two through five](proofs/n2-n5/README.md) |
-| 4 | $`M_4=256`$ | Unit square | [Two through five](proofs/n2-n5/README.md) |
-| 5 | $`M_5=3125`$ | Unit regular pentagon | [Two through five](proofs/n2-n5/README.md) |
-| 6 | $`M_6=C_6=6^{15}/5^{10}`$ | Center and regular pentagon | [Six points](proofs/n6/README.md) |
-| 7 | $`M_7=C_7=7^{21}/6^{15}`$ | Center and regular hexagon | [Seven points](proofs/n7/README.md) |
-| 8 | $`M_8=C_8=8^{28}/7^{21}`$ | Center and regular heptagon | [Eight points](proofs/n8/README.md) |
-| 9 | $`M_9=C_9=9^{36}/8^{28}`$ | Center and regular octagon | [Nine points](proofs/n9/README.md) |
-| 10 | **$`M_{10}>C_{10}`$** | An explicit strict improvement over the centered nonagon | [Ten points](proofs/n10/README.md) |
+Let $S_n$ consist of the origin and the vertices of a regular $(n-1)$-gon of radius $\sqrt{n/(n-1)}$, and let $C_n=\Delta(S_n)$.
 
-The two-to-five-point results are existing results collected here. Six through nine points are supported by computer-assisted proofs; the seven-point argument uses a published complete vortex classification, as stated in its proof. For $`n=6,7,8,9`$, all maximizers are
+| Number of points | Result | Maximizers or proof of exclusion |
+|---|---|---|
+| $2\le n\le5$ | $M_n=n^n$ | Equally spaced points on the unit circle, including an antipodal pair for two points. [Proofs and sources](proofs/n2-n5/README.md) |
+| $6\le n\le9$ | $M_n=C_n$ | Only $S_n$, up to rotation and relabeling. Proofs for [six](proofs/n6/README.md), [seven](proofs/n7/README.md), [eight](proofs/n8/README.md) and [nine points](proofs/n9/README.md). |
+| $n\ge10$ | $M_n>C_n$ | A direct comparison at ten points and an instability theorem for every $n\ge11$ exclude $S_n$. The sharp values in this range are undetermined here. [Proof](proofs/n10/README.md) |
 
-```math
-\{0\}\cup\left\{\sqrt{\frac{n}{n-1}}e^{i\theta+2\pi i k/(n-1)}:k=0,\ldots,n-2\right\},
-```
+![Two to five equally spaced points on a circle in the top row. For six to nine points, one point lies at the center of the regular outer polygon.](assets/mordell-2-9.png)
 
-up to rotation and relabeling. “Extensions” refers to further point counts and configurations; no claim of literature priority is made.
+**Figure 1. Optimal configurations for Mordell’s problem, $2\le n\le9$.** [Vector figure (PDF)](assets/mordell-2-9.pdf)
 
-For ten points this release includes only the explicit construction
-
-```math
-Z=\sqrt{\frac5{2021}}\{\pm7,\ \pm21\pm9i,\ \pm8\pm20i\}
-```
-
-and its strict comparison. The signs in each four-point group are independent. The configuration has total squared radius 10 and satisfies $`\Delta(Z)>C_{10}`$; this does not determine $`M_{10}`$.
+The six-point proof uses algebraic elimination and a recorded exact dimension computation. For seven points we use the complete [Faugère–Svartz classification](https://doi.org/10.1145/2442829.2442856) and compare twelve equilibrium classes. A [related public manuscript](https://github.com/harrykane8816627373-cell/mordell-research/tree/631e0feacf197f5c96f092bafbf17bc8cbd0ef32/earlier-results) also treats six and seven points. For eight and nine points a certified inequality for pairs gives a global bound after summation. The equality conditions recover the radii and the regular outer polygon.
 
 ## Quick verification
 
@@ -79,7 +64,7 @@ python verify.py
 python verify.py --level check --case n10
 ```
 
-The first command audits the distributed files and saved certificates. The second recomputes the ten-point integer comparison using only the standard library. To check other computations:
+The first command audits the distributed files and saved certificates. The second recomputes both ten-point integer comparisons using only the standard library. To check other computations:
 
 ```sh
 python -m pip install -r requirements.txt
@@ -88,6 +73,12 @@ python verify.py --level check --case n7
 
 Complete covers can be replayed when needed; see [verification](verification/README.md). The default command launches neither searches nor full covers.
 
-## Relation to the distance-ratio problem
+## Relation to an Erdős problem on minimum diameter
 
-[Friedman's distance-ratio problem](https://erich-friedman.github.io/packing/maxmin/) has a different objective: for two through eight points there are common maximizers/minimizers, although the full sets of optimal configurations need not coincide. At nine points a better distance-ratio arrangement is known than the centered octagon, which remains optimal for Mordell's problem; at ten points both objectives admit improvements over the centered nonagon. Exact optimal configurations for general point counts remain challenging, and the linked page lists best-known distance-ratio records from nine points onward.
+Bateman and Erdős asked how small the diameter of $n$ planar points can be if every pair is at least one unit apart. Rescaling the shortest distance to one turns the diameter into the ratio of the largest to the smallest pairwise distance. They proved the seven-point minimum, and Bezdek and Fodor determined the eight-point minimum. [Bateman–Erdős (1951)](https://renyi.hu/~p_erdos/1951-03.pdf) · [Bezdek–Fodor (1999)](https://doi.org/10.1006/jcta.1998.2889)
+
+For each $2\le n\le8$ the two problems have a common optimal shape. At eight points the full sets of optimizers differ. Nine is the first point count with no common optimizer. For every $n\ge10$ both problems exclude $S_n$; whether their actual optimizers coincide is a separate question. [Comparisons and integer witnesses](proofs/ratio/README.md) · [Friedman’s illustrated catalogue](https://erich-friedman.github.io/packing/maxmin/)
+
+## Citation
+
+Manuscript: Xiang Ji, Tiancheng Xu and Wensheng Yu, *Optimal Configurations for Mordell’s Problem*. For the software, cite the release or commit used. [Citation metadata](CITATION.cff)

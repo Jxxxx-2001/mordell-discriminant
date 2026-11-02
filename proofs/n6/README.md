@@ -30,3 +30,5 @@ The saved Singular and Magma inputs, outputs and exact comparison data are inclu
 python verify.py --case n6
 python verify.py --level check --case n6
 ```
+
+The check first reconstructs the sextic resultant, the four necessary equations and the saturated quotient-system inputs. See the [resultant checker](../../verification/n6/verify_resultant_bridge.py).

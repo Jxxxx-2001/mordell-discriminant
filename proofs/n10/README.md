@@ -1,8 +1,16 @@
-# Ten points: a strict improvement over the centered nonagon
+# Why Chalk’s configuration fails for ten or more points
 
 [中文](README.zh-CN.md) · [Home](../../README.md)
 
-This section proves only $`M_{10}>C_{10}`$, where $`C_{10}=10^{45}/9^{36}`$. It does not determine $`M_{10}`$.
+## Ten points
+
+Here $C_{10}=10^{45}/9^{36}$. Figure 1 of [Gueron and Shafrir (1999)](https://doi.org/10.1137/S0036139997315258) gives two rectangular orbits and two axial points. Treat the printed decimals as exact rational coordinates. Clearing the denominator gives
+
+$$W=\{(\pm11183,0),(\pm32765,\pm14669),(\pm12323,\pm31572)\}.$$
+
+The signs within each rectangle are independent. Put $q=\sum_{w\in W}|w|^2=9999608174$ and $z=\sqrt{10/q}\,W$. Then $Q(z)=10$. For $P$ the product of the 45 squared distances in $W$, exact integer arithmetic gives $9^{36}P>q^{45}$, hence $\Delta(z)>C_{10}$. [Historical coordinate check](../../verification/n10/verify_counterexample.py)
+
+### A second witness with smaller integers
 
 Take
 
@@ -40,6 +48,10 @@ The [certificate](../../verification/n10/exact_counterexample_certificate.json) 
 python verify.py --level check --case n10
 ```
 
-## Comparison benchmark
+## Eleven or more points
 
-Chalk's 1960 counterexample to the original $`n^n`$ conjecture is a regular $`(n-1)`$-gon with its center; it supplies the attainable value $`C_n`$. [Paper](https://doi.org/10.4153/CMB-1960-002-x)
+Set $N=n(n-1)/2$ and $w=z/\sqrt n$. On the unit sphere the energy used by Gueron and Shafrir is
+
+$$F(w)=-\sum_{i<j}\log|w_i-w_j|=\tfrac12(N\log n-\log\Delta(z)).$$
+
+Their Theorem 1(2) proves that the centered polygon is unstable for every $n\ge11$. Arbitrarily close feasible configurations have strictly lower energy, hence strictly larger distance product after scaling back. Combining this with the ten-point witness proves $M_n>C_n$ for every $n\ge10$. Thus among the $n\ge6$ of Chalk’s comparison, $S_n$ is globally optimal exactly for $6\le n\le9$. [Gueron–Shafrir](https://doi.org/10.1137/S0036139997315258) · [Chalk](https://doi.org/10.4153/CMB-1960-002-x)

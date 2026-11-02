@@ -18,7 +18,7 @@ import sys
 import uuid
 
 ROOT = Path(__file__).resolve().parent
-CASES = ("n2-n5", "n6", "n7", "n8", "n9", "n10")
+CASES = ("n2-n5", "n6", "n7", "n8", "n9", "n10", "ratio")
 N9_LEAF_REASONS = ("outside", "moment_outside", "quartic_outside", "local", "positive", "cubic_positive", "arb_positive", "discrete_radial_outside", "physical_correction_positive", "quadratic_correction_positive", "arb_correction_positive")
 
 
@@ -90,6 +90,8 @@ def audit_case(case: str, root: Path = ROOT) -> dict:
             "kind": "proofs-and-citations",
             "scope": "Complete elementary proofs for n=2,3; cited global theorems for n=4,5.",
         }
+    if case == "ratio":
+        return {"kind": "proofs-and-witnesses", "scope": "Use check to compare the three integer examples with the centered polygons."}
     if case == "n10":
         return check_ten(root)
     if case == "n6":
@@ -152,7 +154,9 @@ def audit_case(case: str, root: Path = ROOT) -> dict:
 
 
 CHECK_SCRIPTS = {
-    "n6": ["verify_global.py"],
+    "n10": ["verify_counterexample.py"],
+    "ratio": ["check_examples.py"],
+    "n6": ["verify_resultant_bridge.py", "verify_global.py"],
     "n7": ["certify_twelve.py"],
     "n8": ["verify_radius_bounds.py", "verify_exact_definition.py", "verify_positive_definiteness.py", "verify_contact_neighborhoods.py"],
     "n9": ["verify_basics.py", "verify_fourth_moment_bound.py", "verify_discrete_radial_remainder.py", "check_arb_bernstein.py", "check_physical_boundary_bernstein.py", "verify_pair_bound_definition.py", "verify_pair_bound_local_preconditioned.py"],
@@ -160,7 +164,7 @@ CHECK_SCRIPTS = {
 
 
 def run_case(case: str, level: str, root: Path = ROOT) -> dict:
-    if case in {"n2-n5", "n10"}:
+    if case == "n2-n5":
         return audit_case(case, root)
     work = root / "build/verification" / f"{case}-{uuid.uuid4().hex[:12]}"
     require(work.resolve().is_relative_to((root / "build/verification").resolve()), "Invalid work directory.")
@@ -179,6 +183,12 @@ def run_case(case: str, level: str, root: Path = ROOT) -> dict:
         return {"kind": "fresh-full-cover", "unresolved_boxes": 0, "output": str(work.relative_to(root))}
     for script in CHECK_SCRIPTS[case]:
         run(script)
+    if case == "ratio":
+        return {"kind": "certified-distance-ratio-comparisons", "point_counts": [9, 10, 11]}
+    if case == "n10":
+        result = check_ten(root)
+        result["historical_comparison"] = True
+        return result
     if case == "n6":
         result = read_json(work / "global_verification.json")
         require(result["global_upper_bound_certified"] and result["all_equality_cases_classified"], "n6 exact checks did not complete.")
@@ -200,7 +210,7 @@ def run_case(case: str, level: str, root: Path = ROOT) -> dict:
             require(counts["visited"] == 2 * counts["split"] + 1, "Invalid fresh n9 tree count.")
             require(sum(counts.get(key, 0) for key in N9_LEAF_REASONS) == counts["split"] + 1, "Invalid fresh n9 leaf count.")
             return {"kind": "fresh-full-cover", "unresolved_boxes": 0, "output": str(work.relative_to(root))}
-    scope = "Exact post-CAS checks; saved CAS completeness evidence is reused." if case == "n6" else "Exact comparison; the published complete classification remains cited." if case == "n7" else "Fresh algebra, positivity and contact checks; the complete cover is not rerun."
+    scope = "Resultant reconstruction and exact post-CAS checks; the recorded dimension is reused." if case == "n6" else "Exact comparison; the published complete classification remains cited." if case == "n7" else "Fresh algebra, positivity and contact checks; the complete cover is not rerun."
     return {"kind": "fresh-check", "scope": scope, "output": str(work.relative_to(root))}
 
 
