@@ -47,7 +47,7 @@ C_n=(n-1)^{n-1}\left(\frac{n}{n-1}\right)^{n(n-1)/2}.
 | $6\le n\le9$ | $M_n=C_n$ | 除整体旋转和重标号外，唯一最优构型是 $S_n$。分别见[六点](proofs/n6/README.zh-CN.md)、[七点](proofs/n7/README.zh-CN.md)、[八点](proofs/n8/README.zh-CN.md)、[九点](proofs/n9/README.zh-CN.md)证明。 |
 | $n\ge10$ | $M_n>C_n$ | 十点由显式构型严格超过 $S_{10}$，十一点及以上由失稳定理排除 $S_n$。这一区间的锐值仍未由上述结果确定。[证明](proofs/n10/README.zh-CN.md) |
 
-![上排为二至五点，点在圆上等角间隔排列。下排为六至九点，中心各有一点，外圈构成正多边形。](assets/mordell-2-9.png)
+<a href="assets/mordell-2-9.png"><img src="assets/mordell-2-9.png" alt="上排为二至五点，点在圆上等角间隔排列。下排为六至九点，中心各有一点，外圈构成正多边形。" width="460"></a>
 
 **图 1　Mordell 问题的二至九点最优构型。** [矢量图（PDF）](assets/mordell-2-9.pdf)
 

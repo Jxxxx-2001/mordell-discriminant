@@ -49,7 +49,7 @@ Let $S_n$ consist of the origin and the vertices of a regular $(n-1)$-gon of rad
 | $6\le n\le9$ | $M_n=C_n$ | Only $S_n$, up to rotation and relabeling. Proofs for [six](proofs/n6/README.md), [seven](proofs/n7/README.md), [eight](proofs/n8/README.md) and [nine points](proofs/n9/README.md). |
 | $n\ge10$ | $M_n>C_n$ | A direct comparison at ten points and an instability theorem for every $n\ge11$ exclude $S_n$. The sharp values in this range are undetermined here. [Proof](proofs/n10/README.md) |
 
-![Two to five equally spaced points on a circle in the top row. For six to nine points, one point lies at the center of the regular outer polygon.](assets/mordell-2-9.png)
+<a href="assets/mordell-2-9.png"><img src="assets/mordell-2-9.png" alt="Two to five equally spaced points on a circle in the top row. For six to nine points, one point lies at the center of the regular outer polygon." width="460"></a>
 
 **Figure 1. Optimal configurations for Mordell’s problem, $2\le n\le9$.** [Vector figure (PDF)](assets/mordell-2-9.pdf)
 
