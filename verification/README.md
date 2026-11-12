@@ -27,7 +27,7 @@ python verify.py --level check --case ratio
 | §3, n7 | Ten certified classes plus two exact classes, and their separated objective values | The published complete seven-vortex classification is cited |
 | §4, n8 | Exact domain identities, kernel reconstruction, positive definiteness and contact neighborhoods | Saved complete domain-cover certificate |
 | §4, n9 | Exact identities and domain bounds, kernel reconstruction, positive definiteness and contact neighborhoods | Saved complete domain-cover certificate |
-| §5, n10 | Both ten-point witnesses, including the coordinates of Gueron and Shafrir. Each requires 45 positive squared distances and a strict product comparison | For $n\ge11$ use the cited instability theorem, as explained in the [proof](../proofs/n10/README.md) |
+| §5, n10 | Both ten-point witnesses, including the coordinates of Gueron and Shafrir. Each requires 45 positive squared distances and a strict product comparison | The uniform explicit construction for every $n\ge10$ is checked separately in [Lean](../formalization/chalk_ge10/Chalk.lean); see the [proof](../proofs/n10/README.md) |
 | §6 and Appendix C, ratio | All pair distances of the three integer sets, their extrema and three rigorous comparisons with the centered polygons | The constructions for eight points and all $n\ge12$ are analytic. See the [proof](../proofs/ratio/README.md) |
 
 To rerun a complete cover explicitly:
@@ -39,7 +39,7 @@ python verify.py --level replay --case n9
 
 `replay` for n6 and n7 runs their listed exact checks; it does not silently invoke remote CAS services or regenerate the cited classification. Full n8/n9 covers must finish with zero unresolved boxes (193458 terminal boxes for n8 and 15807 for n9). A timeout, missing input, hash mismatch or failed mathematical check exits nonzero. Checks run in separate copies under ignored `build/verification/`; frozen evidence is not overwritten.
 
-The n9 public runner checks the core global theorem. The original proof's additional website-configuration appendix is not a premise of that theorem; its website snapshots are not redistributed or required by the public runner. The original source manifest is retained for provenance, and the publication manifest identifies the selected distributed files.
+The n9 public runner checks the core global theorem. The original proof's additional website-configuration appendix is not a premise of that theorem; its website snapshots are not redistributed or required by the public runner. Original input hashes are recorded in `source-map.json`. The case manifests bind the distributed proof inputs, and the publication manifest records all distributed files.
 
 The resultant bridge and historical ten-point checker are taken from the manuscript supplements S6 and S10. The ratio checker uses the three sets in Appendix C.
 
@@ -51,7 +51,7 @@ The resultant bridge and historical ten-point checker are taken from the manuscr
 - The n7 verifier's optional local-PDF checksum I/O is adapted to avoid redistributing a paper. If the PDF is supplied at the original relative location its checksum is checked; otherwise the output explicitly records that no local PDF was checked. The complete-classification theorem remains an external premise in both cases. The original program is retained in `n7/original/`.
 - The core n8/n9 mathematical inputs and computational kernels are byte-identical to the source material. Their mathematical summation and equality arguments must be read together with the computational certificates.
 
-No proof-assistant formalization or external peer-review certification is claimed for these six-to-nine-point proofs.
+This page describes the Python verification suite. The Lean formalizations and their reproduction commands are documented [separately](../formalization/REPRODUCE.md).
 
 ## Maintaining the publication manifest
 

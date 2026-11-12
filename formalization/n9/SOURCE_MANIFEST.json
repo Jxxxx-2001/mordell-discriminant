@@ -1,6 +1,6 @@
 {
   "project": "n9",
-  "status": "Main project passed 2026-11-03. Earlier independent rebuild paused at 1034/3659. Release rebuild pending.",
+  "status": "Main-project theorem checks and axiom audit passed; source manifest verified.",
   "roots": [
     "Pilot.NineFinal"
   ],

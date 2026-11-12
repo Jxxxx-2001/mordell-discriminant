@@ -1,6 +1,6 @@
 {
   "project": "chalk_ge10",
-  "status": "Main project and historical independent source build passed. Release candidate passed a fresh build of all 3 project modules and final axiom audit on 2026-11-12 in 120.63 seconds, reusing the pinned third-party dependency cache.",
+  "status": "Main-project checks, independent source rebuild and final theorem axiom audit passed.",
   "roots": [
     "Chalk"
   ],

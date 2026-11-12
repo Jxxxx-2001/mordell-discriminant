@@ -7,8 +7,8 @@
     "magma": "2.29-10, public calculator, GlobalModular=false"
   },
   "sha256": {
-    "GLOBAL_PROOF.txt": "cacce89e5bbd5b014e31dd7c2ec5d64628445447d947984f8a6e9bd9bb75194c",
-    "SYMMETRIC_PROOF.md": "ab8045dca3bbcf1edbb5c7e48b2be44e4f82a834218e8028b3e41e0365219249",
+    "GLOBAL_PROOF.txt": "489b3bb6af1fd8997ee7215731b9f922778da46725503672eea75adfcb42f45e",
+    "SYMMETRIC_PROOF.md": "f8c85b0f2205b148f3e3bbc351dbdad22712dce05b8b4c40d80398432d455a00",
     "generic_system.py": "f93bfc6e796b74c91a6c94d540dff7ffc54a9d5892a6874be3e7e171201e4e9b",
     "generic_system.json": "6e5a33d4107325fd163e1020d878114e4f61d7efa1994c3ba97e37c3efdd436b",
     "prepare_generic.py": "f360b81ea98de35271c42df2a3ae911ee0fc8f20f80ae071184222051b66c73f",

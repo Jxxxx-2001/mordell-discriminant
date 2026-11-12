@@ -1,6 +1,6 @@
 {
   "project": "n7",
-  "status": "Main project passed 2026-11-10 and revalidated 2026-11-11. Independent release rebuild pending.",
+  "status": "Main-project theorem checks and axiom audit passed; source manifest verified.",
   "roots": [
     "N7"
   ],

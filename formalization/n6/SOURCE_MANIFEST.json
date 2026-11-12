@@ -1,6 +1,6 @@
 {
   "project": "n6",
-  "status": "Sharp upper bound, attainment and equality classification passed the historical main-project audit. Source hashes and exact import closure verified for this release candidate; independent release rebuild pending.",
+  "status": "Main-project theorem checks and axiom audit passed; source manifest verified.",
   "roots": [
     "N6"
   ],

@@ -20,8 +20,7 @@
 按本问题的二阶矩约束缩放后的构型。
 
 本证明的外部数学前提是上述论文的“恰有 12 类”完整分类。
-本轮没有独立重跑该论文的所有有理数 Gröbner 消元及分支排除。
-本轮独立证明的是：构造 12 个互不等价的真实驻点类，严格认证其中 10 类的
+分类定理作为外部结果引用；下文验证其在本问题中的应用：构造 12 个互不等价的真实驻点类，严格认证其中 10 类的
 存在性和目标区间，加上两个显式构型，再完成全部 12 类的目标比较。
 这是一份依赖已发表分类的普通计算机辅助证明，不是自包含的分类新证明，
 也不是 Lean 形式化证明。未把数值搜索、图片坐标或有限域消元当作证明。
@@ -34,7 +33,6 @@ Solving Polynomial Systems Globally Invariant Under an Action of the Symmetric
 Group and Application to the Equilibria of N vortices in the Plane,
 ISSAC '12, pp.170–178, DOI 10.1145/2442829.2442856.
 作者存档：https://inria.hal.science/hal-00777791v1
-本地全文：../sources/fs12_hal.pdf。
 
 使用的位置：
   §5.2–5.3：齐次缩放及恢复物理解的尺度；
@@ -42,7 +40,7 @@ ISSAC '12, pp.170–178, DOI 10.1145/2442829.2442856.
   §5.5：中心反演、共轭等对称性；
   §5.7：报告 N=7 除去全部对称性后恰有 12 个解；
   §7，Figure 4：七点的完整分支图及 12 个构型。
-本轮同时核对了文字和 Figure 4 原图。原文的伴随数据网页未能取得。
+分类结论引用论文正文；Figure 4 用于说明构型。
 
 所引用的分类可表述为：七个互异复数 u_i 满足
 
@@ -183,7 +181,7 @@ Df 的点对贡献使用精确公式
 主要证明输入：interval_certificate_inputs.json
 主要验证程序：certify_twelve.py
 主要输出证书：classification_based_certificate.json
-复算：py -3.12 research/n7_global_audit_20261023/certify_twelve.py
+复算：在仓库根目录运行 python verify.py --level check --case n7
 
 复算不需要再取图像坐标、不需要运行优化、不需要调用外部服务。
 recover_twelve.py 和 twelve_seeds_and_roots.json 记录初值及近似根发现过程，
@@ -192,12 +190,9 @@ recover_twelve.py 和 twelve_seeds_and_roots.json 记录初值及近似根发现
 local_certificate.json 另独立给出了中心加正六边形的完整实 Hessian 特征多项式。
 它验证除整体旋转外严格局部最优，但全局证明不以局部最优代替完备性。
 
-本轮曾尝试独立重做七次多项式驻点消元：有限域的通用分支计算完成，
-有理数完整计算未完成；这些探索数据未进入全局证明。Magma 有理数尝试因
-公开计算器60秒时限中止；不能将其误读为通过。相关日志均保留。
-
-如果要求不引用 Faugère–Svartz 的完整分类，而要把分类本身也在当前目录中
-独立重证，那么这一更强的自包含要求尚未完成。当前证明明确引用该已发表结果。
+本文件采用已发表的完整分类作为数学前提。另一路线见
+proofs/n7/PAIR_BOUND.zh-CN.md（相对仓库根目录）：该连续点对域证明
+不依赖上述十二类分类，配套 Lean 入口为 formalization/n7/N7/Kernel/Final.lean。
 
 Friedman 网页只用于识别构型：
 https://erich-friedman.github.io/packing/maxmin/

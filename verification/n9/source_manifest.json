@@ -3,7 +3,7 @@
   "fresh_packaged_verification_completed": true,
   "inputs": {
     "arb_bernstein.py": "ff18dccd70f083cf5e7fb79ba1a2c9b75b38886f82cc239198407c0b2d85e751",
-    "BASIC_RESULTS.txt": "b069f0b962aaf8e97db28028a6da5a2eaf9968e70b982d4755b9f592ef0f812e",
+    "BASIC_RESULTS.txt": "77346e16d4600833746b193fce7ed76dd0b302d4a39508d402ca4eaaa9d91209",
     "certify_contact_configuration.py": "11d2a7ef757c6010f91920bd0df4ef70b4a953b75df22d5e6fcb170a7629d208",
     "check_arb_bernstein.py": "b78900e08bb3a2635ffe5c7a6b92dc69edda9086ee8390d478bd7cdb45a8cc7a",
     "check_physical_boundary_bernstein.py": "cbcfe1ffe598022b1b721104185e52730c65d68a31ecb36ce564d917f41d17cb",
@@ -34,6 +34,5 @@
     "PROOF_ZH.txt": "73a348ff828c302a1cee2874cd463c350dac7c8c3b2a8e26ee6dfdef97d03439",
     "README.txt": "7a14dc3298f51bca0a43652e1d6c769f18d8e676122de3757d1d1766118db4d2",
     "audit_completed_certificate.py": "9545eb33de5573a836a68a86a21065eef9bb686c6d16bfa8443d158093a1007f"
-  },
-  "presentation_finalization": "Final proof and README added, historical draft relocated, verification code and exact auxiliary input unchanged."
+  }
 }

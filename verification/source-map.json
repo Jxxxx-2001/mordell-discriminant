@@ -5,13 +5,13 @@
       "source": "research/n6_global_audit_20261023/GLOBAL_PROOF.txt",
       "destination": "verification/n6/GLOBAL_PROOF.txt",
       "source_sha256": "cacce89e5bbd5b014e31dd7c2ec5d64628445447d947984f8a6e9bd9bb75194c",
-      "change": "byte-identical"
+      "change": "Expository text and document-hash bindings revised; mathematical inputs and verification programs unchanged."
     },
     {
       "source": "research/n6_global_audit_20261023/SYMMETRIC_PROOF.md",
       "destination": "verification/n6/SYMMETRIC_PROOF.md",
       "source_sha256": "ab8045dca3bbcf1edbb5c7e48b2be44e4f82a834218e8028b3e41e0365219249",
-      "change": "byte-identical"
+      "change": "Expository text and document-hash bindings revised; mathematical inputs and verification programs unchanged."
     },
     {
       "source": "research/n6_global_audit_20261023/generic_system.py",
@@ -203,7 +203,7 @@
       "source": "research/n6_global_audit_20261023/proof_manifest.json",
       "destination": "verification/n6/source_manifest.json",
       "source_sha256": "d97e1870895e0189f15606a80eada416c069173bafa73fa2906d21639879d7c9",
-      "change": "byte-identical"
+      "change": "Expository text and document-hash bindings revised; mathematical inputs and verification programs unchanged."
     },
     {
       "source": "research/n6_global_audit_20261023/singular_runtime.json",
@@ -215,7 +215,7 @@
       "source": "research/n7_global_audit_20261023/GLOBAL_PROOF.txt",
       "destination": "verification/n7/GLOBAL_PROOF.txt",
       "source_sha256": "2f5bf3c96c398d85f9ce373cae7e49ba7ed3c7249b16c13263ce320a60a87976",
-      "change": "byte-identical"
+      "change": "Expository text and document-hash bindings revised; mathematical inputs and verification programs unchanged."
     },
     {
       "source": "research/n7_global_audit_20261023/interval_certificate_inputs.json",
@@ -245,7 +245,7 @@
       "source": "research/n7_global_audit_20261023/proof_manifest.json",
       "destination": "verification/n7/source_manifest.json",
       "source_sha256": "7d0e1880b8cda8a8c7dc637efa3b0c665720d92753a9c198f913e149fe8bc387",
-      "change": "byte-identical"
+      "change": "Expository text and document-hash bindings revised; mathematical inputs and verification programs unchanged."
     },
     {
       "source": "research/n7_global_audit_20261023/certify_twelve.py",
@@ -365,7 +365,7 @@
       "source": "research/n9_global_audit_20261024/global_certificate_verification/BASIC_RESULTS.txt",
       "destination": "verification/n9/BASIC_RESULTS.txt",
       "source_sha256": "b069f0b962aaf8e97db28028a6da5a2eaf9968e70b982d4755b9f592ef0f812e",
-      "change": "byte-identical"
+      "change": "Expository text and document-hash bindings revised; mathematical inputs and verification programs unchanged."
     },
     {
       "source": "research/n9_global_audit_20261024/global_certificate_verification/FOURTH_MOMENT_RADIUS_PROOF.txt",
@@ -503,7 +503,7 @@
       "source": "research/n9_global_audit_20261024/global_certificate_verification/INPUT_MANIFEST.json",
       "destination": "verification/n9/source_manifest.json",
       "source_sha256": "11675a37e1a5323052e7b82755c94bfb51e7ba86b5f46024ba14df3ef423d365",
-      "change": "byte-identical"
+      "change": "Expository text and document-hash bindings revised; mathematical inputs and verification programs unchanged."
     },
     {
       "source": "research/n10_global_audit_20261025/exact_counterexample.py",
