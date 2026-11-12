@@ -2,6 +2,29 @@
 
 [中文](README.zh-CN.md) · [Home](../../README.md)
 
+## A uniform explicit construction for every $n\ge10$
+
+Put $p=n-2\ge8$ and $N=n(n-1)/2$. Take the two real points $\pm1$ and a rotated regular $p$-gon of radius $\sqrt{p+3}$:
+
+```math
+W=\{-1,1\}\cup\left\{\sqrt{p+3}\exp\!\left(i\left(\frac{\pi}{2p}+\frac{2\pi j}{p}\right)\right):j=0,\ldots,p-1\right\}.
+```
+
+Set $Z=W/\sqrt{p+1}$. Since $\sum_{w\in W}|w|^2=2+p(p+3)=(p+1)(p+2)$, the configuration satisfies $\sum_{z\in Z}|z|^2=n$. The distance products within the polygon and between it and the two real points give
+
+```math
+\Delta(W)\ge4p^p(p+3)^{N-1}>(p+1)^{p+1}(p+2)^N.
+```
+
+The strict integer inequality holds for every $p\ge8$; see the [Lean integer comparison](../../formalization/chalk_ge10/Chalk/Integer.lean). Scaling yields
+
+```math
+\Delta(Z)=\frac{\Delta(W)}{(p+1)^N}
+>\frac{(p+2)^N}{(p+1)^{N-p-1}}=C_n.
+```
+
+Thus $M_n>C_n$ for every $n\ge10$. The [final Lean theorem `Chalk.exists_above_chalk`](../../formalization/chalk_ge10/Chalk.lean) verifies this uniform construction. It excludes the centered polygon without determining the sharp maximum or all maximizers. The other ten-point explicit witnesses and the historical instability argument for eleven or more points are retained below.
+
 ## Ten points
 
 Here $C_{10}=10^{45}/9^{36}$. Figure 1 of [Gueron and Shafrir (1999)](https://doi.org/10.1137/S0036139997315258) gives two rectangular orbits and two axial points. Treat the printed decimals as exact rational coordinates. Clearing the denominator gives

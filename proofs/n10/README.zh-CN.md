@@ -2,6 +2,29 @@
 
 [English](README.md) · [返回首页](../../README.zh-CN.md)
 
+## 所有 $n\ge10$ 的统一显式构造
+
+令 $p=n-2\ge8$、$N=n(n-1)/2$。取两个实点 $\pm1$ 和半径 $\sqrt{p+3}$ 的旋转正 $p$ 边形：
+
+```math
+W=\{-1,1\}\cup\left\{\sqrt{p+3}\exp\!\left(i\left(\frac{\pi}{2p}+\frac{2\pi j}{p}\right)\right):j=0,\ldots,p-1\right\}.
+```
+
+令 $Z=W/\sqrt{p+1}$。由于 $\sum_{w\in W}|w|^2=2+p(p+3)=(p+1)(p+2)$，有 $\sum_{z\in Z}|z|^2=n$。正多边形内部及其与两个实点的距离乘积给出
+
+```math
+\Delta(W)\ge4p^p(p+3)^{N-1}>(p+1)^{p+1}(p+2)^N.
+```
+
+后一严格整数不等式对每个 $p\ge8$ 成立，见 [Lean 整数比较](../../formalization/chalk_ge10/Chalk/Integer.lean)。缩放后得到
+
+```math
+\Delta(Z)=\frac{\Delta(W)}{(p+1)^N}
+>\frac{(p+2)^N}{(p+1)^{N-p-1}}=C_n.
+```
+
+因此每个 $n\ge10$ 都有 $M_n>C_n$。[Lean 最终定理 `Chalk.exists_above_chalk`](../../formalization/chalk_ge10/Chalk.lean)核验了这一统一构造。它排除了中心正多边形的最优性，尚未给出真正的锐值和全部最优构型。下面保留十点的其他显式构型及十一点起的历史失稳论证。
+
 ## 十点的显式比较
 
 此时 $C_{10}=10^{45}/9^{36}$。[Gueron 与 Shafrir（1999）](https://doi.org/10.1137/S0036139997315258) 的图 1 给出两个矩形的顶点及横轴上的两点。将刊出的小数坐标视为精确有理数，清除公分母后得到

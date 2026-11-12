@@ -2,6 +2,10 @@
 
 [English](README.md) · [中文](README.zh-CN.md)
 
+Xiang Ji, Tiancheng Xu, and Wensheng Yu, [*Optimal Configurations for Mordell’s Problem*](https://arxiv.org/abs/2611.03088v1).
+
+Project affiliation: Intelligent Information Processing Laboratory, Beijing University of Posts and Telecommunications (北京邮电大学 智能信息处理实验室).
+
 **First public release: 2026-10-29 · [v0.1.0](https://github.com/Jxxxx-2001/mordell-discriminant/releases/tag/v0.1.0).**
 
 **Content updated: 2026-11-12.**
@@ -48,23 +52,21 @@ Let $S_n$ consist of the origin and the vertices of a regular $(n-1)$-gon of rad
 | 2 | $M_2=4=2^2$ | Antipodal points on the unit circle | [Proof](proofs/n2-n5/README.md) | — |
 | 3 | $M_3=27=3^3$ | Equilateral triangle on the unit circle | [Proof](proofs/n2-n5/README.md) | — |
 | 4 | $M_4=256=4^4$ | Square on the unit circle | [Proof](proofs/n2-n5/README.md) | — |
-| 5 | $M_5=3125=5^5$ | Regular pentagon on the unit circle | [Proof](proofs/n2-n5/README.md) | — |
+| 5 | $M_5=3125=5^5$ | Regular pentagon on the unit circle | [Proof](proofs/n2-n5/README.md) | [Lean](https://github.com/dgjszy/mordell-five/blob/4329977fbe3f1286e089f6f655f990f47f134eba/Mordell/Original.lean) |
 | 6 | $M_6=C_6=\frac{6^{15}}{5^{10}}$ | Origin and a regular pentagon | [Proof](proofs/n6/README.md) | [Lean](formalization/n6/N6/SharpTheorem.lean) |
-| 7 | $M_7=C_7=\frac{7^{21}}{6^{15}}$ | Origin and a regular hexagon | [Proof](proofs/n7/README.md) | [Lean](formalization/n7/N7/Kernel/Final.lean) |
+| 7 | $M_7=C_7=\frac{7^{21}}{6^{15}}$ | Origin and a regular hexagon | [Proof](proofs/n7/PAIR_BOUND.md) | [Lean](formalization/n7/N7/Kernel/Final.lean) |
 | 8 | $M_8=C_8=\frac{8^{28}}{7^{21}}$ | Origin and a regular heptagon | [Proof](proofs/n8/README.md) | [Lean](formalization/n8/Eight/Final.lean) |
-| 9 | $M_9=C_9=\frac{9^{36}}{8^{28}}$ | Origin and a regular octagon | [Proof](proofs/n9/README.md) | [Lean and certificate assets](formalization/REPRODUCE.md) |
-| 10 | $M_{10}>C_{10}=\frac{10^{45}}{9^{36}}$ | The centered nonagon is excluded. The sharp value is undetermined here. | [Proof](proofs/n10/README.md) | [Lean (all $n\ge10$)](formalization/chalk_ge10/Chalk.lean) |
+| 9 | $M_9=C_9=\frac{9^{36}}{8^{28}}$ | Origin and a regular octagon | [Proof](proofs/n9/README.md) | [Lean](formalization/REPRODUCE.md) |
+| 10 | $M_{10}>C_{10}=\frac{10^{45}}{9^{36}}$ | The centered nonagon is excluded. The sharp value is undetermined here. | [Proof](proofs/n10/README.md) | [Lean](formalization/chalk_ge10/Chalk.lean) |
 
-For two through nine points the listed maximizer is unique up to rotation and relabeling. For every $n\ge10$, one has $M_n>C_n$, by an explicit comparison at ten points and an instability theorem for every $n\ge11$. [General conclusion](proofs/n10/README.md)
+For two through nine points the listed maximizer is unique up to rotation and relabeling. For every $n\ge10$, a uniform explicit construction gives a configuration with distance product strictly greater than $C_n$, hence $M_n>C_n$. This excludes $S_n$ without determining the sharp maximum or all maximizers. [Explicit construction](proofs/n10/README.md)
 
 <p align="center">
   <a href="assets/mordell-2-9.png"><img src="assets/mordell-2-9.png" alt="Two to five equally spaced points on a circle in the top row. For six to nine points, one point lies at the center of the regular outer polygon." width="460"></a><br>
   <strong>Figure 1. Optimal configurations for Mordell’s problem, 2 ≤ n ≤ 9.</strong> <a href="assets/mordell-2-9.pdf">Vector figure (PDF)</a>
 </p>
 
-The six-point proof uses algebraic elimination and a recorded exact dimension computation. For seven points we use the complete [Faugère–Svartz classification](https://doi.org/10.1145/2442829.2442856) and compare twelve equilibrium classes. A [related public manuscript](https://github.com/harrykane8816627373-cell/mordell-research/tree/631e0feacf197f5c96f092bafbf17bc8cbd0ef32/earlier-results) also treats six and seven points. For eight and nine points a certified inequality for pairs gives a global bound after summation. The equality conditions recover the radii and the regular outer polygon.
-
-See also the [seven-point pair-domain proof](proofs/n7/PAIR_BOUND.md).
+The five- and six-point proofs share an algebraic framework: reduce the stationarity equations, exclude coefficient branches, and compare discriminant values exactly. The five-point Lean link points to the external [mordell-five project](https://github.com/dgjszy/mordell-five/tree/4329977fbe3f1286e089f6f655f990f47f134eba). The current seven-, eight-, and nine-point proofs use certified pair inequalities: summing over all pairs yields the global bound, and the equality conditions recover the radii and regular outer polygon. See the [seven-point pair-domain proof](proofs/n7/PAIR_BOUND.md); the [earlier classification proof](proofs/n7/README.md) remains available.
 
 ## Quick verification
 
@@ -93,9 +95,5 @@ Bateman and Erdős asked how small the diameter of $n$ planar points can be if e
 For each $2\le n\le8$ the two problems have a common optimal shape. At eight points the full sets of optimizers differ. Nine is the first point count with no common optimizer. For every $n\ge10$ both problems exclude $S_n$; whether their actual optimizers coincide is a separate question. [Comparisons and integer witnesses](proofs/ratio/README.md) · [Friedman’s illustrated catalogue](https://erich-friedman.github.io/packing/maxmin/)
 
 ## Citation
-
-Xiang Ji, Tiancheng Xu, and Wensheng Yu, [*Optimal Configurations for Mordell’s Problem*](https://arxiv.org/abs/2611.03088v1).
-
-Project affiliation: Intelligent Information Processing Laboratory, Beijing University of Posts and Telecommunications (北京邮电大学 智能信息处理实验室).
 
 To reproduce arXiv v1, use the [paper’s pinned revision](https://github.com/Jxxxx-2001/mordell-discriminant/tree/31cc934b7dfa0ef2308566a1bce48cbfb2e01559). For the software, cite the release or commit used. [Citation metadata](CITATION.cff)

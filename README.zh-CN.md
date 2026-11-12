@@ -2,6 +2,10 @@
 
 [English](README.md) · [中文](README.zh-CN.md)
 
+Xiang Ji、Tiancheng Xu、Wensheng Yu，[*Optimal Configurations for Mordell’s Problem*](https://arxiv.org/abs/2611.03088v1)。
+
+项目单位：北京邮电大学 智能信息处理实验室。
+
 **首次公开：2026-10-29 · [v0.1.0](https://github.com/Jxxxx-2001/mordell-discriminant/releases/tag/v0.1.0)。**
 
 **内容更新：2026-11-12。**
@@ -46,23 +50,21 @@ C_n=(n-1)^{n-1}\left(\frac{n}{n-1}\right)^{n(n-1)/2}.
 | 2 | $M_2=4=2^2$ | 单位圆上的一对对径点 | [证明](proofs/n2-n5/README.zh-CN.md) | — |
 | 3 | $M_3=27=3^3$ | 单位圆上的正三角形 | [证明](proofs/n2-n5/README.zh-CN.md) | — |
 | 4 | $M_4=256=4^4$ | 单位圆上的正方形 | [证明](proofs/n2-n5/README.zh-CN.md) | — |
-| 5 | $M_5=3125=5^5$ | 单位圆上的正五边形 | [证明](proofs/n2-n5/README.zh-CN.md) | — |
+| 5 | $M_5=3125=5^5$ | 单位圆上的正五边形 | [证明](proofs/n2-n5/README.zh-CN.md) | [Lean](https://github.com/dgjszy/mordell-five/blob/4329977fbe3f1286e089f6f655f990f47f134eba/Mordell/Original.lean) |
 | 6 | $M_6=C_6=\frac{6^{15}}{5^{10}}$ | 原点与正五边形 | [证明](proofs/n6/README.zh-CN.md) | [Lean](formalization/n6/N6/SharpTheorem.lean) |
-| 7 | $M_7=C_7=\frac{7^{21}}{6^{15}}$ | 原点与正六边形 | [证明](proofs/n7/README.zh-CN.md) | [Lean](formalization/n7/N7/Kernel/Final.lean) |
+| 7 | $M_7=C_7=\frac{7^{21}}{6^{15}}$ | 原点与正六边形 | [证明](proofs/n7/PAIR_BOUND.zh-CN.md) | [Lean](formalization/n7/N7/Kernel/Final.lean) |
 | 8 | $M_8=C_8=\frac{8^{28}}{7^{21}}$ | 原点与正七边形 | [证明](proofs/n8/README.zh-CN.md) | [Lean](formalization/n8/Eight/Final.lean) |
-| 9 | $M_9=C_9=\frac{9^{36}}{8^{28}}$ | 原点与正八边形 | [证明](proofs/n9/README.zh-CN.md) | [Lean 与证书资产](formalization/REPRODUCE.md) |
-| 10 | $M_{10}>C_{10}=\frac{10^{45}}{9^{36}}$ | 原点与正九边形已被排除，十点锐值尚未由此确定 | [证明](proofs/n10/README.zh-CN.md) | [Lean（所有 $n\ge10$）](formalization/chalk_ge10/Chalk.lean) |
+| 9 | $M_9=C_9=\frac{9^{36}}{8^{28}}$ | 原点与正八边形 | [证明](proofs/n9/README.zh-CN.md) | [Lean](formalization/REPRODUCE.md) |
+| 10 | $M_{10}>C_{10}=\frac{10^{45}}{9^{36}}$ | 原点与正九边形已被排除，十点锐值尚未由此确定 | [证明](proofs/n10/README.zh-CN.md) | [Lean](formalization/chalk_ge10/Chalk.lean) |
 
-二至九点的取等构型均在整体旋转和重标号意义下唯一。对所有 $n\ge10$，均有 $M_n>C_n$：十点由显式比较得到，十一点起由失稳定理得到。[一般结论](proofs/n10/README.zh-CN.md)
+二至九点的取等构型均在整体旋转和重标号意义下唯一。对所有 $n\ge10$，统一的显式构造给出距离平方乘积严格大于 $C_n$ 的构型，从而 $M_n>C_n$。这排除了 $S_n$ 的最优性，尚未确定相应的锐值及全部最优构型。[显式构造](proofs/n10/README.zh-CN.md)
 
 <p align="center">
   <a href="assets/mordell-2-9.png"><img src="assets/mordell-2-9.png" alt="上排为二至五点，点在圆上等角间隔排列。下排为六至九点，中心各有一点，外圈构成正多边形。" width="460"></a><br>
   <strong>图 1　Mordell 问题的二至九点最优构型。</strong> <a href="assets/mordell-2-9.pdf">矢量图（PDF）</a>
 </p>
 
-六点证明使用代数消元及有理商空间的精确维数记录。七点依据 [Faugère–Svartz 的完整分类](https://doi.org/10.1145/2442829.2442856)，严格比较十二类平衡构型。另有[公开文稿](https://github.com/harrykane8816627373-cell/mordell-research/tree/631e0feacf197f5c96f092bafbf17bc8cbd0ef32/earlier-results)讨论六、七点的锐界。八、九点则通过认证点对不等式，对全部点对求和得到全局上界，并由取等条件确定半径和外圈形状。
-
-另见七点的[连续点对域证明](proofs/n7/PAIR_BOUND.zh-CN.md)。
+五、六点采用共同的代数证明框架：由驻点方程进行代数归约，排除系数分支，并精确比较判别式值。其中五点的 Lean 链接指向外部项目 [mordell-five](https://github.com/dgjszy/mordell-five/tree/4329977fbe3f1286e089f6f655f990f47f134eba)。七至九点的当前证明采用认证点对不等式框架：对全部点对求和得到全局上界，再由取等条件恢复半径及正多边形外圈。七点的新证明见[连续点对域证明](proofs/n7/PAIR_BOUND.zh-CN.md)，[早期分类证明](proofs/n7/README.zh-CN.md)仍保留供查阅。
 
 ## 简短验证
 
@@ -91,9 +93,5 @@ Bateman 与 Erdős 研究了如下问题：平面上 $n$ 个点的两两距离�
 按相似意义比较，二至八点各有共同最优形状。八点时两问题的全部最优解集已经不同，九点首次没有共同最优形状。对每个 $n\ge10$，两个问题均排除 $S_n$，至于两者真正的最优形状是否重合，还须另行研究。[几何比较与整数构型](proofs/ratio/README.zh-CN.md) · [Friedman 构型目录](https://erich-friedman.github.io/packing/maxmin/)
 
 ## 引用
-
-Xiang Ji、Tiancheng Xu、Wensheng Yu，[*Optimal Configurations for Mordell’s Problem*](https://arxiv.org/abs/2611.03088v1)。
-
-项目单位：北京邮电大学 智能信息处理实验室。
 
 复核 arXiv v1 时请使用[论文指定的固定提交](https://github.com/Jxxxx-2001/mordell-discriminant/tree/31cc934b7dfa0ef2308566a1bce48cbfb2e01559)。引用软件时请注明实际使用的发布版本或提交。[引用信息](CITATION.cff)
