@@ -52,9 +52,9 @@ C_n=(n-1)^{n-1}\left(\frac{n}{n-1}\right)^{n(n-1)/2}.
 | 4 | $M_4=256=4^4$ | 单位圆上的正方形 | [证明](proofs/n2-n5/README.zh-CN.md) | — |
 | 5 | $M_5=3125=5^5$ | 单位圆上的正五边形 | [证明](proofs/n2-n5/README.zh-CN.md) | [Lean](https://github.com/dgjszy/mordell-five/blob/4329977fbe3f1286e089f6f655f990f47f134eba/Mordell/Original.lean) |
 | 6 | $M_6=C_6=\frac{6^{15}}{5^{10}}$ | 原点与正五边形 | [证明](proofs/n6/README.zh-CN.md) | [Lean](formalization/n6/N6/SharpTheorem.lean) |
-| 7 | $M_7=C_7=\frac{7^{21}}{6^{15}}$ | 原点与正六边形 | [证明](proofs/n7/PAIR_BOUND.zh-CN.md) | [Lean](formalization/n7/N7/Kernel/Final.lean) |
-| 8 | $M_8=C_8=\frac{8^{28}}{7^{21}}$ | 原点与正七边形 | [证明](proofs/n8/README.zh-CN.md) | [Lean](formalization/n8/Eight/Final.lean) |
-| 9 | $M_9=C_9=\frac{9^{36}}{8^{28}}$ | 原点与正八边形 | [证明](proofs/n9/README.zh-CN.md) | [Lean](formalization/REPRODUCE.md) |
+| 7 | $M_7=C_7=\frac{7^{21}}{6^{15}}$ | 原点与正六边形 | [证明](proofs/n7/PAIR_BOUND.zh-CN.md) | [Lean](formalization/n7/N7/Kernel/Final.lean#L9-L19) |
+| 8 | $M_8=C_8=\frac{8^{28}}{7^{21}}$ | 原点与正七边形 | [证明](proofs/n8/README.zh-CN.md) | [Lean](formalization/n8/Eight/Final.lean#L8-L17) |
+| 9 | $M_9=C_9=\frac{9^{36}}{8^{28}}$ | 原点与正八边形 | [证明](proofs/n9/README.zh-CN.md) | [Lean](formalization/n9/NineFinal.lean#L7-L21) |
 | 10 | $M_{10}>C_{10}=\frac{10^{45}}{9^{36}}$ | 原点与正九边形已被排除，十点锐值尚未由此确定 | [证明](proofs/n10/README.zh-CN.md) | [Lean](formalization/chalk_ge10/Chalk.lean) |
 
 二至九点的取等构型均在整体旋转和重标号意义下唯一。对所有 $n\ge10$，统一的显式构造给出距离平方乘积严格大于 $C_n$ 的构型，从而 $M_n>C_n$。这排除了 $S_n$ 的最优性，尚未确定相应的锐值及全部最优构型。[显式构造](proofs/n10/README.zh-CN.md)

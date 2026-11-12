@@ -7,8 +7,8 @@
     "LICENSE": "7401cb3cd38284b1ee2096247e82cba44b4cbfe6d80f142a33999bc56f3b5d95",
     "LICENSE-DOCS.txt": "d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744",
     "LICENSING.md": "5802a87315f9a91ab0e12cb6351e6ed069dc03eeae2dcd99dcd4e7e25b9a1bdf",
-    "README.md": "bcef31d41c362380bdca25977b29db5623753a0612f6fe8562fdfd3f599c794f",
-    "README.zh-CN.md": "5134e527ccd3116d9a5cb87bf6f9dc5a5d96bf8572fa7c00c5fe8c3af2883733",
+    "README.md": "2f534dcc66682b4621519adae4651162360d5f7c72c037e5c6b3dc7ae0fd34ac",
+    "README.zh-CN.md": "d8044419aa1bdf010dbdc719d58d41379accac788016f032f6bf69ed2ea2fe21",
     "assets/mordell-2-9.pdf": "e1d4ccb5245fdceb95369ab2568100bad4a9b5bbf176aba5a46da3b5e972c331",
     "assets/mordell-2-9.png": "cf0ea09a2bf3d70534d9ff3aa29e07ea9c1f50aba74ce17aed75e15162dcd7c4",
     "proofs/n10/README.md": "3810c5510ebcf666e274cb7604543fa18b1e793f1709fecba24cae2aab1cec15",
@@ -123,6 +123,9 @@
     "verification/n9/verify_pair_bound_local_preconditioned.py": "de8f3ed4fa775ec700b95f8b08d4f9f2f063b65c6a3df577956a6a6b01398c18",
     "verification/ratio/check_examples.py": "db141f12f7a19fa6997e42bc357a8d1e5b28f35e5e8b64c0f1a9c143e120073e",
     "verification/source-map.json": "d63a63161c108201e7c992822f81fec1177696e2dd6783bf1ed473e3413bc5b4",
-    "verify.py": "f9e18ccbfff0d5567dc43f8c2662d2a5f088c2d92abe4efec810bf86dc26b6ab"
+    "verify.py": "f9e18ccbfff0d5567dc43f8c2662d2a5f088c2d92abe4efec810bf86dc26b6ab",
+    "formalization/REPRODUCE.md": "c7efac472a9ccbc7a56aa757ef7bad3fbbafcbf33250a7cc35117861f9bf5376",
+    "formalization/n9/NineFinal.lean": "2e68ecf92cbadb163e7825357343a9272fc54862512cfe2269b5ad8d31e2c15a",
+    "formalization/n9/README.md": "af5efb2e6da003678fc4b4e2e5c6278f4016269d3b18f5967ca176f4445764fc"
   }
 }

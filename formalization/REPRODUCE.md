@@ -6,9 +6,11 @@ Use Python 3.11 or later and install Lean through Elan. Each project fixes Lean 
 | --- | --- |
 | `chalk_ge10` | [Chalk.lean](chalk_ge10/Chalk.lean) |
 | `n6` | [N6/SharpTheorem.lean](n6/N6/SharpTheorem.lean) |
-| `n7` | [N7/Kernel/Final.lean](n7/N7/Kernel/Final.lean) and [N7/Witness.lean](n7/N7/Witness.lean) |
-| `n8` | [Eight/Final.lean](n8/Eight/Final.lean) and [Eight/Witness.lean](n8/Eight/Witness.lean) |
-| `n9` | `Pilot/NineFinal.lean` after extraction |
+| `n7` | [Upper bound and equality classification](n7/N7/Kernel/Final.lean#L9-L19); [attainment](n7/N7/Witness.lean#L42-L44) |
+| `n8` | [Upper bound, equality classification and `complete_8`](n8/Eight/Final.lean#L8-L17); [attainment](n8/Eight/Witness.lean#L116-L117) |
+| `n9` | [Upper bound, attainment and equality classification](n9/NineFinal.lean#L7-L21) |
+
+The nine-point link opens an [exact reading copy](n9/README.md) of the final theorem file from the source archive. The build entry remains `Pilot/NineFinal.lean` after extraction.
 
 The final theorems passed the main-project Lean checks and axiom audits. Source integrity is checked against the manifests. The distributed `chalk_ge10` sources also passed an independent rebuild.
 

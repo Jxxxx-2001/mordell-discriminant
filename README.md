@@ -54,9 +54,9 @@ Let $S_n$ consist of the origin and the vertices of a regular $(n-1)$-gon of rad
 | 4 | $M_4=256=4^4$ | Square on the unit circle | [Proof](proofs/n2-n5/README.md) | — |
 | 5 | $M_5=3125=5^5$ | Regular pentagon on the unit circle | [Proof](proofs/n2-n5/README.md) | [Lean](https://github.com/dgjszy/mordell-five/blob/4329977fbe3f1286e089f6f655f990f47f134eba/Mordell/Original.lean) |
 | 6 | $M_6=C_6=\frac{6^{15}}{5^{10}}$ | Origin and a regular pentagon | [Proof](proofs/n6/README.md) | [Lean](formalization/n6/N6/SharpTheorem.lean) |
-| 7 | $M_7=C_7=\frac{7^{21}}{6^{15}}$ | Origin and a regular hexagon | [Proof](proofs/n7/PAIR_BOUND.md) | [Lean](formalization/n7/N7/Kernel/Final.lean) |
-| 8 | $M_8=C_8=\frac{8^{28}}{7^{21}}$ | Origin and a regular heptagon | [Proof](proofs/n8/README.md) | [Lean](formalization/n8/Eight/Final.lean) |
-| 9 | $M_9=C_9=\frac{9^{36}}{8^{28}}$ | Origin and a regular octagon | [Proof](proofs/n9/README.md) | [Lean](formalization/REPRODUCE.md) |
+| 7 | $M_7=C_7=\frac{7^{21}}{6^{15}}$ | Origin and a regular hexagon | [Proof](proofs/n7/PAIR_BOUND.md) | [Lean](formalization/n7/N7/Kernel/Final.lean#L9-L19) |
+| 8 | $M_8=C_8=\frac{8^{28}}{7^{21}}$ | Origin and a regular heptagon | [Proof](proofs/n8/README.md) | [Lean](formalization/n8/Eight/Final.lean#L8-L17) |
+| 9 | $M_9=C_9=\frac{9^{36}}{8^{28}}$ | Origin and a regular octagon | [Proof](proofs/n9/README.md) | [Lean](formalization/n9/NineFinal.lean#L7-L21) |
 | 10 | $M_{10}>C_{10}=\frac{10^{45}}{9^{36}}$ | The centered nonagon is excluded. The sharp value is undetermined here. | [Proof](proofs/n10/README.md) | [Lean](formalization/chalk_ge10/Chalk.lean) |
 
 For two through nine points the listed maximizer is unique up to rotation and relabeling. For every $n\ge10$, a uniform explicit construction gives a configuration with distance product strictly greater than $C_n$, hence $M_n>C_n$. This excludes $S_n$ without determining the sharp maximum or all maximizers. [Explicit construction](proofs/n10/README.md)
