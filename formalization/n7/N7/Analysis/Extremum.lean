@@ -1,0 +1,97 @@
+-- Adapted from the checked N6 analytic argument; see analysis/adapt_maximum.py.
+import N7.Analysis.Compactness
+import Mathlib.Analysis.SpecialFunctions.Pow.Real
+
+set_option autoImplicit false
+
+namespace N7.Analysis
+
+def IsGlobalMaximum (z : Configuration) : Prop :=
+  normSum z = 7 ∧ ∀ w : Configuration, normSum w = 7 → discriminant w ≤ discriminant z
+
+theorem discriminant_pos_of_injective {z : Configuration} (hz : Function.Injective z) :
+    0 < discriminant z := by
+  apply Finset.prod_pos
+  intro p hp
+  apply Complex.normSq_pos.mpr
+  intro h
+  have hij := hz (sub_eq_zero.mp h)
+  have hlt : p.1 < p.2 := (Finset.mem_filter.mp hp).2
+  exact (ne_of_lt hlt) hij
+
+theorem injective_of_discriminant_pos {z : Configuration} (hz : 0 < discriminant z) :
+    Function.Injective z := by
+  intro i j hij
+  by_contra hne
+  have hzero : discriminant z = 0 := by
+    unfold discriminant
+    apply Finset.prod_eq_zero_iff.mpr
+    rcases lt_or_gt_of_ne hne with hlt | hgt
+    · refine ⟨(i,j), Finset.mem_filter.mpr ⟨Finset.mem_univ _, hlt⟩, ?_⟩
+      simp [hij]
+    · refine ⟨(j,i), Finset.mem_filter.mpr ⟨Finset.mem_univ _, hgt⟩, ?_⟩
+      simp [hij]
+  exact (ne_of_gt hz) hzero
+
+theorem global_maximum_positive {z : Configuration} (hz : IsGlobalMaximum z) :
+    0 < discriminant z := by
+  have hw : normSum sharpWitness = 7 := by
+    rw [normSum_eq_energy, sharpWitness_energy]
+  have hp : 0 < discriminant sharpWitness := by
+    rw [discriminant_eq_delta, sharpWitness_delta]
+    norm_num [sharpConstant]
+  exact hp.trans_le (hz.2 sharpWitness hw)
+
+theorem global_maximum_injective {z : Configuration} (hz : IsGlobalMaximum z) :
+    Function.Injective z :=
+  injective_of_discriminant_pos (global_maximum_positive hz)
+
+theorem global_maximum_sub_ne_zero {z : Configuration} (hz : IsGlobalMaximum z)
+    {i j : Fin 7} (hij : i ≠ j) : z i - z j ≠ 0 := by
+  exact sub_ne_zero.mpr ((global_maximum_injective hz).ne hij)
+
+theorem normSum_pos_of_discriminant_pos {z : Configuration} (hz : 0 < discriminant z) :
+    0 < normSum z := by
+  by_contra hp
+  have hn : normSum z = 0 := le_antisymm (not_lt.mp hp) (normSum_nonneg z)
+  have hall : ∀ i, z i = 0 := by
+    intro i
+    apply Complex.normSq_eq_zero.mp
+    exact le_antisymm (by simpa [hn] using normSq_le_normSum z i)
+      (Complex.normSq_nonneg _)
+  have hi := injective_of_discriminant_pos hz
+  have h01 : (0 : Fin 7) = 1 := hi (by rw [hall, hall])
+  exact (by decide : (0 : Fin 7) ≠ 1) h01
+
+/-- Translation and rescaling strictly improve an uncentered positive maximum. -/
+theorem global_maximum_centered {z : Configuration} (hz : IsGlobalMaximum z) :
+    ∑ i, z i = 0 := by
+  have hd := global_maximum_positive hz
+  have ht : discriminant (center z) = discriminant z := discriminant_translate z _
+  have hs : 0 < normSum (center z) := normSum_pos_of_discriminant_pos (ht ▸ hd)
+  by_contra hsum
+  have hcent : 0 < Complex.normSq (∑ i, z i) := Complex.normSq_pos.mpr hsum
+  have hs6 : normSum (center z) < 7 := by rw [normSum_center, hz.1]; linarith
+  let a : ℝ := Real.sqrt (7 / normSum (center z))
+  have ha2 : a * a = 7 / normSum (center z) := by
+    exact Real.mul_self_sqrt (le_of_lt (div_pos (by norm_num) hs))
+  have hn : Complex.normSq (a : ℂ) = 7 / normSum (center z) := by
+    rw [Complex.normSq_ofReal, ha2]
+  have hnorm : normSum (fun i => (a : ℂ) * center z i) = 7 := by
+    rw [normSum_scale, hn]
+    exact div_mul_cancel₀ _ (ne_of_gt hs)
+  have hratio : 1 < 7 / normSum (center z) := (lt_div_iff₀ hs).mpr (by simpa using hs6)
+  have hpow : 1 < (7 / normSum (center z)) ^ 21 := by
+    simpa using pow_lt_pow_left₀ hratio (by norm_num : (0 : ℝ) ≤ 1) (by decide : 21 ≠ 0)
+  have hmax := hz.2 _ hnorm
+  rw [discriminant_scale, hn, ht] at hmax
+  nlinarith [mul_lt_mul_of_pos_right hpow hd]
+
+theorem exists_centered_distinct_global_maximum :
+    ∃ z : Configuration, IsGlobalMaximum z ∧ (∑ i, z i = 0) ∧ Function.Injective z := by
+  obtain ⟨z, hz, hm⟩ := exists_global_maximum
+  have hmax : IsGlobalMaximum z := ⟨hz, hm⟩
+  exact ⟨z, hmax, global_maximum_centered hmax,
+    injective_of_discriminant_pos (global_maximum_positive hmax)⟩
+
+end N7.Analysis

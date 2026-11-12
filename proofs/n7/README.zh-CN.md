@@ -33,3 +33,5 @@ python verify.py --level check --case n7
 
 
 来源：Faugère、Svartz，ISSAC 2012，[DOI](https://doi.org/10.1145/2442829.2442856)，§§5.2–5.7及Figure 4。
+
+另见[连续点对域证明](PAIR_BOUND.zh-CN.md)及其 [Lean 最终声明](../../formalization/n7/N7/Kernel/Final.lean)。

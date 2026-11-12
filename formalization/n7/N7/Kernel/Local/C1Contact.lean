@@ -1,0 +1,37 @@
+import N7.Kernel.Local.Parameters
+set_option autoImplicit false
+set_option maxRecDepth 64000
+set_option maxHeartbeats 0
+namespace N7.Kernel.Local.C1
+open GapAnalytic LocalGeometry
+theorem value_checked : exactMajorant.atRat 1 1 (1/2:ℚ)=⟨0,0,0⟩ := by decide +kernel
+theorem derivative0_checked : exactMajorant.du.atRat 1 1 (1/2:ℚ)=⟨1,0,0⟩ := by decide +kernel
+theorem derivative1_checked : exactMajorant.dv.atRat 1 1 (1/2:ℚ)=⟨1,0,0⟩ := by decide +kernel
+theorem derivative2_checked : exactMajorant.dt.atRat 1 1 (1/2:ℚ)=⟨-2,0,0⟩ := by decide +kernel
+theorem contact_value : gap exactMajorant (point center)=0 := by
+  have h := congrArg KernelCoeff.real value_checked
+  rw [ExactKernel.real_atRat] at h
+  norm_num [gap,eval3,point,center,distance,KernelCoeff.real,Matrix.cons_val_two] at h ⊢
+  linarith
+theorem contact_gradient0 : gradient exactMajorant (point center) 0=0 := by
+  have h := congrArg KernelCoeff.real derivative0_checked
+  rw [ExactKernel.real_atRat] at h
+  norm_num [show (2:Fin 3)≠0 by decide,show (2:Fin 3)≠1 by decide,gradient,partialPoly,eval3,point,center,distance,dd,KernelCoeff.real,Matrix.cons_val_two] at h ⊢
+  linarith
+theorem contact_gradient1 : gradient exactMajorant (point center) 1=0 := by
+  have h := congrArg KernelCoeff.real derivative1_checked
+  rw [ExactKernel.real_atRat] at h
+  norm_num [show (2:Fin 3)≠0 by decide,show (2:Fin 3)≠1 by decide,gradient,partialPoly,eval3,point,center,distance,dd,KernelCoeff.real,Matrix.cons_val_two] at h ⊢
+  linarith
+theorem contact_gradient2 : gradient exactMajorant (point center) 2=0 := by
+  have h := congrArg KernelCoeff.real derivative2_checked
+  rw [ExactKernel.real_atRat] at h
+  norm_num [show (2:Fin 3)≠0 by decide,show (2:Fin 3)≠1 by decide,gradient,partialPoly,eval3,point,center,distance,dd,KernelCoeff.real,Matrix.cons_val_two] at h ⊢
+  linarith
+theorem contact_gradient (i : Fin 3) : gradient exactMajorant (point center) i=0 := by
+  fin_cases i
+  · exact contact_gradient0
+  · exact contact_gradient1
+  · exact contact_gradient2
+#print axioms contact_value
+end N7.Kernel.Local.C1

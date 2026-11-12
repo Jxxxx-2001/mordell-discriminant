@@ -1,0 +1,15 @@
+name = "mordell_chalk_ge10"
+version = "0.2.0"
+defaultTargets = ["Chalk"]
+
+[leanOptions]
+autoImplicit = false
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "c5ea00351c28e24afc9f0f84379aa41082b1188f"
+
+[[lean_lib]]
+name = "Chalk"
+globs = ["Chalk"]

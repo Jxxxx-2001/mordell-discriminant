@@ -33,3 +33,5 @@ python verify.py --level check --case n7
 
 
 Source: Faugère and Svartz, ISSAC 2012, [DOI](https://doi.org/10.1145/2442829.2442856), §§5.2–5.7 and Figure 4.
+
+See also the [pair-domain proof](PAIR_BOUND.md) and its [final Lean declarations](../../formalization/n7/N7/Kernel/Final.lean).

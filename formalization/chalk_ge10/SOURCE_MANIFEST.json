@@ -1,0 +1,48 @@
+{
+  "project": "chalk_ge10",
+  "status": "Main project and historical independent source build passed. Release candidate passed a fresh build of all 3 project modules and final axiom audit on 2026-11-12 in 120.63 seconds, reusing the pinned third-party dependency cache.",
+  "roots": [
+    "Chalk"
+  ],
+  "theorems": [
+    "Chalk.exists_above_chalk"
+  ],
+  "lean": "leanprover/lean4:v4.30.0",
+  "mathlib_commit": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+  "build_order": [
+    "Chalk.Integer",
+    "Chalk.Products",
+    "Chalk"
+  ],
+  "external_imports": [
+    "Mathlib.Algebra.Order.Ring.Pow",
+    "Mathlib.Analysis.Complex.Polynomial.Basic",
+    "Mathlib.Data.Nat.Choose.Basic",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.FieldTheory.KummerExtension",
+    "Mathlib.RingTheory.RootsOfUnity.Complex",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.IntervalCases",
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Positivity",
+    "Mathlib.Tactic.Ring"
+  ],
+  "files": [
+    {
+      "path": "Chalk/Integer.lean",
+      "sha256": "04dc797fb1254d771084f8dcb2aa2a1e89b1c73c369b2a1b7266a283d57b0609",
+      "bytes": 3469
+    },
+    {
+      "path": "Chalk/Products.lean",
+      "sha256": "beaab49dc8d5c4ea6b5fccdb8fc73ba942b740471f0a3c68918e5c0ad978510b",
+      "bytes": 3843
+    },
+    {
+      "path": "Chalk.lean",
+      "sha256": "3784aa154253c58fac8dabd442e865c1e80c30ffd75201837037943696253900",
+      "bytes": 3625
+    }
+  ]
+}

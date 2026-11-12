@@ -1,0 +1,4437 @@
+{
+  "project": "n6",
+  "status": "Sharp upper bound, attainment and equality classification passed the historical main-project audit. Source hashes and exact import closure verified for this release candidate; independent release rebuild pending.",
+  "roots": [
+    "N6"
+  ],
+  "theorems": [
+    "N6.mordell_six_norm_bound",
+    "N6.mordell_six_sharp_witness",
+    "N6.mordell_six_norm_equality_iff"
+  ],
+  "lean": "leanprover/lean4:v4.30.0",
+  "mathlib_commit": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+  "build_order": [
+    "N6.Statement",
+    "N6.Analysis.Definitions",
+    "N6.Analysis.Compactness",
+    "N6.Analysis.Extremum",
+    "N6.Analysis.Stationarity",
+    "N6.Analysis.Directional",
+    "N6.Analysis.Force",
+    "N6.Analysis.RootPolynomial",
+    "N6.Analysis.Normalization",
+    "N6.Analysis.SexticCoefficients",
+    "N6.Analysis.ShapeTransport",
+    "N6.Analysis.PhysicalScalar",
+    "N6.Pentagon.Basic",
+    "N6.Pentagon.Discriminant",
+    "N6.Analysis.DualStationarity",
+    "N6.Pentagon.OrderedDiscriminant",
+    "N6.Analysis.DiscriminantScaling",
+    "N6.Pentagon.Witness",
+    "N6.Analysis.GenericValue",
+    "N6.Analysis.ResultantBridge",
+    "review.Resultant6GeneralMatrix",
+    "N6.CertificateCore",
+    "N6.Exceptional.DeterminantsIndices",
+    "N6.SparseProductReduceCore",
+    "N6.Exceptional.Data",
+    "review.SparseCheck",
+    "N6.Exceptional.Bindings",
+    "review.Resultant6Jet",
+    "N6.Exceptional.DeterminantsBase",
+    "review.SparseProductReduce",
+    "N6.Exceptional.ArithmeticHelpers",
+    "N6.Exceptional.Ground000",
+    "N6.Exceptional.Arithmetic000",
+    "N6.ResultantMinors.JetFiniteElim",
+    "N6.Exceptional.Determinants000",
+    "N6.Exceptional.Ground001",
+    "N6.Exceptional.Arithmetic001",
+    "N6.Exceptional.Determinants001",
+    "N6.Exceptional.Ground002",
+    "N6.Exceptional.Arithmetic002",
+    "N6.Exceptional.Determinants002",
+    "N6.Exceptional.Ground003",
+    "N6.Exceptional.Arithmetic003",
+    "N6.Exceptional.Determinants003",
+    "N6.Exceptional.Ground004",
+    "N6.Exceptional.Arithmetic004",
+    "N6.Exceptional.Determinants004",
+    "N6.Exceptional.Ground005",
+    "N6.Exceptional.Arithmetic005",
+    "N6.Exceptional.Determinants005_00",
+    "N6.Exceptional.Determinants005",
+    "N6.Exceptional.Ground006",
+    "N6.Exceptional.Arithmetic006",
+    "N6.Exceptional.Determinants006",
+    "N6.Exceptional.Ground007",
+    "N6.Exceptional.Arithmetic007",
+    "N6.Exceptional.Determinants007",
+    "N6.Exceptional.DeterminantsAll",
+    "N6.ResultantMinors.CoefficientCore",
+    "N6.ResultantMinors.Data",
+    "review.Resultant6Matrix",
+    "N6.ResultantMinors.Bindings",
+    "review.Resultant6Coefficients",
+    "N6.Exceptional.PolynomialBridge",
+    "N6.Exceptional.Projections",
+    "N6.Exceptional.ChartIIData",
+    "N6.Exceptional.ChartIIFormulas",
+    "review.KroneckerCheck",
+    "review.KroneckerFastPack",
+    "N6.Exceptional.ChartIICertificates",
+    "N6.Analysis.PhysicalCoefficients",
+    "N6.Exceptional.ChartII",
+    "N6.Exceptional.ChartIIIData",
+    "N6.Exceptional.ChartIIIFormulas",
+    "N6.Exceptional.ChartIIICertificates",
+    "N6.Exceptional.ChartIII",
+    "N6.Exceptional.ChartIVData",
+    "N6.Exceptional.ChartIVFormulas",
+    "N6.Exceptional.ChartIV",
+    "N6.Exceptional.All",
+    "N6.Symmetry.TripleAlgebra",
+    "N6.Pentagon.Classification",
+    "N6.Symmetry.TripleBound",
+    "N6.Analysis.AZeroClassification",
+    "N6.ResultantMinors.RawCoefficientData",
+    "N6.ExceptionalA1.Data",
+    "N6.ExceptionalA1.CertificateData",
+    "N6.ExceptionalA1.Ground",
+    "N6.ExceptionalA1.Helpers",
+    "N6.ResultantMinors.RawCoefficientGround",
+    "N6.ResultantMinors.ArithmeticHelpers",
+    "N6.Chart",
+    "N6.ResultantMinors.RawCoefficientBindings",
+    "N6.ExceptionalA1.Bindings",
+    "N6.Certificate",
+    "N6.ExceptionalA1.Contradiction",
+    "N6.ResultantMinors.DeterminantsIndices",
+    "N6.ResultantMinors.DeterminantsBase",
+    "N6.ResultantMinors.Ground000",
+    "N6.ResultantMinors.Arithmetic000",
+    "N6.ResultantMinors.Determinants000",
+    "N6.ResultantMinors.Ground001",
+    "N6.ResultantMinors.Arithmetic001",
+    "N6.ResultantMinors.Determinants001",
+    "N6.ResultantMinors.Ground002",
+    "N6.ResultantMinors.Arithmetic002",
+    "N6.ResultantMinors.Determinants002",
+    "N6.ResultantMinors.Ground003",
+    "N6.ResultantMinors.Arithmetic003",
+    "N6.ResultantMinors.Determinants003",
+    "N6.ResultantMinors.Ground004",
+    "N6.ResultantMinors.Arithmetic004",
+    "N6.ResultantMinors.Determinants004",
+    "N6.ResultantMinors.Ground005",
+    "N6.ResultantMinors.Arithmetic005",
+    "N6.ResultantMinors.Determinants005_00",
+    "N6.ResultantMinors.Determinants005_01",
+    "N6.ResultantMinors.Determinants005_02",
+    "N6.ResultantMinors.Determinants005_03",
+    "N6.ResultantMinors.Determinants005_04",
+    "N6.ResultantMinors.Determinants005_05",
+    "N6.ResultantMinors.Determinants005_06",
+    "N6.ResultantMinors.Determinants005_07",
+    "N6.ResultantMinors.Ground006",
+    "N6.ResultantMinors.Arithmetic006",
+    "N6.ResultantMinors.Determinants006_00",
+    "N6.ResultantMinors.Determinants006_01",
+    "N6.ResultantMinors.Determinants006_02",
+    "N6.ResultantMinors.Determinants006_03",
+    "N6.ResultantMinors.Determinants006_04",
+    "N6.ResultantMinors.Determinants006_05",
+    "N6.ResultantMinors.Determinants006_06",
+    "N6.ResultantMinors.Determinants006_07",
+    "N6.ResultantMinors.Ground007",
+    "N6.ResultantMinors.Arithmetic007",
+    "N6.ResultantMinors.Determinants007_00",
+    "N6.ResultantMinors.Determinants007_01",
+    "N6.ResultantMinors.Determinants007_02",
+    "N6.ResultantMinors.Determinants007_03",
+    "N6.ResultantMinors.Determinants007_04",
+    "N6.ResultantMinors.Determinants007_05",
+    "N6.ResultantMinors.Determinants007_06",
+    "N6.ResultantMinors.DeterminantsAll",
+    "N6.ResultantMinors.PolynomialBridge",
+    "N6.ResultantMinors.R4Data",
+    "N6.ResultantMinors.R4Ground",
+    "N6.ResultantMinors.R4Semantics",
+    "N6.ResultantMinors.Necessity",
+    "N6.ExceptionalA1.FromMaximum",
+    "N6.BranchEval.ProgramCore",
+    "N6.Even.ProgramData",
+    "N6.Even.ProgramSourceData",
+    "N6.Even.ProgramGround",
+    "N6.Even.CoverageData",
+    "N6.Even.CoverageGround",
+    "N6.Even.CoverageSemantics",
+    "N6.Even.RawBindings",
+    "N6.BranchEval.OperationSemantics",
+    "N6.BranchEval.ProgramSoundness",
+    "N6.BranchEval.ProgramBinding",
+    "N6.Even.ProgramSemantics",
+    "N6.Even.ProgramBridge",
+    "N6.Univariate.IntegerCore",
+    "N6.Even.ValueData",
+    "N6.Even.ValueGround",
+    "N6.Even.RootBounds",
+    "Mordell.Interval",
+    "N6.Univariate.IntegerSoundness",
+    "N6.Even.ValueBound",
+    "N6.Even.ValuePhysical",
+    "N6.Even.ProgramActualData",
+    "N6.Even.ProgramActualGround",
+    "N6.Even.ProgramActualBindings",
+    "N6.Even.PhysicalValue",
+    "N6.Even.FromMaximum",
+    "N6.Univariate.Core",
+    "N6.BranchEval.B0.PublishedData",
+    "N6.Univariate.Branch0Data",
+    "N6.BranchEval.B0.ProgramInputs",
+    "N6.BranchEval.B0.ProgramNodes000",
+    "N6.BranchEval.B0.ProgramNodes001",
+    "N6.BranchEval.B0.ProgramNodes002",
+    "N6.BranchEval.B0.ProgramNodes003",
+    "N6.BranchEval.B0.ProgramNodes004",
+    "N6.BranchEval.B0.ProgramNodes005",
+    "N6.BranchEval.B0.ProgramNodes006",
+    "N6.BranchEval.B0.ProgramData",
+    "N6.BranchEval.B0.ProgramSourceData",
+    "N6.BranchEval.B0.PublishedGround",
+    "N6.BranchEval.B0.EndpointDefinitions",
+    "N6.BranchEval.B0.ProgramBlock000",
+    "N6.BranchEval.B0.ProgramBlock001",
+    "N6.BranchEval.B0.ProgramBlock002",
+    "N6.BranchEval.B0.ProgramBlock003",
+    "N6.BranchEval.B0.ProgramBlock004",
+    "N6.BranchEval.B0.ProgramBlock005",
+    "N6.BranchEval.B0.ProgramBlock006",
+    "N6.BranchEval.B0.ProgramBlock007",
+    "N6.BranchEval.B0.ProgramBlock008",
+    "N6.BranchEval.B0.ProgramBlock009",
+    "N6.BranchEval.B0.ProgramBlock010",
+    "N6.BranchEval.B0.ProgramBlock011",
+    "N6.BranchEval.B0.ProgramBlock012",
+    "N6.BranchEval.B0.ProgramBlock013",
+    "N6.BranchEval.B0.ProgramBlock014",
+    "N6.BranchEval.B0.ProgramBlock015",
+    "N6.BranchEval.B0.ProgramBlock016",
+    "N6.BranchEval.B0.ProgramBlock017",
+    "N6.BranchEval.B0.ProgramBlock018",
+    "N6.BranchEval.B0.ProgramBlock019",
+    "N6.BranchEval.B0.ProgramBlock020",
+    "N6.BranchEval.B0.ProgramBlock021",
+    "N6.BranchEval.B0.ProgramBlock022",
+    "N6.BranchEval.B0.ProgramBlock023",
+    "N6.BranchEval.B0.ProgramBlock024",
+    "N6.BranchEval.B0.ProgramBlock025",
+    "N6.BranchEval.B0.ProgramBlock026",
+    "N6.BranchEval.B0.ProgramBlock027",
+    "N6.BranchEval.B0.ProgramBlock028",
+    "N6.BranchEval.B0.ProgramBlock029",
+    "N6.BranchEval.B0.ProgramBlock030",
+    "N6.BranchEval.B0.ProgramBlock031",
+    "N6.BranchEval.B0.ProgramBlock032",
+    "N6.BranchEval.B0.ProgramBlock033",
+    "N6.BranchEval.B0.ProgramBlock034",
+    "N6.BranchEval.B0.ProgramBlock035",
+    "N6.BranchEval.B0.ProgramBlock036",
+    "N6.BranchEval.B0.ProgramBlock037",
+    "N6.BranchEval.B0.ProgramBlock038",
+    "N6.BranchEval.B0.ProgramBlock039",
+    "N6.BranchEval.B0.ProgramBlock040",
+    "N6.BranchEval.B0.ProgramBlock041",
+    "N6.BranchEval.B0.ProgramBlock042",
+    "N6.BranchEval.B0.ProgramBlock043",
+    "N6.BranchEval.B0.ProgramBlock044",
+    "N6.BranchEval.B0.ProgramBlock045",
+    "N6.BranchEval.B0.ProgramBlock046",
+    "N6.BranchEval.B0.ProgramBlock047",
+    "N6.BranchEval.B0.ProgramBlock048",
+    "N6.BranchEval.B0.ProgramBlock049",
+    "N6.BranchEval.B0.ProgramBlock050",
+    "N6.BranchEval.B0.ProgramBlock051",
+    "N6.BranchEval.B0.ProgramChecked",
+    "N6.BranchEval.B0.ProgramBindingProbeGround",
+    "N6.BranchEval.B0.EndpointSemantics",
+    "N6.BQ14.Parents",
+    "review.Dcolon1Data",
+    "N6.Quartics21.Ground001",
+    "N6.Quartics21.Ground002",
+    "N6.Quartics21.Ground003",
+    "N6.Quartics21.Ground004",
+    "N6.Quartics21.Ground005",
+    "N6.Quartics21.Ground006",
+    "N6.Quartics21.Ground007",
+    "N6.Quartics21.Ground008",
+    "N6.Quartics21.Ground009",
+    "N6.Quartics21.Ground010",
+    "N6.Quartics21.Ground011",
+    "N6.Quartics21.Ground012",
+    "N6.Quartics21.Ground013",
+    "N6.Quartics21.Ground014",
+    "N6.Quartics21.Ground015",
+    "N6.Quartics21.Ground016",
+    "N6.Quartics21.Case017Data",
+    "N6.Quartics21.Ground017",
+    "N6.Quartics21.Ground018",
+    "N6.Quartics21.Ground019",
+    "N6.Quartics21.Ground020",
+    "N6.Quartics21.Ground021",
+    "N6.Weighted49.ArithmeticCore",
+    "N6.Weighted49.ParentData",
+    "N6.Weighted49.MatrixData_e",
+    "N6.Weighted49.MatrixData_k",
+    "N6.Weighted49.MatrixData_c",
+    "N6.Weighted49.MatrixData_B",
+    "N6.Weighted49.MatrixData",
+    "N6.Weighted49.ActionData",
+    "N6.Weighted49.ColumnCore",
+    "N6.Weighted49.VecData000",
+    "N6.Weighted49.VecData001",
+    "N6.Weighted49.VecData002",
+    "N6.Weighted49.VecData003",
+    "N6.Weighted49.VecData004",
+    "N6.Weighted49.VecData005",
+    "N6.Weighted49.VecData",
+    "N6.Weighted49.ArithmeticFoldCore",
+    "N6.Weighted49.LexData",
+    "N6.BranchEval.B0.ProjectionData",
+    "N6.BranchEval.B0.ProjectionGround",
+    "N6.Weighted49.SemanticsHelpers",
+    "N6.Saturation",
+    "N6.Weighted49.LinearSemantics",
+    "N6.Weighted49.ColumnHelpers",
+    "N6.Weighted49.LexSemantics",
+    "N6.BranchEval.B0.CoordinateProjection",
+    "N6.Univariate.Soundness",
+    "N6.BranchEval.B0.OriginalBindings",
+    "N6.Weighted49.ColumnData",
+    "N6.Weighted49.ColumnGround000",
+    "N6.Weighted49.ColumnSemantics000",
+    "N6.Weighted49.ColumnGround001",
+    "N6.Weighted49.ColumnSemantics001",
+    "N6.Weighted49.ColumnGround002",
+    "N6.Weighted49.ColumnSemantics002",
+    "N6.Weighted49.ColumnGround003",
+    "N6.Weighted49.ColumnSemantics003",
+    "N6.Weighted49.ColumnGround004",
+    "N6.Weighted49.ColumnSemantics004",
+    "N6.Weighted49.ColumnGround005",
+    "N6.Weighted49.ColumnSemantics005",
+    "N6.Weighted49.ColumnGround006",
+    "N6.Weighted49.ColumnSemantics006",
+    "N6.Weighted49.ColumnGround007",
+    "N6.Weighted49.ColumnSemantics007",
+    "N6.Weighted49.ColumnGround008",
+    "N6.Weighted49.ColumnSemantics008",
+    "N6.Weighted49.ColumnGround009",
+    "N6.Weighted49.ColumnSemantics009",
+    "N6.Weighted49.ColumnGround010",
+    "N6.Weighted49.ColumnSemantics010",
+    "N6.Weighted49.ColumnGround011",
+    "N6.Weighted49.ColumnSemantics011",
+    "N6.Weighted49.ColumnGround012",
+    "N6.Weighted49.ColumnSemantics012",
+    "N6.Weighted49.ColumnGround013",
+    "N6.Weighted49.ColumnSemantics013",
+    "N6.Weighted49.ColumnGround014",
+    "N6.Weighted49.ColumnSemantics014",
+    "N6.Weighted49.ColumnGround015",
+    "N6.Weighted49.ColumnSemantics015",
+    "N6.Weighted49.ColumnGround016",
+    "N6.Weighted49.ColumnSemantics016",
+    "N6.Weighted49.ColumnGround017",
+    "N6.Weighted49.ColumnSemantics017",
+    "N6.Weighted49.ColumnGround018",
+    "N6.Weighted49.ColumnSemantics018",
+    "N6.Weighted49.ColumnGround019",
+    "N6.Weighted49.ColumnSemantics019",
+    "N6.Weighted49.ColumnGround020",
+    "N6.Weighted49.ColumnSemantics020",
+    "N6.Weighted49.ColumnGround021",
+    "N6.Weighted49.ColumnSemantics021",
+    "N6.Weighted49.ColumnGround022",
+    "N6.Weighted49.ColumnSemantics022",
+    "N6.Weighted49.ColumnGround023",
+    "N6.Weighted49.ColumnSemantics023",
+    "N6.Weighted49.ColumnGround024",
+    "N6.Weighted49.ColumnSemantics024",
+    "N6.Weighted49.Columns",
+    "N6.Weighted49.GateSemanticsHelpers",
+    "N6.Weighted49.FullColumnListsData",
+    "N6.Weighted49.GateGround000",
+    "N6.Weighted49.ArithmeticFoldSemantics",
+    "N6.Weighted49.FullColumnLayouts",
+    "N6.Weighted49.GateTransfer000",
+    "N6.Weighted49.MonomialBase",
+    "N6.Weighted49.MonomialGate000",
+    "N6.Weighted49.MonomialGate001",
+    "N6.Weighted49.GateGround001",
+    "N6.Weighted49.GateTransfer001",
+    "N6.Weighted49.MonomialGate002",
+    "N6.Weighted49.MonomialGate003",
+    "N6.Weighted49.GateGround002",
+    "N6.Weighted49.GateTransfer002",
+    "N6.Weighted49.MonomialGate004",
+    "N6.Weighted49.MonomialGate005",
+    "N6.Weighted49.GateGround003",
+    "N6.Weighted49.GateTransfer003",
+    "N6.Weighted49.MonomialGate006",
+    "N6.Weighted49.MonomialGate007",
+    "N6.Weighted49.GateGround004",
+    "N6.Weighted49.GateTransfer004",
+    "N6.Weighted49.MonomialGate008",
+    "N6.Weighted49.MonomialGate009",
+    "N6.Weighted49.GateGround005",
+    "N6.Weighted49.GateTransfer005",
+    "N6.Weighted49.MonomialGate010",
+    "N6.Weighted49.MonomialGate011",
+    "N6.Weighted49.GateGround006",
+    "N6.Weighted49.GateTransfer006",
+    "N6.Weighted49.MonomialGate012",
+    "N6.Weighted49.MonomialGate013",
+    "N6.Weighted49.GateGround007",
+    "N6.Weighted49.GateTransfer007",
+    "N6.Weighted49.MonomialGate014",
+    "N6.Weighted49.MonomialGate015",
+    "N6.Weighted49.GateGround008",
+    "N6.Weighted49.GateTransfer008",
+    "N6.Weighted49.MonomialGate016",
+    "N6.Weighted49.InitData",
+    "N6.Weighted49.InitGround",
+    "N6.Weighted49.InitTransfer",
+    "N6.Weighted49.DInitialization",
+    "N6.Weighted49.GateGround009",
+    "N6.Weighted49.GateTransfer009",
+    "N6.Weighted49.KrylovGate000",
+    "N6.Weighted49.KrylovGate001",
+    "N6.Weighted49.GateGround010",
+    "N6.Weighted49.GateTransfer010",
+    "N6.Weighted49.KrylovGate002",
+    "N6.Weighted49.KrylovGate003",
+    "N6.Weighted49.KrylovGate004",
+    "N6.Weighted49.WeightedCoordinates",
+    "N6.Weighted49.RowGround_P35",
+    "N6.Weighted49.RowTransfer_P35",
+    "N6.Weighted49.RowGround_c",
+    "N6.Weighted49.RowTransfer_c",
+    "N6.Weighted49.RowGround_k",
+    "N6.Weighted49.RowTransfer_k",
+    "N6.Weighted49.RowGround_e",
+    "N6.Weighted49.RowTransfer_e",
+    "N6.Weighted49.ActionGround000",
+    "N6.Weighted49.ActionGround001",
+    "N6.Weighted49.ActionGround002",
+    "N6.Weighted49.ActionGround003",
+    "N6.Weighted49.ActionGround004",
+    "N6.Weighted49.ActionGround005",
+    "N6.Weighted49.ActionGround006",
+    "N6.Weighted49.ActionGround007",
+    "N6.Weighted49.ActionGround008",
+    "N6.Weighted49.ActionGround009",
+    "N6.Weighted49.ActionGround010",
+    "N6.Weighted49.ActionGround011",
+    "N6.Weighted49.ActionGround012",
+    "N6.Weighted49.ActionSemantics",
+    "review.Dcolon1Chart",
+    "N6.Quartics21.Semantic000",
+    "N6.Quartics21.Semantic001",
+    "N6.Quartics21.Semantic002",
+    "N6.Quartics21.All",
+    "N6.Weighted49.ParentLocalData",
+    "N6.Weighted49.ParentLocalGround000",
+    "N6.Weighted49.ParentLocalGround001",
+    "N6.Weighted49.ParentLocalGround002",
+    "N6.Weighted49.ParentLocalGround003",
+    "N6.Weighted49.ParentsFromInputs",
+    "N6.Weighted49.ActionsFromInputs",
+    "N6.Weighted49.Cover",
+    "N6.BranchEval.B0.Complete",
+    "N6.BranchEval.RealValues",
+    "N6.Univariate.Branch0Checks",
+    "N6.Univariate.Branch0",
+    "N6.BranchEval.B0.PhysicalValue",
+    "N6.Weighted49.FactorData",
+    "N6.BranchEval.B0.FactorBindingGround",
+    "N6.Weighted49.FromStationarity",
+    "N6.Analysis.SecondMoment",
+    "N6.BranchEval.B0.FromMaximum",
+    "N6.BranchEval.B1.PublishedData",
+    "N6.BranchEval.B1.ProgramInputs",
+    "N6.BranchEval.B1.ProgramNodes000",
+    "N6.BranchEval.B1.ProgramNodes001",
+    "N6.BranchEval.B1.ProgramNodes002",
+    "N6.BranchEval.B1.ProgramNodes003",
+    "N6.BranchEval.B1.ProgramNodes004",
+    "N6.BranchEval.B1.ProgramNodes005",
+    "N6.BranchEval.B1.ProgramNodes006",
+    "N6.BranchEval.B1.ProgramData",
+    "N6.BranchEval.B1.ProgramSourceData",
+    "N6.BranchEval.B1.PublishedGround",
+    "N6.BranchEval.B1.EndpointDefinitions",
+    "N6.BranchEval.B1.ProgramBlock000",
+    "N6.BranchEval.B1.ProgramBlock001",
+    "N6.BranchEval.B1.ProgramBlock002",
+    "N6.BranchEval.B1.ProgramBlock003",
+    "N6.BranchEval.B1.ProgramBlock004",
+    "N6.BranchEval.B1.ProgramBlock005",
+    "N6.BranchEval.B1.ProgramBlock006",
+    "N6.BranchEval.B1.ProgramBlock007",
+    "N6.BranchEval.B1.ProgramBlock008",
+    "N6.BranchEval.B1.ProgramBlock009",
+    "N6.BranchEval.B1.ProgramBlock010",
+    "N6.BranchEval.B1.ProgramBlock011",
+    "N6.BranchEval.B1.ProgramBlock012",
+    "N6.BranchEval.B1.ProgramChecked",
+    "N6.BranchEval.B1.ProgramBindingProbeGround",
+    "N6.BranchEval.B1.EndpointSemantics",
+    "N6.BranchEval.B1.ProjectionData",
+    "N6.BranchEval.B1.ProjectionGround",
+    "N6.BranchEval.B1.CoordinateProjection",
+    "N6.BranchEval.B1.OriginalBindings",
+    "N6.BranchEval.B1.Complete",
+    "N6.BranchEval.B1.PhysicalValue",
+    "N6.BranchEval.B1.FactorBindingGround",
+    "N6.Analysis.EndpointExclusion",
+    "N6.BranchEval.B1.FromMaximum",
+    "N6.BranchEval.B2.PublishedData",
+    "N6.Univariate.Branch2Data",
+    "N6.BranchEval.B2.ProgramInputs",
+    "N6.BranchEval.B2.ProgramNodes000",
+    "N6.BranchEval.B2.ProgramNodes001",
+    "N6.BranchEval.B2.ProgramNodes002",
+    "N6.BranchEval.B2.ProgramNodes003",
+    "N6.BranchEval.B2.ProgramNodes004",
+    "N6.BranchEval.B2.ProgramNodes005",
+    "N6.BranchEval.B2.ProgramNodes006",
+    "N6.BranchEval.B2.ProgramData",
+    "N6.BranchEval.B2.ProgramSourceData",
+    "N6.BranchEval.B2.PublishedGround",
+    "N6.BranchEval.B2.EndpointDefinitions",
+    "N6.BranchEval.B2.ProgramBlock000",
+    "N6.BranchEval.B2.ProgramBlock001",
+    "N6.BranchEval.B2.ProgramBlock002",
+    "N6.BranchEval.B2.ProgramBlock003",
+    "N6.BranchEval.B2.ProgramBlock004",
+    "N6.BranchEval.B2.ProgramBlock005",
+    "N6.BranchEval.B2.ProgramBlock006",
+    "N6.BranchEval.B2.ProgramBlock007",
+    "N6.BranchEval.B2.ProgramBlock008",
+    "N6.BranchEval.B2.ProgramBlock009",
+    "N6.BranchEval.B2.ProgramBlock010",
+    "N6.BranchEval.B2.ProgramBlock011",
+    "N6.BranchEval.B2.ProgramBlock012",
+    "N6.BranchEval.B2.ProgramChecked",
+    "N6.BranchEval.B2.ProgramBindingProbeGround",
+    "N6.BranchEval.B2.EndpointSemantics",
+    "N6.BranchEval.B2.ProjectionData",
+    "N6.BranchEval.B2.ProjectionGround",
+    "N6.BranchEval.B2.CoordinateProjection",
+    "N6.BranchEval.B2.OriginalBindings",
+    "N6.BranchEval.B2.Complete",
+    "N6.Univariate.Branch2Checks",
+    "N6.Univariate.Branch2",
+    "N6.BranchEval.B2.PhysicalValue",
+    "N6.BranchEval.B2.FactorBindingGround",
+    "N6.BranchEval.B2.FromMaximum",
+    "N6.BranchEval.B3.PublishedData",
+    "N6.Univariate.Branch3Data",
+    "N6.BranchEval.B3.ProgramInputs",
+    "N6.BranchEval.B3.ProgramNodes000",
+    "N6.BranchEval.B3.ProgramNodes001",
+    "N6.BranchEval.B3.ProgramNodes002",
+    "N6.BranchEval.B3.ProgramNodes003",
+    "N6.BranchEval.B3.ProgramNodes004",
+    "N6.BranchEval.B3.ProgramNodes005",
+    "N6.BranchEval.B3.ProgramNodes006",
+    "N6.BranchEval.B3.ProgramData",
+    "N6.BranchEval.B3.ProgramSourceData",
+    "N6.BranchEval.B3.PublishedGround",
+    "N6.BranchEval.B3.EndpointDefinitions",
+    "N6.BranchEval.B3.ProgramBlock000",
+    "N6.BranchEval.B3.ProgramBlock001",
+    "N6.BranchEval.B3.ProgramBlock002",
+    "N6.BranchEval.B3.ProgramBlock003",
+    "N6.BranchEval.B3.ProgramBlock004",
+    "N6.BranchEval.B3.ProgramBlock005",
+    "N6.BranchEval.B3.ProgramBlock006",
+    "N6.BranchEval.B3.ProgramBlock007",
+    "N6.BranchEval.B3.ProgramBlock008",
+    "N6.BranchEval.B3.ProgramBlock009",
+    "N6.BranchEval.B3.ProgramBlock010",
+    "N6.BranchEval.B3.ProgramBlock011",
+    "N6.BranchEval.B3.ProgramBlock012",
+    "N6.BranchEval.B3.ProgramChecked",
+    "N6.BranchEval.B3.ProgramBindingProbeGround",
+    "N6.BranchEval.B3.EndpointSemantics",
+    "N6.BranchEval.B3.ProjectionData",
+    "N6.BranchEval.B3.ProjectionGround",
+    "N6.BranchEval.B3.CoordinateProjection",
+    "N6.BranchEval.B3.OriginalBindings",
+    "N6.BranchEval.B3.Complete",
+    "N6.Univariate.Branch3NoRootsGround",
+    "N6.Univariate.Branch3NoRoots",
+    "N6.BranchEval.B3.PhysicalValue",
+    "N6.BranchEval.B3.FactorBindingGround",
+    "N6.BranchEval.B3.FromMaximum",
+    "N6.BranchEval.B4.PublishedData",
+    "N6.Univariate.Branch4Data",
+    "N6.BranchEval.B4.ProgramInputs",
+    "N6.BranchEval.B4.ProgramNodes000",
+    "N6.BranchEval.B4.ProgramNodes001",
+    "N6.BranchEval.B4.ProgramNodes002",
+    "N6.BranchEval.B4.ProgramNodes003",
+    "N6.BranchEval.B4.ProgramNodes004",
+    "N6.BranchEval.B4.ProgramNodes005",
+    "N6.BranchEval.B4.ProgramNodes006",
+    "N6.BranchEval.B4.ProgramNodes007",
+    "N6.BranchEval.B4.ProgramNodes008",
+    "N6.BranchEval.B4.ProgramNodes009",
+    "N6.BranchEval.B4.ProgramNodes010",
+    "N6.BranchEval.B4.ProgramNodes011",
+    "N6.BranchEval.B4.ProgramNodes012",
+    "N6.BranchEval.B4.ProgramNodes013",
+    "N6.BranchEval.B4.ProgramData",
+    "N6.BranchEval.B4.ProgramSourceData",
+    "N6.BranchEval.B4.PublishedGround",
+    "N6.BranchEval.B4.EndpointDefinitions",
+    "N6.BranchEval.B4.ProgramBlock000",
+    "N6.BranchEval.B4.ProgramBlock001",
+    "N6.BranchEval.B4.ProgramBlock002",
+    "N6.BranchEval.B4.ProgramBlock003",
+    "N6.BranchEval.B4.ProgramBlock004",
+    "N6.BranchEval.B4.ProgramBlock005",
+    "N6.BranchEval.B4.ProgramBlock006",
+    "N6.BranchEval.B4.ProgramBlock007",
+    "N6.BranchEval.B4.ProgramBlock008",
+    "N6.BranchEval.B4.ProgramBlock009",
+    "N6.BranchEval.B4.ProgramBlock010",
+    "N6.BranchEval.B4.ProgramBlock011",
+    "N6.BranchEval.B4.ProgramBlock012",
+    "N6.BranchEval.B4.ProgramBlock013",
+    "N6.BranchEval.B4.ProgramBlock014",
+    "N6.BranchEval.B4.ProgramBlock015",
+    "N6.BranchEval.B4.ProgramBlock016",
+    "N6.BranchEval.B4.ProgramBlock017",
+    "N6.BranchEval.B4.ProgramBlock018",
+    "N6.BranchEval.B4.ProgramBlock019",
+    "N6.BranchEval.B4.ProgramBlock020",
+    "N6.BranchEval.B4.ProgramBlock021",
+    "N6.BranchEval.B4.ProgramBlock022",
+    "N6.BranchEval.B4.ProgramBlock023",
+    "N6.BranchEval.B4.ProgramBlock024",
+    "N6.BranchEval.B4.ProgramBlock025",
+    "N6.BranchEval.B4.ProgramBlock026",
+    "N6.BranchEval.B4.ProgramBlock027",
+    "N6.BranchEval.B4.ProgramBlock028",
+    "N6.BranchEval.B4.ProgramBlock029",
+    "N6.BranchEval.B4.ProgramBlock030",
+    "N6.BranchEval.B4.ProgramBlock031",
+    "N6.BranchEval.B4.ProgramBlock032",
+    "N6.BranchEval.B4.ProgramBlock033",
+    "N6.BranchEval.B4.ProgramBlock034",
+    "N6.BranchEval.B4.ProgramBlock035",
+    "N6.BranchEval.B4.ProgramBlock036",
+    "N6.BranchEval.B4.ProgramBlock037",
+    "N6.BranchEval.B4.ProgramBlock038",
+    "N6.BranchEval.B4.ProgramBlock039",
+    "N6.BranchEval.B4.ProgramBlock040",
+    "N6.BranchEval.B4.ProgramBlock041",
+    "N6.BranchEval.B4.ProgramBlock042",
+    "N6.BranchEval.B4.ProgramBlock043",
+    "N6.BranchEval.B4.ProgramBlock044",
+    "N6.BranchEval.B4.ProgramBlock045",
+    "N6.BranchEval.B4.ProgramBlock046",
+    "N6.BranchEval.B4.ProgramBlock047",
+    "N6.BranchEval.B4.ProgramBlock048",
+    "N6.BranchEval.B4.ProgramBlock049",
+    "N6.BranchEval.B4.ProgramBlock050",
+    "N6.BranchEval.B4.ProgramBlock051",
+    "N6.BranchEval.B4.ProgramBlock052",
+    "N6.BranchEval.B4.ProgramBlock053",
+    "N6.BranchEval.B4.ProgramBlock054",
+    "N6.BranchEval.B4.ProgramBlock055",
+    "N6.BranchEval.B4.ProgramBlock056",
+    "N6.BranchEval.B4.ProgramBlock057",
+    "N6.BranchEval.B4.ProgramBlock058",
+    "N6.BranchEval.B4.ProgramBlock059",
+    "N6.BranchEval.B4.ProgramBlock060",
+    "N6.BranchEval.B4.ProgramBlock061",
+    "N6.BranchEval.B4.ProgramBlock062",
+    "N6.BranchEval.B4.ProgramBlock063",
+    "N6.BranchEval.B4.ProgramBlock064",
+    "N6.BranchEval.B4.ProgramBlock065",
+    "N6.BranchEval.B4.ProgramBlock066",
+    "N6.BranchEval.B4.ProgramBlock067",
+    "N6.BranchEval.B4.ProgramBlock068",
+    "N6.BranchEval.B4.ProgramBlock069",
+    "N6.BranchEval.B4.ProgramBlock070",
+    "N6.BranchEval.B4.ProgramBlock071",
+    "N6.BranchEval.B4.ProgramBlock072",
+    "N6.BranchEval.B4.ProgramBlock073",
+    "N6.BranchEval.B4.ProgramBlock074",
+    "N6.BranchEval.B4.ProgramBlock075",
+    "N6.BranchEval.B4.ProgramBlock076",
+    "N6.BranchEval.B4.ProgramBlock077",
+    "N6.BranchEval.B4.ProgramBlock078",
+    "N6.BranchEval.B4.ProgramBlock079",
+    "N6.BranchEval.B4.ProgramBlock080",
+    "N6.BranchEval.B4.ProgramBlock081",
+    "N6.BranchEval.B4.ProgramChecked",
+    "N6.BranchEval.B4.ProgramBindingProbeGround",
+    "N6.BranchEval.B4.EndpointSemantics",
+    "N6.BranchEval.B4.ProjectionData",
+    "N6.BranchEval.B4.ProjectionGround",
+    "N6.BranchEval.B4.CoordinateProjection",
+    "N6.BranchEval.B4.OriginalBindings",
+    "N6.BranchEval.B4.Complete",
+    "N6.Univariate.IntegerBranch4Data",
+    "N6.Univariate.IntegerBranch4Checks",
+    "N6.Univariate.IntegerBranch4",
+    "N6.BranchEval.B4.PhysicalValue",
+    "N6.BranchEval.B4.FactorBindingGround",
+    "N6.BranchEval.B4.FromMaximum",
+    "N6.BranchEval.B5.PublishedData",
+    "N6.Univariate.Branch5Data",
+    "N6.BranchEval.B5.ProgramInputs",
+    "N6.BranchEval.B5.ProgramNodes000",
+    "N6.BranchEval.B5.ProgramNodes001",
+    "N6.BranchEval.B5.ProgramNodes002",
+    "N6.BranchEval.B5.ProgramNodes003",
+    "N6.BranchEval.B5.ProgramNodes004",
+    "N6.BranchEval.B5.ProgramNodes005",
+    "N6.BranchEval.B5.ProgramNodes006",
+    "N6.BranchEval.B5.ProgramData",
+    "N6.BranchEval.B5.ProgramSourceData",
+    "N6.BranchEval.B5.PublishedGround",
+    "N6.BranchEval.B5.EndpointDefinitions",
+    "N6.BranchEval.B5.ProgramBlock000",
+    "N6.BranchEval.B5.ProgramBlock001",
+    "N6.BranchEval.B5.ProgramBlock002",
+    "N6.BranchEval.B5.ProgramBlock003",
+    "N6.BranchEval.B5.ProgramBlock004",
+    "N6.BranchEval.B5.ProgramBlock005",
+    "N6.BranchEval.B5.ProgramBlock006",
+    "N6.BranchEval.B5.ProgramBlock007",
+    "N6.BranchEval.B5.ProgramBlock008",
+    "N6.BranchEval.B5.ProgramBlock009",
+    "N6.BranchEval.B5.ProgramBlock010",
+    "N6.BranchEval.B5.ProgramBlock011",
+    "N6.BranchEval.B5.ProgramBlock012",
+    "N6.BranchEval.B5.ProgramChecked",
+    "N6.BranchEval.B5.ProgramBindingProbeGround",
+    "N6.BranchEval.B5.EndpointSemantics",
+    "N6.BranchEval.B5.ProjectionData",
+    "N6.BranchEval.B5.ProjectionGround",
+    "N6.BranchEval.B5.CoordinateProjection",
+    "N6.BranchEval.B5.OriginalBindings",
+    "N6.BranchEval.B5.Complete",
+    "N6.Univariate.Branch5NoRootsGround",
+    "N6.Univariate.Branch5NoRoots",
+    "N6.BranchEval.B5.PhysicalValue",
+    "N6.BranchEval.B5.FactorBindingGround",
+    "N6.BranchEval.B5.FromMaximum",
+    "N6.Weighted49.FactorGround",
+    "N6.Weighted49.FactorCover",
+    "N6.BranchEval.GeneralFromMaximum",
+    "N6.Analysis.MaximumClassification",
+    "N6.SharpTheorem",
+    "N6"
+  ],
+  "external_imports": [
+    "Init",
+    "Init.Data.Int.Bitwise.Lemmas",
+    "Init.Data.Rat",
+    "Lean.Elab.Tactic.Omega",
+    "Mathlib.Algebra.Algebra.Rat",
+    "Mathlib.Algebra.BigOperators.Fin",
+    "Mathlib.Algebra.Polynomial.Coeff",
+    "Mathlib.Algebra.Polynomial.Derivative",
+    "Mathlib.Algebra.Polynomial.Div",
+    "Mathlib.Algebra.Polynomial.Inductions",
+    "Mathlib.Algebra.Polynomial.Roots",
+    "Mathlib.Algebra.Ring.Int.Defs",
+    "Mathlib.Analysis.Calculus.Deriv.Add",
+    "Mathlib.Analysis.Calculus.Deriv.Mul",
+    "Mathlib.Analysis.Calculus.Deriv.Pow",
+    "Mathlib.Analysis.Calculus.LocalExtr.Basic",
+    "Mathlib.Analysis.Normed.Module.FiniteDimension",
+    "Mathlib.Analysis.SpecialFunctions.Pow.Complex",
+    "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+    "Mathlib.Data.Complex.Basic",
+    "Mathlib.Data.Fin.Tuple.Basic",
+    "Mathlib.Data.Fintype.Card",
+    "Mathlib.Data.Fintype.Fin",
+    "Mathlib.Data.Int.Bitwise",
+    "Mathlib.Data.List.GetD",
+    "Mathlib.Data.Nat.Bitwise",
+    "Mathlib.Data.Rat.Cast.Order",
+    "Mathlib.Data.Real.Basic",
+    "Mathlib.LinearAlgebra.Matrix.Determinant.Basic",
+    "Mathlib.LinearAlgebra.Matrix.Notation",
+    "Mathlib.LinearAlgebra.Vandermonde",
+    "Mathlib.RingTheory.Polynomial.Resultant.Basic",
+    "Mathlib.RingTheory.Polynomial.ScaleRoots",
+    "Mathlib.RingTheory.RootsOfUnity.Complex",
+    "Mathlib.RingTheory.RootsOfUnity.PrimitiveRoots",
+    "Mathlib.Tactic",
+    "Mathlib.Tactic.FieldSimp",
+    "Mathlib.Tactic.FinCases",
+    "Mathlib.Tactic.Linarith",
+    "Mathlib.Tactic.LinearCombination",
+    "Mathlib.Tactic.NormNum",
+    "Mathlib.Tactic.Ring",
+    "Mathlib.Topology.Order.Compact"
+  ],
+  "files": [
+    {
+      "path": "N6/Statement.lean",
+      "sha256": "46d9ff9d623bfc108d64dcb330f35d279e7712ad102ac79c154660b426285732",
+      "bytes": 1010
+    },
+    {
+      "path": "N6/Analysis/Definitions.lean",
+      "sha256": "cbaeaa39e2ac06c05179c23fbe9dacb5eb6a060877e5dee9fcb29c6b66dd020d",
+      "bytes": 2058
+    },
+    {
+      "path": "N6/Analysis/Compactness.lean",
+      "sha256": "a09e769533cbfe9d3a15fdfc26658443acf19458752eb01d42c38aca5d6e0671",
+      "bytes": 1905
+    },
+    {
+      "path": "N6/Analysis/Extremum.lean",
+      "sha256": "4768c5484529866ff78ff32a017c19f84542e27981507e46e51f5235788ffcd6",
+      "bytes": 4672
+    },
+    {
+      "path": "N6/Analysis/Stationarity.lean",
+      "sha256": "d854a61bcd0d5bda074aab3e5b7fb20c2bb490c2057205297f682c7d2bd9bc22",
+      "bytes": 2468
+    },
+    {
+      "path": "N6/Analysis/Directional.lean",
+      "sha256": "0ca1f50c0edcc02bd50ba1d027e47d8af360665ab5e49a4cf8609d00690a654d",
+      "bytes": 4253
+    },
+    {
+      "path": "N6/Analysis/Force.lean",
+      "sha256": "460289bde9e65eb221ba5249ebdeae51bcc1fa53104ebe68e80e776dda6c1dce",
+      "bytes": 3000
+    },
+    {
+      "path": "N6/Analysis/RootPolynomial.lean",
+      "sha256": "eb04db0b7395e14bec016b46af3879b32aab3ffbaebb0cf51cd7ecc03edba754",
+      "bytes": 3965
+    },
+    {
+      "path": "N6/Analysis/Normalization.lean",
+      "sha256": "703c22988a507c74c3fe898305b8b898dca392732e752b3d85923ab830495bd2",
+      "bytes": 13467
+    },
+    {
+      "path": "N6/Analysis/SexticCoefficients.lean",
+      "sha256": "0cc32c258f5ee27381b2979743a81aca93ae9230a495d97f2fec34555a4db738",
+      "bytes": 1648
+    },
+    {
+      "path": "N6/Analysis/ShapeTransport.lean",
+      "sha256": "ed9bacccc3eef2091738c841e5b7957dd6cf6b34f3760e81f7ea7a44f12ab001",
+      "bytes": 1586
+    },
+    {
+      "path": "N6/Analysis/PhysicalScalar.lean",
+      "sha256": "701aa80312b4104a7441725bc66d7c119abec4558d3983d7c5eef224bd0b60f5",
+      "bytes": 5524
+    },
+    {
+      "path": "N6/Pentagon/Basic.lean",
+      "sha256": "bab91aae18b3a354c3fdcaccd9660bedc656290e1b37ed77bedce8c05ab27757",
+      "bytes": 3598
+    },
+    {
+      "path": "N6/Pentagon/Discriminant.lean",
+      "sha256": "091f29590e1dda474b0e46bdcd0e9d5e2c3d5a57f0871d41df72d513daa6aebf",
+      "bytes": 3121
+    },
+    {
+      "path": "N6/Analysis/DualStationarity.lean",
+      "sha256": "2d26b504f4b9f7fc0e9da44060fe99114e4c8367b5c6bd66cac700875fc5d17e",
+      "bytes": 7430
+    },
+    {
+      "path": "N6/Pentagon/OrderedDiscriminant.lean",
+      "sha256": "90de10f1fc51ca5cb58ae7c97b618f47a855ff010d0f46f9b20ddb999a1c89e4",
+      "bytes": 2940
+    },
+    {
+      "path": "N6/Analysis/DiscriminantScaling.lean",
+      "sha256": "4fcce1a6cfb38a5f0d65620b32bb6fa411e7ea531da433fbc707daaa9635491a",
+      "bytes": 2768
+    },
+    {
+      "path": "N6/Pentagon/Witness.lean",
+      "sha256": "5d21655407cbadb8e3b8a3d49bbfc9e75f978259ae1821e104c019825bed70f2",
+      "bytes": 1508
+    },
+    {
+      "path": "N6/Analysis/GenericValue.lean",
+      "sha256": "b8066dce4e0e6ecf4a1d0dd1632bfaee3dfdcfbc514259d3af2dcfbbde174301",
+      "bytes": 1340
+    },
+    {
+      "path": "N6/Analysis/ResultantBridge.lean",
+      "sha256": "5a5a9448ef1be7f9c62b7b55251eae1e9160a589b11bf0981a16efb89817de01",
+      "bytes": 4858
+    },
+    {
+      "path": "review/Resultant6GeneralMatrix.lean",
+      "sha256": "90ea338ccef204a0fec11cb197bd02b55b7f71298d65e2d8b3ad56d0b3636744",
+      "bytes": 4928
+    },
+    {
+      "path": "N6/CertificateCore.lean",
+      "sha256": "712cc53ae0818394a3080b142bd942255484825a9dbe5d8ae959138437f94656",
+      "bytes": 5153
+    },
+    {
+      "path": "N6/Exceptional/DeterminantsIndices.lean",
+      "sha256": "b447d37dd4921355976504edd7ff8905e557b77c957ae562be7b69027562264e",
+      "bytes": 11785
+    },
+    {
+      "path": "N6/SparseProductReduceCore.lean",
+      "sha256": "baa1118d317e878034fffda7419489eae66db090685ad5bedfb39dddb6fa43fd",
+      "bytes": 323
+    },
+    {
+      "path": "N6/Exceptional/Data.lean",
+      "sha256": "0aa450d5066c82a216e3ecc2304755719fbf8ccab3ecd727e7aa601772ef643d",
+      "bytes": 104684
+    },
+    {
+      "path": "review/SparseCheck.lean",
+      "sha256": "21677dc9b857fb401b555423a68caf79c03fcc6ea0109251c904b1f8339d3a59",
+      "bytes": 2710
+    },
+    {
+      "path": "N6/Exceptional/Bindings.lean",
+      "sha256": "5809651e9727abab0692aee2cecddb1f7676088d04c6bdbb5a39088ff836be1d",
+      "bytes": 14645
+    },
+    {
+      "path": "review/Resultant6Jet.lean",
+      "sha256": "1fbcc8ad222992883c9ee9a9b023a492f2b66497e6d4ccfa2297ca56a1e69958",
+      "bytes": 1538
+    },
+    {
+      "path": "N6/Exceptional/DeterminantsBase.lean",
+      "sha256": "a3a7d25a87982d9b2abb5cc5ce37abe7ffcdc4db3732caa1919ff10bc80c2b9b",
+      "bytes": 733
+    },
+    {
+      "path": "review/SparseProductReduce.lean",
+      "sha256": "6b60ba15052ae10f4349fcdff6574500fa571da4f3062a8d11a96fe9915e68d3",
+      "bytes": 617
+    },
+    {
+      "path": "N6/Exceptional/ArithmeticHelpers.lean",
+      "sha256": "33b22fe3a7c82ef07068c63a11b70e558ccb1b1816cb6d8179cf7daf84c10fd9",
+      "bytes": 1090
+    },
+    {
+      "path": "N6/Exceptional/Ground000.lean",
+      "sha256": "619c2e79ae8544aad0cc4da3e7fe980e5e9c1d8a97e07685650ddf6d392ff33e",
+      "bytes": 2158
+    },
+    {
+      "path": "N6/Exceptional/Arithmetic000.lean",
+      "sha256": "e1c5f0685db01749ebd342ac749d6ee6618b368ddb9389985185e3d4c99a1bd2",
+      "bytes": 14956
+    },
+    {
+      "path": "N6/ResultantMinors/JetFiniteElim.lean",
+      "sha256": "830fdbd7c69d00b0c9010ecf28f018ee5fab225b02b592a1addb05df8e9d300a",
+      "bytes": 1112
+    },
+    {
+      "path": "N6/Exceptional/Determinants000.lean",
+      "sha256": "d211f67b4145fb2bd50f9c5e3ee7e7f47f4230ec5d0b869e9e3fc0292415fe25",
+      "bytes": 23912
+    },
+    {
+      "path": "N6/Exceptional/Ground001.lean",
+      "sha256": "25ad676ca17cdef213187e6b77f91b25e6b6ebc0a0c4f6cd49c159270adc5c39",
+      "bytes": 2158
+    },
+    {
+      "path": "N6/Exceptional/Arithmetic001.lean",
+      "sha256": "2e1444482b738d27fc10e58279d83a9f0ce2dd782d24e2d4194d5e408c94a47f",
+      "bytes": 16282
+    },
+    {
+      "path": "N6/Exceptional/Determinants001.lean",
+      "sha256": "c800e63df1a474c775c02a5f36594ba54396fa1582a78104da3039ccad9bfc70",
+      "bytes": 27541
+    },
+    {
+      "path": "N6/Exceptional/Ground002.lean",
+      "sha256": "19a8019512d368ee956baae8fd3a8bb2f6314e05f13e93bb5a6257d4fb0b9706",
+      "bytes": 2158
+    },
+    {
+      "path": "N6/Exceptional/Arithmetic002.lean",
+      "sha256": "756fe59a7603092b87a88effb989171469bfcbc4dff15890b9d090c5a679ad7f",
+      "bytes": 16945
+    },
+    {
+      "path": "N6/Exceptional/Determinants002.lean",
+      "sha256": "c7a0e9a459966dcb1086faffa3091391335e46502a9eb68b16b832878f5679b3",
+      "bytes": 29356
+    },
+    {
+      "path": "N6/Exceptional/Ground003.lean",
+      "sha256": "4e854c29e30796a43909e0b4b8ef03f91024332df226ff9854345528a0ae2fd5",
+      "bytes": 2158
+    },
+    {
+      "path": "N6/Exceptional/Arithmetic003.lean",
+      "sha256": "cd3d2f5816bcfe85798e630e8115574c7598cf25f20ace0f1d78f6c3401c0c8c",
+      "bytes": 18050
+    },
+    {
+      "path": "N6/Exceptional/Determinants003.lean",
+      "sha256": "fce55b0d5b545b758757cbd40025fb9af574763558465f9d110aa1db8b187e92",
+      "bytes": 32381
+    },
+    {
+      "path": "N6/Exceptional/Ground004.lean",
+      "sha256": "c6a111eb170d2bcdb4be2a67d5f27d164929627831b971dbdbd979db9a1e9966",
+      "bytes": 2158
+    },
+    {
+      "path": "N6/Exceptional/Arithmetic004.lean",
+      "sha256": "d92fa01e5684cf3a40942351b3946bd773f016786fcfc15c9cb60ef3affea7c4",
+      "bytes": 18050
+    },
+    {
+      "path": "N6/Exceptional/Determinants004.lean",
+      "sha256": "0060010d0ac3ef85f829a024fdba29058252e291ef15b0eb6d98f13f65701364",
+      "bytes": 32381
+    },
+    {
+      "path": "N6/Exceptional/Ground005.lean",
+      "sha256": "9b294604f1535a331a10bb2a0b4206e7f8c2bd85090760b332655c89612d1a51",
+      "bytes": 2158
+    },
+    {
+      "path": "N6/Exceptional/Arithmetic005.lean",
+      "sha256": "b1e3677e0be7b0a800e551b8936c2cf224742cfdfcc6a6ae05df594f086d167d",
+      "bytes": 19597
+    },
+    {
+      "path": "N6/Exceptional/Determinants005_00.lean",
+      "sha256": "fdaa0455de3e16b37905ff2c1a95442c30cacf00ba1040323bcdd2e0d4e422e5",
+      "bytes": 4304
+    },
+    {
+      "path": "N6/Exceptional/Determinants005.lean",
+      "sha256": "e39c5cebe1688ad890776de0f861fe58c01764f3e51148d795f55ed50fe81e12",
+      "bytes": 32608
+    },
+    {
+      "path": "N6/Exceptional/Ground006.lean",
+      "sha256": "b39ebb6f5f6fde6006932f7b20c6f2e52e76b855cc1f7f96a93834a6a850e89b",
+      "bytes": 2158
+    },
+    {
+      "path": "N6/Exceptional/Arithmetic006.lean",
+      "sha256": "64cf3fe7ed785a929943581b518921fcc1e660bf9e47e7352de64a3aa16ff8d3",
+      "bytes": 19818
+    },
+    {
+      "path": "N6/Exceptional/Determinants006.lean",
+      "sha256": "d46c2dc7ea121d7294b1be5b4bf75f9c9f4d72cf39e0c37215bf02e85bb2973e",
+      "bytes": 37221
+    },
+    {
+      "path": "N6/Exceptional/Ground007.lean",
+      "sha256": "858a111fa1ab57611cb7910829208dca9158a094ad0c58440656dedf432e3f84",
+      "bytes": 1911
+    },
+    {
+      "path": "N6/Exceptional/Arithmetic007.lean",
+      "sha256": "5fdea5b5a27dad1d8673fc7a612e24bda06cef77a4799f8210f00679c4d45a4e",
+      "bytes": 19145
+    },
+    {
+      "path": "N6/Exceptional/Determinants007.lean",
+      "sha256": "9486e5676f117d4301c1c95e78f217a5e9939f2a540c6217117eb308c20923dd",
+      "bytes": 37445
+    },
+    {
+      "path": "N6/Exceptional/DeterminantsAll.lean",
+      "sha256": "30cf1159ba4fa89f620f8306af96f7a33785d6f009e0f6f4ccaff2bd0022946c",
+      "bytes": 1334
+    },
+    {
+      "path": "N6/ResultantMinors/CoefficientCore.lean",
+      "sha256": "b1dd3b2c14e0558cf120906ac77ef46298966ac9cf608637ce981eb91918046e",
+      "bytes": 333
+    },
+    {
+      "path": "N6/ResultantMinors/Data.lean",
+      "sha256": "8647f637aa74c6acc90f573715d34a282915f24fd743a2792f0627140fa69008",
+      "bytes": 200194
+    },
+    {
+      "path": "review/Resultant6Matrix.lean",
+      "sha256": "7d8d66bea88267cf717a7840ffe2d7803a82a76d6f42a3e51ed9f71c232769ae",
+      "bytes": 4544
+    },
+    {
+      "path": "N6/ResultantMinors/Bindings.lean",
+      "sha256": "9204b3eea298fd4e4bbf79ab9e775cff4ead08ef59dc6b5e09872e40dd04981c",
+      "bytes": 14666
+    },
+    {
+      "path": "review/Resultant6Coefficients.lean",
+      "sha256": "d115603271d181d0813ba6db647c521568dc2becf3ca354647539000648a7006",
+      "bytes": 1173
+    },
+    {
+      "path": "N6/Exceptional/PolynomialBridge.lean",
+      "sha256": "c046f30677475c11085521b8fa50a8b9395242f16b158ef19f0979165d20db0a",
+      "bytes": 1662
+    },
+    {
+      "path": "N6/Exceptional/Projections.lean",
+      "sha256": "5900cd9262b8244a25cc28c5d6c083a926759d70fef8beeb87db08990f95f064",
+      "bytes": 5813
+    },
+    {
+      "path": "N6/Exceptional/ChartIIData.lean",
+      "sha256": "c3942e43715bc6d4bb308cb59e2c4c8d9e1eeceb43dee57080a7bbc0cd59124a",
+      "bytes": 50837
+    },
+    {
+      "path": "N6/Exceptional/ChartIIFormulas.lean",
+      "sha256": "9937b2e956738c7f6e4884ffd3d3ef4825018c78c27d29e0cb1be58b7940b762",
+      "bytes": 2186
+    },
+    {
+      "path": "review/KroneckerCheck.lean",
+      "sha256": "6c4a3ef9815111aa6e33d242461d5cc16ec404b5d7a0ccdaefa7cf20a455130c",
+      "bytes": 7058
+    },
+    {
+      "path": "review/KroneckerFastPack.lean",
+      "sha256": "49269ff2695774790f2c1f649d92158d73ece95b51e57636accca5b3035383da",
+      "bytes": 2966
+    },
+    {
+      "path": "N6/Exceptional/ChartIICertificates.lean",
+      "sha256": "9654b25cc3f756ae527d10fd34104f07fb7fb1c9f8c5f128281a3bac93f338de",
+      "bytes": 898
+    },
+    {
+      "path": "N6/Analysis/PhysicalCoefficients.lean",
+      "sha256": "21f81dc831158175cd09e58d66fafe515d92d6f55d310b902105c413325840c4",
+      "bytes": 2277
+    },
+    {
+      "path": "N6/Exceptional/ChartII.lean",
+      "sha256": "e8fcb2881b55010c81df43987f8d5fea7aa32872371ccaa37abd3cf01ec032b2",
+      "bytes": 4450
+    },
+    {
+      "path": "N6/Exceptional/ChartIIIData.lean",
+      "sha256": "483b361933c1a99157e1a3f352a26ed24c1df87e0c004845a809c3b7b3e6fa04",
+      "bytes": 3226
+    },
+    {
+      "path": "N6/Exceptional/ChartIIIFormulas.lean",
+      "sha256": "a7bd6f9dfbc7ed0342cf25c22bbcc09c415a2b0552bf626e712d6f7b51b4b043",
+      "bytes": 2376
+    },
+    {
+      "path": "N6/Exceptional/ChartIIICertificates.lean",
+      "sha256": "6f795eac46fd3d8b4d3c3abbc9d60fb9f80916a730f611c1ae395124c54cd669",
+      "bytes": 595
+    },
+    {
+      "path": "N6/Exceptional/ChartIII.lean",
+      "sha256": "52895cf6595cc162f5bba2acbfe22d3902b8c755a1b836cad5b51666ce666cc7",
+      "bytes": 3754
+    },
+    {
+      "path": "N6/Exceptional/ChartIVData.lean",
+      "sha256": "8a474d259ff6bade768b72341636f6a73c41bc594e8d1661cc81d16830c6b909",
+      "bytes": 314
+    },
+    {
+      "path": "N6/Exceptional/ChartIVFormulas.lean",
+      "sha256": "29a491d2117386069da6cd52a364428da8528e3a73c5cbb856fe2fcbee8b5c23",
+      "bytes": 544
+    },
+    {
+      "path": "N6/Exceptional/ChartIV.lean",
+      "sha256": "31f2b51b50c40204ef3954fce2c860d1b6c36b51443db82f55dbc249ee1da47d",
+      "bytes": 1512
+    },
+    {
+      "path": "N6/Exceptional/All.lean",
+      "sha256": "b4ed83056710a88ec75aa21d59e3910db3fa803f6ca88af6bd0767349886dcf9",
+      "bytes": 94
+    },
+    {
+      "path": "N6/Symmetry/TripleAlgebra.lean",
+      "sha256": "c3506f71c70731b7bf769927293cd93a26b2a7e65bab6a5f5f8ede17c754652a",
+      "bytes": 4279
+    },
+    {
+      "path": "N6/Pentagon/Classification.lean",
+      "sha256": "77c1f896f1019c14f1d3a46bfe3f47e99e8e33fd342eed63e34457aad4c63bbf",
+      "bytes": 5187
+    },
+    {
+      "path": "N6/Symmetry/TripleBound.lean",
+      "sha256": "31f455741fd5199ad2fddf90876e9dfbc2f109a61258524d1d7d0498ac5cc151",
+      "bytes": 4068
+    },
+    {
+      "path": "N6/Analysis/AZeroClassification.lean",
+      "sha256": "fbdb4a5fcef30a551706aecad950547ac284cecacdf13c9e6fc64d8722f6d986",
+      "bytes": 3782
+    },
+    {
+      "path": "N6/ResultantMinors/RawCoefficientData.lean",
+      "sha256": "4607f0d9f645f9860e8036059a2d770d2807817eec347037fa7a3698232006c9",
+      "bytes": 12537
+    },
+    {
+      "path": "N6/ExceptionalA1/Data.lean",
+      "sha256": "6d8b0d16146b6c877f8782004e7ded3a74c4dd0d21df75ae19b50cbfe1326c9c",
+      "bytes": 197144
+    },
+    {
+      "path": "N6/ExceptionalA1/CertificateData.lean",
+      "sha256": "f80a47718cc9b957d6f106e833a7d126c8de0e87db31a57e86259c657f877e50",
+      "bytes": 338
+    },
+    {
+      "path": "N6/ExceptionalA1/Ground.lean",
+      "sha256": "25c03f7ca8c7cac0d09f8d29a9f104d24eac5e5cfb087ea9be4109cda3425682",
+      "bytes": 1737
+    },
+    {
+      "path": "N6/ExceptionalA1/Helpers.lean",
+      "sha256": "0cb53b9dfb18a9c303286ec839ed2218ff2c5bbbf6209613fa240d70a8a4a211",
+      "bytes": 1843
+    },
+    {
+      "path": "N6/ResultantMinors/RawCoefficientGround.lean",
+      "sha256": "6ac3248471ac0f8b1621c3500b5a3c72f3848631e60b821e6b396c6aa256cc42",
+      "bytes": 677
+    },
+    {
+      "path": "N6/ResultantMinors/ArithmeticHelpers.lean",
+      "sha256": "8350dafd4bb99e1e713dbbdede7514a57e6c0c59d09e350e42db771cf925c266",
+      "bytes": 1102
+    },
+    {
+      "path": "N6/Chart.lean",
+      "sha256": "185c9203d8c52d579d839952dd1d36437fd500c08272d28432701c54cdb398ff",
+      "bytes": 43829
+    },
+    {
+      "path": "N6/ResultantMinors/RawCoefficientBindings.lean",
+      "sha256": "1a26588c80ca9036ff9576833f74200d31d4176ae044e61dc3ce9d0eca47dcf6",
+      "bytes": 6210
+    },
+    {
+      "path": "N6/ExceptionalA1/Bindings.lean",
+      "sha256": "e3ca40b6f655b47463f765180cca2e56281719212f7fa1dd0f30e5e9fd6b9c75",
+      "bytes": 1992
+    },
+    {
+      "path": "N6/Certificate.lean",
+      "sha256": "c8497e40f340514852c6ea5c142af3bb40599d6650528a4a22c10baa3a6c0cf3",
+      "bytes": 1156
+    },
+    {
+      "path": "N6/ExceptionalA1/Contradiction.lean",
+      "sha256": "ba46cdff9baad1a98fb28d7bc9240898ddf4c6df5e3d28b9459dd8da317d220b",
+      "bytes": 1820
+    },
+    {
+      "path": "N6/ResultantMinors/DeterminantsIndices.lean",
+      "sha256": "b0e977824cba8d8a9411d6702ac31f2cb360e155c4126b1ff087f7a14dc458b6",
+      "bytes": 11800
+    },
+    {
+      "path": "N6/ResultantMinors/DeterminantsBase.lean",
+      "sha256": "48e33a9355276f4ecca4455710842b1d63f5637322da6438ff500328868a85f6",
+      "bytes": 703
+    },
+    {
+      "path": "N6/ResultantMinors/Ground000.lean",
+      "sha256": "acb4e0ed47669c5d99e12eb83806cc978e18b5baccff5e0e0c4c7b7b39528605",
+      "bytes": 2170
+    },
+    {
+      "path": "N6/ResultantMinors/Arithmetic000.lean",
+      "sha256": "fbf772ef493bb25ce88b3ecdad38fee2ef8ef7113cf57b3490a93417ddeef71f",
+      "bytes": 14972
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants000.lean",
+      "sha256": "195d72481b57788cd1e1cfca1a21e835d2a3307253b579b6eee4cda50c7e108d",
+      "bytes": 15291
+    },
+    {
+      "path": "N6/ResultantMinors/Ground001.lean",
+      "sha256": "37b734018e253fd37239618b635c05a649240f009251c27f90ab9f63f0596e79",
+      "bytes": 2170
+    },
+    {
+      "path": "N6/ResultantMinors/Arithmetic001.lean",
+      "sha256": "2a89d02c0d4b63892b0afa884979c07b95dcb97330af61a65b5df3d7b659e65b",
+      "bytes": 16298
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants001.lean",
+      "sha256": "afc080a4174f72ac8f57d27498a546e14183e95c68569cbf3790ebf977c28838",
+      "bytes": 20060
+    },
+    {
+      "path": "N6/ResultantMinors/Ground002.lean",
+      "sha256": "c9378d9f777f59a169122a01f10adaf4db83a8580ed237fbb7868db8f78a0246",
+      "bytes": 2170
+    },
+    {
+      "path": "N6/ResultantMinors/Arithmetic002.lean",
+      "sha256": "a3940c81bf8e3d9049d5bf8d52ec06daf4b6b65e75d86bcd08064a1d682032c6",
+      "bytes": 16961
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants002.lean",
+      "sha256": "ce187046e2f1bda480bd9c56fc45dab705d9483621b91def072b7f9d053809f7",
+      "bytes": 21914
+    },
+    {
+      "path": "N6/ResultantMinors/Ground003.lean",
+      "sha256": "828862fdd694b9a46c1ae81154cb39d1792d1a78af0b22171a3c7c4d45a3fcbd",
+      "bytes": 2170
+    },
+    {
+      "path": "N6/ResultantMinors/Arithmetic003.lean",
+      "sha256": "8a6715fadbc9666f094350a23b6725c0ae6298a0621508217e084c43c55df6d6",
+      "bytes": 18066
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants003.lean",
+      "sha256": "0e96840f389aca950932ae525031e250dd4f66cc9d3a6a7d47679684cbce4b47",
+      "bytes": 25004
+    },
+    {
+      "path": "N6/ResultantMinors/Ground004.lean",
+      "sha256": "c1197dd3bf8d5a7d39d34e6bbef74243068dbb5e2ea7c52a65901524b2b2d53d",
+      "bytes": 2170
+    },
+    {
+      "path": "N6/ResultantMinors/Arithmetic004.lean",
+      "sha256": "506e1671d82ffe00042ac281c0e57490c5ae7982fe0daff308b95a4605a1f180",
+      "bytes": 18066
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants004.lean",
+      "sha256": "652b996f29755c02f58de7fd8a44190b529157f9663f7fd9e01d65543e1bd6bf",
+      "bytes": 25004
+    },
+    {
+      "path": "N6/ResultantMinors/Ground005.lean",
+      "sha256": "d7fd3342c27dfa63b1b238d997693a29033553ac688688fc7fbc2d7376939cfe",
+      "bytes": 2170
+    },
+    {
+      "path": "N6/ResultantMinors/Arithmetic005.lean",
+      "sha256": "8e8d0cbd7e199d0079e23cac0919657860fd8d4246322591eac9e1c67e6e0992",
+      "bytes": 19613
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants005_00.lean",
+      "sha256": "fa4018f29fb438963d71fb300c548eb47f0c4e7302ee701d57a6486292e88aa4",
+      "bytes": 3360
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants005_01.lean",
+      "sha256": "7157fd8ace82fb132fe5c5e65f323efea3d77d7e8f6e92984fceda16c2dc2919",
+      "bytes": 3981
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants005_02.lean",
+      "sha256": "646ec7c9850470386680ab82db9c119456b03902efc671a40995136d305dbaa4",
+      "bytes": 3981
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants005_03.lean",
+      "sha256": "77f6681ceeb1b8ef37dadaa69fe20a5b0a5ad12f47994f353001ee0bb5d281f6",
+      "bytes": 3981
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants005_04.lean",
+      "sha256": "cd9bad04dc50c1c9739ca15a911e84ddfb010dd02de28beeff01141777c5be1b",
+      "bytes": 3981
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants005_05.lean",
+      "sha256": "f91294c2551ff8d07ddbd05485480291b79f2b0bfaebf33d66c6e10b65dab2df",
+      "bytes": 3981
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants005_06.lean",
+      "sha256": "9645997ba6469c0d9a81278e6987ba665b1ef3b4ce83bff9dfb66f548dc0af34",
+      "bytes": 3981
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants005_07.lean",
+      "sha256": "5df54764c9aaaef5fa30f712eb7bbb8b024f415bdc30b3939e240f5eab1fb7a2",
+      "bytes": 3981
+    },
+    {
+      "path": "N6/ResultantMinors/Ground006.lean",
+      "sha256": "10297b2ee655452062e02481dd9128cfd85cf29eb3ad9e8149d41f989f5983cb",
+      "bytes": 2170
+    },
+    {
+      "path": "N6/ResultantMinors/Arithmetic006.lean",
+      "sha256": "898e3077d32f377124649919acd71789566c90c9aa4c6c1be3b865837edd57f5",
+      "bytes": 19834
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants006_00.lean",
+      "sha256": "be05eec87d80d68f7cfc02436a0232e754c2a0c2931a68146d1337d1f8b138c3",
+      "bytes": 3981
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants006_01.lean",
+      "sha256": "b4c3b9b7cb11d61239ea866c4b97610842c567572ce5f9d8d22a89c4834d090a",
+      "bytes": 3981
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants006_02.lean",
+      "sha256": "a1d908bdad51cfb97e230d105435f60838d2273c20f91d90e544b9b74a007168",
+      "bytes": 4675
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants006_03.lean",
+      "sha256": "e6fb1228e47c11cf31eab1aef0de22d1413aaac3a6399f96766b7f3070434751",
+      "bytes": 4675
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants006_04.lean",
+      "sha256": "7e421460f286c523adfc939135c1c7013247c275a728caf0059026ddcbdc9053",
+      "bytes": 4675
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants006_05.lean",
+      "sha256": "d9da36f8566719c5530d548e5db330a3735f4f6bbe331935d015e155791b7980",
+      "bytes": 4675
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants006_06.lean",
+      "sha256": "0f227001d81c1dce5fc21376e8cf551b9087c10bb75170b6c0adb4c069056f21",
+      "bytes": 4675
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants006_07.lean",
+      "sha256": "b8b54a66144aa2034a1ae186451d8370fe6bbc6ea83386a49cdf917ff5c0290d",
+      "bytes": 4675
+    },
+    {
+      "path": "N6/ResultantMinors/Ground007.lean",
+      "sha256": "10d036b2d9a2f06a2a5fe28c3972cd1d0431636fa98c48b0dea8332d3217099a",
+      "bytes": 1923
+    },
+    {
+      "path": "N6/ResultantMinors/Arithmetic007.lean",
+      "sha256": "df63b9505b14c3557f925b7138904fedd82d9dac54668996414f2a934100350c",
+      "bytes": 19161
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants007_00.lean",
+      "sha256": "0bb5d8a6215a1e861faccba204d6aede0d9d69afc56c7825b6dca56c480af8e7",
+      "bytes": 5280
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants007_01.lean",
+      "sha256": "6cbb73a9407581d95c19448a5c5e5dd5b41fb13e7f947af3aace2f8782c03625",
+      "bytes": 5280
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants007_02.lean",
+      "sha256": "fe37380b868f1242e2ae232a5c203b4304c2921ff750565ae21c816bb343d18d",
+      "bytes": 5280
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants007_03.lean",
+      "sha256": "7b98f6ecf51fa13a9164dab1bc2c768c3070e7c583856870e7f00fd1f4a4f059",
+      "bytes": 5280
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants007_04.lean",
+      "sha256": "b0801fb01c89dcea2b112070a388243d5e6a90120e89db24bf8cf2674122471d",
+      "bytes": 5280
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants007_05.lean",
+      "sha256": "04ccca3da0d6267b42ae7bb42108bb414f79e63623361750202e42ca36df7cd4",
+      "bytes": 5280
+    },
+    {
+      "path": "N6/ResultantMinors/Determinants007_06.lean",
+      "sha256": "55cfe360838359cc7ab41b7d04b2e8219cd0a845d4d44746081d25cd211ec1f2",
+      "bytes": 5885
+    },
+    {
+      "path": "N6/ResultantMinors/DeterminantsAll.lean",
+      "sha256": "dbe0ac8e3f31ad6d400fbc14ac671d66f93ce18f91de91cd8eda41f74ea82e80",
+      "bytes": 1234
+    },
+    {
+      "path": "N6/ResultantMinors/PolynomialBridge.lean",
+      "sha256": "42096947b27484d9334caf32a289ab492d14f962dc318cbfa0770a08252429f2",
+      "bytes": 1562
+    },
+    {
+      "path": "N6/ResultantMinors/R4Data.lean",
+      "sha256": "fd520520c060a745171d49cefc1aff38db10f10ab1967611a078dc7356e88e39",
+      "bytes": 4839
+    },
+    {
+      "path": "N6/ResultantMinors/R4Ground.lean",
+      "sha256": "b813e89ae7885930d0c1e6c5784fcbb68dc3968cece5f90b73899afbdbd92d21",
+      "bytes": 227
+    },
+    {
+      "path": "N6/ResultantMinors/R4Semantics.lean",
+      "sha256": "35ae911bfc6c2fa1d51baca2053c66e18580064321c049c0f975318aaf66546a",
+      "bytes": 829
+    },
+    {
+      "path": "N6/ResultantMinors/Necessity.lean",
+      "sha256": "094cc6e04f937a88330cd3b9688f5cc5201ade79894f6b1e3d920b56b5824a46",
+      "bytes": 4197
+    },
+    {
+      "path": "N6/ExceptionalA1/FromMaximum.lean",
+      "sha256": "31d088d39ba3afbaa09f09580ce688a68d12d1da520dbec645e037ba5dd59ba6",
+      "bytes": 1162
+    },
+    {
+      "path": "N6/BranchEval/ProgramCore.lean",
+      "sha256": "49dd0282173c06ab0c102912129ef4fec787c3b72b38032d1aead9823176917a",
+      "bytes": 3470
+    },
+    {
+      "path": "N6/Even/ProgramData.lean",
+      "sha256": "5c4938e21d443ca516e3fff69dfa3ba707035a72044c75a403fbeba0193cddf4",
+      "bytes": 84554
+    },
+    {
+      "path": "N6/Even/ProgramSourceData.lean",
+      "sha256": "f94c21cb80c90b43317e28e53422ab4e25edaff1e2dac4c4a31d14cefd2c0b70",
+      "bytes": 9844
+    },
+    {
+      "path": "N6/Even/ProgramGround.lean",
+      "sha256": "2501e18b3bec21e3585c4303e718646611d716b0a464e9a3af3e5d927b06b110",
+      "bytes": 2039
+    },
+    {
+      "path": "N6/Even/CoverageData.lean",
+      "sha256": "176a7b99a555608859829e79264ed571a2bc9fc28d4cc9e257ad9b794bdbfb25",
+      "bytes": 52935
+    },
+    {
+      "path": "N6/Even/CoverageGround.lean",
+      "sha256": "41ae16d54b208effc3899d0e304d7585ce8eb8d9f4bc36572f7b92360f730227",
+      "bytes": 740
+    },
+    {
+      "path": "N6/Even/CoverageSemantics.lean",
+      "sha256": "1c618ea93bb0d61d63dc1d5d8de511ae66e5dd8d140acd0dab1f93d5148f707c",
+      "bytes": 2539
+    },
+    {
+      "path": "N6/Even/RawBindings.lean",
+      "sha256": "7b795e29cfeb9cf1a587633a1c71fc832dbeaabf385af6a847e0424cf02b9108",
+      "bytes": 2708
+    },
+    {
+      "path": "N6/BranchEval/OperationSemantics.lean",
+      "sha256": "c24892bfd9f0683d4092a1433c28ff9ff449f9e399eee74a9c007d92f7d16b9b",
+      "bytes": 2448
+    },
+    {
+      "path": "N6/BranchEval/ProgramSoundness.lean",
+      "sha256": "10ea77ad98a8128c2139948c3569192173d4836c5dfff7ca69e658ecc4a3dff7",
+      "bytes": 6662
+    },
+    {
+      "path": "N6/BranchEval/ProgramBinding.lean",
+      "sha256": "b4016183d8a450a585c93d869b6030eeeb92c525bb12fc97ba26f23b186793c8",
+      "bytes": 3639
+    },
+    {
+      "path": "N6/Even/ProgramSemantics.lean",
+      "sha256": "913cfc5458a812865f082ecbbf88396c8953601481562e509ac856a6de1a9ae8",
+      "bytes": 10728
+    },
+    {
+      "path": "N6/Even/ProgramBridge.lean",
+      "sha256": "aef2898fd23832556ef3fd5761ba8021019fdd63a248462daf1bf3a3c2b1a717",
+      "bytes": 4432
+    },
+    {
+      "path": "N6/Univariate/IntegerCore.lean",
+      "sha256": "6ba3b8c428302ffff8e881b7553087bed946b32cba88171abdf0db6cde69a403",
+      "bytes": 1395
+    },
+    {
+      "path": "N6/Even/ValueData.lean",
+      "sha256": "c584f718ea69ee586326a0a490202e6fbccecb1b2fcd9d0a915079bc61fc53ec",
+      "bytes": 956
+    },
+    {
+      "path": "N6/Even/ValueGround.lean",
+      "sha256": "32339d2b8c5d0367dd829bc0386128b7e38a66532fadbc76884c255dc6cbe0d2",
+      "bytes": 282
+    },
+    {
+      "path": "N6/Even/RootBounds.lean",
+      "sha256": "bde8ff4cdea9f6e24cebe78b05576929c931a85835c6a2746cf6503b00ac4d7e",
+      "bytes": 996
+    },
+    {
+      "path": "Mordell/Interval.lean",
+      "sha256": "cfbd9ed802b0e294f1cea5120f371710a5b075d9b733320e12079ff2fc608454",
+      "bytes": 4429
+    },
+    {
+      "path": "N6/Univariate/IntegerSoundness.lean",
+      "sha256": "92b538ab060aefc06fa2f6c2bf589b926b1f8465c5625390aea1fc14f332a436",
+      "bytes": 4828
+    },
+    {
+      "path": "N6/Even/ValueBound.lean",
+      "sha256": "e04c2b4353995c84b78893c24bf73cd16972524b8fa2281dcd364a307b53f999",
+      "bytes": 1591
+    },
+    {
+      "path": "N6/Even/ValuePhysical.lean",
+      "sha256": "2c928bd8c25e78688d5cf3c822c8891fe2977f07dd357fb51bfa08f09509bf89",
+      "bytes": 2862
+    },
+    {
+      "path": "N6/Even/ProgramActualData.lean",
+      "sha256": "dcbea3406f788de90ad03e325771b4cc1af36aeb5396738342bde64627b9bdea",
+      "bytes": 2046
+    },
+    {
+      "path": "N6/Even/ProgramActualGround.lean",
+      "sha256": "7e121e738bb0166680e2a0d0e516f5c8739b51c5d138fb6824c1b2a8d1d7a1d6",
+      "bytes": 718
+    },
+    {
+      "path": "N6/Even/ProgramActualBindings.lean",
+      "sha256": "ae9b9f11df45097e938be4fab8c51d572932e80b7222c70285ca118725fc28f7",
+      "bytes": 2226
+    },
+    {
+      "path": "N6/Even/PhysicalValue.lean",
+      "sha256": "9ca929cdab51a1b1234a3d94db8d979a304f404ce78a45b6df938159a0a75aab",
+      "bytes": 3302
+    },
+    {
+      "path": "N6/Even/FromMaximum.lean",
+      "sha256": "b996f8b1b11a49b3b153102eba6d99bab8ce6673c1ea56d8543e2d3204990635",
+      "bytes": 1099
+    },
+    {
+      "path": "N6/Univariate/Core.lean",
+      "sha256": "eb720d7decc7377f818fe04b69e894e4e718c160ebb677401467bd3751f68c3b",
+      "bytes": 1286
+    },
+    {
+      "path": "N6/BranchEval/B0/PublishedData.lean",
+      "sha256": "d4a4478b99b942e3b4ea166f18417a5daa8dd13fbed5c81aa1955f19cb8b835a",
+      "bytes": 522
+    },
+    {
+      "path": "N6/Univariate/Branch0Data.lean",
+      "sha256": "8ce4dce0bb3f28568c33ac4ab1aa95b6d16fd8bcc6c11558eae7c0a16ec374af",
+      "bytes": 334
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramInputs.lean",
+      "sha256": "82dd8dd446dc127b012afe9ce406bea331715f7828d51f4039bc2453c115913d",
+      "bytes": 2304
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramNodes000.lean",
+      "sha256": "6d7edc868f0829942efd0cd9ed9f5035b1f01f10a1bba413ce42852b83559040",
+      "bytes": 36294
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramNodes001.lean",
+      "sha256": "b2399d703d94a7bbcea9ed8ebb40ebae4404ef15b74cac8257e5993c42cb7434",
+      "bytes": 36452
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramNodes002.lean",
+      "sha256": "af3c9ba039a35b2d92bce2b61dc24b32808f7eedb685aac9ca7b6c6d636714e6",
+      "bytes": 36471
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramNodes003.lean",
+      "sha256": "c17dece10f4b84d97ed9ab7aa8ecaea406fc6b93832d0e637f0257bb8f6bccd2",
+      "bytes": 36453
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramNodes004.lean",
+      "sha256": "24d1559e7554d156b6343f2ac2bf881a8f030ba8a15ebcb3871144a1ea4f7c3f",
+      "bytes": 36523
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramNodes005.lean",
+      "sha256": "a7ee79df0437286d68eeb5eec8b47d553c7bc901b462ce5b483d6ab5e4bc6c6e",
+      "bytes": 36444
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramNodes006.lean",
+      "sha256": "8066cf762e3d918f0f991cfbbed426c6f67a90a018d965937ad76537350d1a5b",
+      "bytes": 15174
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramData.lean",
+      "sha256": "2b08d2c4173920c58e1e86df85c03fa7e1c8c34b36bfed09328354521f946bb4",
+      "bytes": 10357
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramSourceData.lean",
+      "sha256": "790f707cc254fd9ac8ede5ed7714feb421ec65db33e189746947ac5073fadbf5",
+      "bytes": 41672
+    },
+    {
+      "path": "N6/BranchEval/B0/PublishedGround.lean",
+      "sha256": "faa2b49b4cacad8e04d2b23fbc8ce81d217db125c3e4312e70f74dc349c3a76a",
+      "bytes": 1155
+    },
+    {
+      "path": "N6/BranchEval/B0/EndpointDefinitions.lean",
+      "sha256": "cc7e800cfc7a1f913bebee54ee8d4d69608c73fd90d2478a0f808d93f709bca0",
+      "bytes": 8545
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock000.lean",
+      "sha256": "9ba6a26adf1ee455c94c91e7ac10e17ec907d75c3800366ee6a705ec299f22be",
+      "bytes": 389
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock001.lean",
+      "sha256": "940c95d017e80908a6674759d9ef889da2effbaf72a472b39772e52e49fa6b7d",
+      "bytes": 390
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock002.lean",
+      "sha256": "22b47de18fca9a6f37ae4d298e6b0f75f5dd853c057eb1c3693eb6a133710052",
+      "bytes": 390
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock003.lean",
+      "sha256": "d17319b5dd3882ba2fdb9abdf5f18e31cc9e66eb9a707ffeb8b55facedf06094",
+      "bytes": 390
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock004.lean",
+      "sha256": "21afd3b2d01ec1d06eb4223d907855a302d6d4c508c7bf0b7f3978f126f2ca35",
+      "bytes": 390
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock005.lean",
+      "sha256": "8c0beb051c051ddf19106a5cc878b38c858f4787307cdc33094203540c23a831",
+      "bytes": 390
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock006.lean",
+      "sha256": "0c7e2df3646f8fbac71dab03c7f2142b1a7a2e43ec1adc9c69de3fac5c59cea6",
+      "bytes": 390
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock007.lean",
+      "sha256": "74ceaac4f02dd348c36afb288b3f0e5943c849df72fb7085723803bc922f0d32",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock008.lean",
+      "sha256": "8ef108640301a4b074256ea1bfa18cc6e0dfb641ca976787e4110b1a7f65bdf5",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock009.lean",
+      "sha256": "c8dc7883b2d3e6f64c736ba0729817ae749327d0801651c6505d2749fad7053f",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock010.lean",
+      "sha256": "a90b94ddc4d85c08a7df438a209143dae75e9cb60ece398a02326d046378ec2c",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock011.lean",
+      "sha256": "19bec655e21c7a40e16950be16c876873ce913e4e6ac6241337dc311c5ae74e9",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock012.lean",
+      "sha256": "e67f90d6e6327e360052e6c2f12762aaf3a428c43d4bbefe2e6419da10ea463b",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock013.lean",
+      "sha256": "7726096f708d15645ee32dc735c790b2f2b3ac145ff5dd084e049dd046fef40c",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock014.lean",
+      "sha256": "881ef48d07bed72f8a40ccc6c7279769671123727e826a7370e5564038844d56",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock015.lean",
+      "sha256": "88a26eca990e881d35e66057909cc01b876535adc2d6e21a3913bfcbfd823e8b",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock016.lean",
+      "sha256": "251fe673d4150a0e2062a3c1fb1e67bd972940555a845590d1c320a36b382105",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock017.lean",
+      "sha256": "3fd1030a47e4407fb2bf25c69f259eee76364658e9dfc82c60297b9aa89038e8",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock018.lean",
+      "sha256": "f20da3b0c07cd617fa34e269cb94da57a4aa8afcae63b9c9191ceb2dfbdada77",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock019.lean",
+      "sha256": "e1a87a559892dfdb7e9f40bee2dbf8f9d3bd6222c323e9a3841d6adc7b336867",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock020.lean",
+      "sha256": "5ffd7b3b688a3fa15595a0cf9283bae038f6babbcf3c533f8bb891ecb226b280",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock021.lean",
+      "sha256": "23043c2b816df45775029cd62320c042d2aa7219938a51e357cf7d8a10fbdc3e",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock022.lean",
+      "sha256": "39ec1b55b54b421c12e0079312d190b3b9f81b018150bf986dc1c02cd6a751ef",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock023.lean",
+      "sha256": "9dfb181f9c7589d6e143f2c5e4413e5f52f9e4a1e05ac1555fda5b872800aba5",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock024.lean",
+      "sha256": "3361094df392b7b3646a64c5e09718a816fb0e9d641e1898fa3be721acc0dc27",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock025.lean",
+      "sha256": "a6ac00df1db605ff55282fa3f1ede838a86675409aaab2887a250d0f545044cd",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock026.lean",
+      "sha256": "72db8ab262c75ad2ae332e4fb86ba2aa22767b3e68423ea44fe4a5173d73ae3f",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock027.lean",
+      "sha256": "ea0f863f1eb0071b6ae207d236bd9671019da747867d5d8d730dc82295bb1c73",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock028.lean",
+      "sha256": "1c89087b2344b4d95c535eef92da4e8aa87b204413ef3da084daa09eda47e175",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock029.lean",
+      "sha256": "7769a05ebcc57d2f2a7e03fed9292cbee11a50e4655320306dd7cfb8c7965613",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock030.lean",
+      "sha256": "20b3ee04732d9da8708480790fd7fa2eda7bda1fdcf227acdd92cfc4371689c2",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock031.lean",
+      "sha256": "17a764f9334c792725590256f3da77cebe6de69ae9c7b78e2cb5a151b1e88e55",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock032.lean",
+      "sha256": "7455912615f142beeec26b1a4001fcc9fb0210e64c687690506b5428afd5860b",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock033.lean",
+      "sha256": "cf39fa490e423fbb0e03e1c68ae24723b41ffab2408912a844b1592e17291ddb",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock034.lean",
+      "sha256": "5967843076fecef320c9fefb17d4c860d52f6cc0377dd25fbbaf5383887a9bfd",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock035.lean",
+      "sha256": "18826893b8b18ae36ea1f4bd00d57415be75aa02fe163ed71341b1eec91d825d",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock036.lean",
+      "sha256": "3bddca18322336a58b9979ee357a7701d59e7657f4676f1ff97abc3103850f80",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock037.lean",
+      "sha256": "fc8f1e1bc8e7e31e764cfb3737c3a5ad16f91fc8bcb2aa3cb014b94d9bb91264",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock038.lean",
+      "sha256": "de978436710a2e7a19f50ea0e33d8fb75ce41ec5783f6a6c3a66825df76bc6c0",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock039.lean",
+      "sha256": "f6b9f8dbbe770197f201c0946a06d686fd84d7ab64478ad15420eb46b2019777",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock040.lean",
+      "sha256": "627bfd424b1da84adf454b86e1aaaf5cf27e0038db33ff39392c43a9ad398c6e",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock041.lean",
+      "sha256": "dacb98969c9c1e11e4a85b1e5d337484824bf93c608cb86112468e6c4261bd30",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock042.lean",
+      "sha256": "6bf7200bfb8d831a510c1c50181e36843f2454d3e76eae35a18b0d9063940f30",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock043.lean",
+      "sha256": "0084681d51505057e5d1ed1585468cdf859a24f038f9ba90ed49704e436e0f1e",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock044.lean",
+      "sha256": "73bd28c9941783d18e2562d872d77e7c0e841640fabbf1e6a3f83c9e321bcf72",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock045.lean",
+      "sha256": "8b995a94ea793720e0e164ec871363d9838bc5ace8fadd34aed104e53be581c9",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock046.lean",
+      "sha256": "938b51956b6415d33e57db9964cbf1a1d76559ee61dc54dd1bcb0f9c781d1036",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock047.lean",
+      "sha256": "09a40cf063c7111d5dd29e3692f7ed176c223b584183a44418ff5285e69a5121",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock048.lean",
+      "sha256": "081ea8032daa613b2b6248f1d5da06dfb6e12d26224a6b076b0b67bd9d9a74c6",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock049.lean",
+      "sha256": "c8f863ba5dc588fdfb7eff12794e53f2b658b1a7d709193243e8bf6cedfe7881",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock050.lean",
+      "sha256": "bad31a16014686557722745164ce0c236ff62d17f0edd1c8ea68a41fac57cb8b",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBlock051.lean",
+      "sha256": "70d482d2d14c25b224237712533857de17113aaf45a35ba5cc73faca3ff37fe0",
+      "bytes": 390
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramChecked.lean",
+      "sha256": "beea29a20d346a2225ee580b6ceeca0c037d94c87d0c68d6d899f013d48d8b09",
+      "bytes": 4484
+    },
+    {
+      "path": "N6/BranchEval/B0/ProgramBindingProbeGround.lean",
+      "sha256": "08e6098798444708341e3f0865248916ccf3a31552f9820b8bc09133c78cd8a7",
+      "bytes": 1918
+    },
+    {
+      "path": "N6/BranchEval/B0/EndpointSemantics.lean",
+      "sha256": "fb356571716206f2afa0080e6a92b0ea56958256234ea779a68e527f588dfafb",
+      "bytes": 14213
+    },
+    {
+      "path": "N6/BQ14/Parents.lean",
+      "sha256": "848e34f060e941f821df953cc7a713e7e8ba14a00020d11ff698920165dcb661",
+      "bytes": 213219
+    },
+    {
+      "path": "review/Dcolon1Data.lean",
+      "sha256": "69285c843ee037b8f9c1474ae61a6c6fa7e6334d668e972bcb40e995465f8b1e",
+      "bytes": 49968
+    },
+    {
+      "path": "N6/Quartics21/Ground001.lean",
+      "sha256": "a6305a3c5aca7fdb6be1a5863e0f8f952e26748baa2bef0872bf41b69ac4e991",
+      "bytes": 119886
+    },
+    {
+      "path": "N6/Quartics21/Ground002.lean",
+      "sha256": "db6638d4ac392cf47727ae5213c21339d854dcf70b47b1efa2c37a71cf747185",
+      "bytes": 119663
+    },
+    {
+      "path": "N6/Quartics21/Ground003.lean",
+      "sha256": "a99787cb8f016211c3013abc35348cfe15bf2d33c2675f8d2b77286003ecc9e8",
+      "bytes": 118558
+    },
+    {
+      "path": "N6/Quartics21/Ground004.lean",
+      "sha256": "168361f2554f4541dc0c3ab0315abc0899303ecf47f3e06bfbc8ab0b6d856212",
+      "bytes": 118846
+    },
+    {
+      "path": "N6/Quartics21/Ground005.lean",
+      "sha256": "f6b9b59c90739539fe57fd1115cdd1d0a68a53e09a2b265f433a1ce57684e341",
+      "bytes": 121691
+    },
+    {
+      "path": "N6/Quartics21/Ground006.lean",
+      "sha256": "4fdb1fd5aac2a376913d9c6ff57849551a7d77d8415e3a534c36e40b6dc56b0b",
+      "bytes": 123404
+    },
+    {
+      "path": "N6/Quartics21/Ground007.lean",
+      "sha256": "c7745261e84d83d972fc40158bbe33c8d1d99e6fe8f71905a49a03fcb3244eb9",
+      "bytes": 119448
+    },
+    {
+      "path": "N6/Quartics21/Ground008.lean",
+      "sha256": "a157dfc713532f55c417a424a6b80c6b1aa608ba1fe8376413c7001105825b15",
+      "bytes": 118900
+    },
+    {
+      "path": "N6/Quartics21/Ground009.lean",
+      "sha256": "dfff1f43437dca64f21d4555d0e6d068124a5e633011cbab556a6e9b83834a64",
+      "bytes": 120627
+    },
+    {
+      "path": "N6/Quartics21/Ground010.lean",
+      "sha256": "5d55a6592958f760c1753b309130183cbd53fc74b6f56971ac4621f8ffa6a02a",
+      "bytes": 120211
+    },
+    {
+      "path": "N6/Quartics21/Ground011.lean",
+      "sha256": "43710414aebac814ed00fa08c22ce10d7bbee66e404eb35867f5d3dcfa9cf58f",
+      "bytes": 119694
+    },
+    {
+      "path": "N6/Quartics21/Ground012.lean",
+      "sha256": "40fe83bd7650d3f44b09e18e887324b8adef7b8495fbeb8bd62535c86258b2b3",
+      "bytes": 120657
+    },
+    {
+      "path": "N6/Quartics21/Ground013.lean",
+      "sha256": "f3ec4f0eefb2e6f6d69fce42c4c98053cec9b2ceef15f9d75d879d9ccf1bed0a",
+      "bytes": 119777
+    },
+    {
+      "path": "N6/Quartics21/Ground014.lean",
+      "sha256": "bf88477cfa04220c55f06999e27ea8546bae02894e42bbe5c1d2c9a9e5559078",
+      "bytes": 121745
+    },
+    {
+      "path": "N6/Quartics21/Ground015.lean",
+      "sha256": "7fc176d2c39f0ae309d90a1821ed08ca333eded20bdfb852d288308e42943316",
+      "bytes": 119960
+    },
+    {
+      "path": "N6/Quartics21/Ground016.lean",
+      "sha256": "a6046fb14a4fae5a15a64beb8baf692e066f7e94a5cc30c2d858e2346af813cf",
+      "bytes": 123156
+    },
+    {
+      "path": "N6/Quartics21/Case017Data.lean",
+      "sha256": "86737a2122675dec7fd97b4e671ab21c8aae037ea308b300759e384d6f86f1fb",
+      "bytes": 142486
+    },
+    {
+      "path": "N6/Quartics21/Ground017.lean",
+      "sha256": "e9b117dff06e85c4dd29ce9766d11df7c125e003367b22d82cf51c46899479af",
+      "bytes": 538
+    },
+    {
+      "path": "N6/Quartics21/Ground018.lean",
+      "sha256": "ccb839e3cccfc85fe7df26be341ba253563fb3a436ea889ee3a0deb46774773b",
+      "bytes": 121020
+    },
+    {
+      "path": "N6/Quartics21/Ground019.lean",
+      "sha256": "f1f0ffe09e2fac94daf9d9dcfb3eb0fc4a258a124544dc9dac8ecc01e9fc5061",
+      "bytes": 122198
+    },
+    {
+      "path": "N6/Quartics21/Ground020.lean",
+      "sha256": "cdbe52f1deaeefda5b9084c673fcefe86783b48ac3b588586aba2533e1537639",
+      "bytes": 122498
+    },
+    {
+      "path": "N6/Quartics21/Ground021.lean",
+      "sha256": "3f410e24da707500d79cb4e66805b0a3934a314d6e274b1c91054144ac8dd84e",
+      "bytes": 125355
+    },
+    {
+      "path": "N6/Weighted49/ArithmeticCore.lean",
+      "sha256": "c556478ec70df4d4fc172e437a88197096136d7a60bf3f65505436591eed6883",
+      "bytes": 318
+    },
+    {
+      "path": "N6/Weighted49/ParentData.lean",
+      "sha256": "50cb967c69a089be6d99ffca6039868852fced98a123c3c5aafee4c140f4314e",
+      "bytes": 3601
+    },
+    {
+      "path": "N6/Weighted49/MatrixData_e.lean",
+      "sha256": "941023896697c66f851e5cb3adab881d355980a696f943267cfed3d3f40230de",
+      "bytes": 179688
+    },
+    {
+      "path": "N6/Weighted49/MatrixData_k.lean",
+      "sha256": "fbfd5f87090798ae59c1d2aa93ca30fe133c2923375f712fc49bfe6792af97a1",
+      "bytes": 162303
+    },
+    {
+      "path": "N6/Weighted49/MatrixData_c.lean",
+      "sha256": "fd38ebbe8923404be55f2be25b6e567f88c8d3db64f6c1b3068f49ce9cd74551",
+      "bytes": 150593
+    },
+    {
+      "path": "N6/Weighted49/MatrixData_B.lean",
+      "sha256": "b00496e1d8f89b6a6ac2a23dfea67d65a36be3cafee77e222e71f2479038fa2a",
+      "bytes": 127064
+    },
+    {
+      "path": "N6/Weighted49/MatrixData.lean",
+      "sha256": "bd0c3d4b30792f093a229d88cb5588dc0f58b83987ede523dda24b89d58e34b9",
+      "bytes": 248
+    },
+    {
+      "path": "N6/Weighted49/ActionData.lean",
+      "sha256": "aea4fa9f56203b382eb395ecb97a278e03b81138acd7a1bfe937e2e9e640fc2b",
+      "bytes": 285517
+    },
+    {
+      "path": "N6/Weighted49/ColumnCore.lean",
+      "sha256": "5972d384f77c4ccded4f6c575191e357502d5e13106b1bfd7abdadb9d8b2586d",
+      "bytes": 808
+    },
+    {
+      "path": "N6/Weighted49/VecData000.lean",
+      "sha256": "1d37088f47893bcd784f55bc638b696260c24d5e3fe06cecf4aaf7273cd9d3cd",
+      "bytes": 13362
+    },
+    {
+      "path": "N6/Weighted49/VecData001.lean",
+      "sha256": "18e147412a396ff782fcc8426eaba9dbac4f7fc7ac3ace342170a0e64bb8655d",
+      "bytes": 120805
+    },
+    {
+      "path": "N6/Weighted49/VecData002.lean",
+      "sha256": "16114b60e94d22b3bf617e1716ed384b8054a89dd7d4eb885f0e3fcb3e0366b9",
+      "bytes": 171607
+    },
+    {
+      "path": "N6/Weighted49/VecData003.lean",
+      "sha256": "a4c82a8367b505e8d7b3a64d780870fbfa88ca2bdd415f5f1ae15ec836a620fd",
+      "bytes": 177172
+    },
+    {
+      "path": "N6/Weighted49/VecData004.lean",
+      "sha256": "0caf5faea5ff6f7fec877dca0f4cf16fd81895ff7b05b57240288b1ebdf63f5a",
+      "bytes": 368836
+    },
+    {
+      "path": "N6/Weighted49/VecData005.lean",
+      "sha256": "7a7744696ee94c5dc63db85765cf14a1ff88f2e40470c4602277fc6e9e9b45f9",
+      "bytes": 509632
+    },
+    {
+      "path": "N6/Weighted49/VecData.lean",
+      "sha256": "1356a12787c2fff3a1e2a2cd7e1d6579391a3173e47c86a80dc6622f04eb1e34",
+      "bytes": 31304
+    },
+    {
+      "path": "N6/Weighted49/ArithmeticFoldCore.lean",
+      "sha256": "c9cbbcdc2e94994306460d0c10f2bcfaa3a428baf6fd09be961f67a1e6061f9b",
+      "bytes": 614
+    },
+    {
+      "path": "N6/Weighted49/LexData.lean",
+      "sha256": "6f6afb6faf4e6ce82568d03a04365d7e4562fa28ba29014b8e168114162a57f8",
+      "bytes": 403550
+    },
+    {
+      "path": "N6/BranchEval/B0/ProjectionData.lean",
+      "sha256": "befb0cd56bc7bd9a5774e8fe94dbfcfe9715c823060a07c11b3c04d243b543e5",
+      "bytes": 116674
+    },
+    {
+      "path": "N6/BranchEval/B0/ProjectionGround.lean",
+      "sha256": "a55d90c65449eb6a420fa669a6563113f43981971b77fd2437489a876033efe9",
+      "bytes": 1216
+    },
+    {
+      "path": "N6/Weighted49/SemanticsHelpers.lean",
+      "sha256": "905ffa7b55b720ff35f260d62be947d0885b90f613f8c8bc6eef2ecf6b0127ad",
+      "bytes": 607
+    },
+    {
+      "path": "N6/Saturation.lean",
+      "sha256": "61f357305a04d88eecf4c3c1f01f8cc02bc00248802eaf01a116a3bcc2a3fafd",
+      "bytes": 803
+    },
+    {
+      "path": "N6/Weighted49/LinearSemantics.lean",
+      "sha256": "cf509566f937fdcc0f690f72093ddd7463ad45a490cc0a6613e0ed9faa8d6b9f",
+      "bytes": 6271
+    },
+    {
+      "path": "N6/Weighted49/ColumnHelpers.lean",
+      "sha256": "0cf34a0acc0408d8030fd753d44879f1b0b355397cc3146c1e6df4b26b8c220f",
+      "bytes": 1948
+    },
+    {
+      "path": "N6/Weighted49/LexSemantics.lean",
+      "sha256": "0d4220a2f8ea13f7fa4e492865eb5ad4103dd0e50bb1278f8cbd55719e5274de",
+      "bytes": 1221
+    },
+    {
+      "path": "N6/BranchEval/B0/CoordinateProjection.lean",
+      "sha256": "71ecab45853fe5ae4acd5897fe1ff39e1e61a635584f1191a0a03d692fa4923d",
+      "bytes": 4070
+    },
+    {
+      "path": "N6/Univariate/Soundness.lean",
+      "sha256": "9e9e18c5ba2148cca9fcf730c1ea1809e80e008969d70430f9644852067d340e",
+      "bytes": 2450
+    },
+    {
+      "path": "N6/BranchEval/B0/OriginalBindings.lean",
+      "sha256": "cdbe558178372cc822e7b360f68f5edf35a5d1cd80f18eabaeae8cf53f7170f0",
+      "bytes": 1805
+    },
+    {
+      "path": "N6/Weighted49/ColumnData.lean",
+      "sha256": "28fdc1055ccee207b6c3caf9301d1823fa962e399c75f3188c709272dd1e868c",
+      "bytes": 53791
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround000.lean",
+      "sha256": "bf1f2a7204328009114870824cd95261c504ce208e6a6340f1f06b76d6dad268",
+      "bytes": 2096
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics000.lean",
+      "sha256": "a88e3d6b11c0e44c50561c272cecb7003cfcdab3eff2d7b74f8129b0bdd0e521",
+      "bytes": 7150
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround001.lean",
+      "sha256": "fd0e8d210561c6105abc4f8f0d6feb628bff3054d6eccf53ce0fc058e43bbce9",
+      "bytes": 2096
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics001.lean",
+      "sha256": "ab7186cb948b35872a966b2fac3c563a4d45288083a37657e4b105a24b0bff1c",
+      "bytes": 7250
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround002.lean",
+      "sha256": "94ba9109d76ff003fd722d4ec8f0d246e545ccdc42e836c5b38b7fb607b1c868",
+      "bytes": 2096
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics002.lean",
+      "sha256": "a002eafcfb1be8ef30df3e002e407cccb1f11152f04d21a3047e0d0edac42035",
+      "bytes": 7867
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround003.lean",
+      "sha256": "f8fc331e45be60de93765ef4137faf481483e4a8ec01ba23d7d9e4cbcfe56f76",
+      "bytes": 2096
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics003.lean",
+      "sha256": "f73e852279478627c244334fe318482b2e6117c74d766a26dc993673d571d72e",
+      "bytes": 7691
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround004.lean",
+      "sha256": "16c6c372399889828a76c9bcd04615092037e8115ef92f11eaef5b9db9253f7f",
+      "bytes": 2096
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics004.lean",
+      "sha256": "1a210fcf27b8fb85afef3fa5941c0cf8029383470121c58d5460256a7aae2f4f",
+      "bytes": 7606
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround005.lean",
+      "sha256": "f0c8f348836703419033346494009d2c5e89a687f87cbf6d25da4efae1d1eb75",
+      "bytes": 2096
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics005.lean",
+      "sha256": "7cf630c677a4110506336ac5614386a7a4f2c9ca11b16f6955fc90e9f7495329",
+      "bytes": 7870
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround006.lean",
+      "sha256": "b5d5be68baa5f2617416a4eae1a6edfe432f8da6a4bfd08e404467d577dca55c",
+      "bytes": 2096
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics006.lean",
+      "sha256": "2fab183688660b69252001bfbf698eebaf77337b41cd6e19cfc0989dc6c8da08",
+      "bytes": 7240
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround007.lean",
+      "sha256": "014869259849c5445c55c1250bcfe5c1196ea8970b2320e8eafa38a82afb8de5",
+      "bytes": 2096
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics007.lean",
+      "sha256": "8b143b9d17ea4ebf4222b39a7ca0c8fb3c317ab0e9cbbf06502d05d85c7379b2",
+      "bytes": 7160
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround008.lean",
+      "sha256": "e20e1fb2cc0654582fd85f721c397bb327ba3c33c2192c71e28c714c971efa75",
+      "bytes": 2096
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics008.lean",
+      "sha256": "270be4f9781c0fe4bd321ef03d8f0e3b8d6f1562aeb278226c75c1cffd000e87",
+      "bytes": 7868
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround009.lean",
+      "sha256": "c65c3126e026c81a18c6e2f599e4687e88ca2bfc2978025daaff1cc790c6c83d",
+      "bytes": 2096
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics009.lean",
+      "sha256": "2b13f02e681e227acc258db7df688ce4064e52a838dd879c6bbbbab5cd97adad",
+      "bytes": 7603
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround010.lean",
+      "sha256": "5708ff2e40a1695dc49805ada6e0a26ac8bdd06e856488c4d7b64cf2e1ea53c4",
+      "bytes": 2096
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics010.lean",
+      "sha256": "5e2d940d9c935bff82cb52ce7a0c4ecbe18d46b0e33e04e369c0921141d94e73",
+      "bytes": 7605
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround011.lean",
+      "sha256": "642803aed65e8e04615bcdc972bc972bcbd55e98fee681eb52d1a34dcf36acd2",
+      "bytes": 2096
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics011.lean",
+      "sha256": "a8d9ab56431f3d11d4ce8c10aa40dd4370d4671ada5596af20bab5fc221df855",
+      "bytes": 7870
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround012.lean",
+      "sha256": "ae322237c5a94ed9755ba5ca17e2b8000d4a59e2faaffa56d9a51c6069bf5cf6",
+      "bytes": 2096
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics012.lean",
+      "sha256": "863917d44ee4f9fa44cf1e9566d66c243d300927e4091fd08017a9fe2264ae53",
+      "bytes": 7330
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround013.lean",
+      "sha256": "4c5ac07bb69c3ac4f15f4d4d93a47d121ee2d8cc783ccb26009503a102da74f1",
+      "bytes": 2096
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics013.lean",
+      "sha256": "08efe5906d026e8da9534a266920bd4756ee6a74052d170480e94a060e05f58b",
+      "bytes": 7158
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround014.lean",
+      "sha256": "11d242cfbe835c12a622c1d0243f3a901285d020f3ddbe35620e1123c4bfe376",
+      "bytes": 2096
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics014.lean",
+      "sha256": "09a2664108c4c92e9cc404b7a49ec7506e66b2b5cfc90c4d8e12ac55fc69e293",
+      "bytes": 7780
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround015.lean",
+      "sha256": "ec5f988520b1daa616d1f86a85f1969bc4941224b27a7e14a6873ca6fb9a7007",
+      "bytes": 2096
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics015.lean",
+      "sha256": "73677b214ef8cb79f3571417028242be78f259f7c35163dcbc6a1ba27b2008b4",
+      "bytes": 7515
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround016.lean",
+      "sha256": "add3722fb56541bf4642abacc0fd82a2fa61dc76c5f366d903dd107ca45ecfd8",
+      "bytes": 2096
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics016.lean",
+      "sha256": "c5cf106d2c4ed6b32f040d07163f9cb202cb7ce28a308caf3d6baa19b8fd9800",
+      "bytes": 7517
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround017.lean",
+      "sha256": "7cc3cd23ba1753e23c42d8c4c698608c1b7e89e2c561a3c424c86a4342423e92",
+      "bytes": 2096
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics017.lean",
+      "sha256": "c539af5a3a90163a6f81b7d25f3908e2363873b78038db12efa97130ec16ea5b",
+      "bytes": 7870
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround018.lean",
+      "sha256": "3a1f463b6d246969f23c50cc4fcd5356b47139f290da08377bd6b61108c70659",
+      "bytes": 2096
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics018.lean",
+      "sha256": "8b51e76867f637dd08709c82b6722e2be1877470508fe50f47095a3a73454b45",
+      "bytes": 7420
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround019.lean",
+      "sha256": "682dfb97d2a55cc9aaf32a983dfec837d3bef7255876cf7253dcb28d139f61c9",
+      "bytes": 2096
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics019.lean",
+      "sha256": "01ea08de6bc1fe1404de45af2eba4595b1d6821ad8be9a6bc1a1da78a6f518b6",
+      "bytes": 7156
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround020.lean",
+      "sha256": "c8f571de23625cbcf8d446b0e7f021c4c52ee0b3ac23712a319f8bfa52b09102",
+      "bytes": 2096
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics020.lean",
+      "sha256": "99b65cb71e5107932b81f9d0467041fbaee92fd236db2767b86a20d59baba1ec",
+      "bytes": 7601
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround021.lean",
+      "sha256": "52290591e7594d5e0cb0924525b4bc0916c3e8ce6965d280768109e8822adb87",
+      "bytes": 2096
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics021.lean",
+      "sha256": "c3c30d911c52d0d32e1b594ebcd1abfb1d819abe6902eaf5d530179f267642c1",
+      "bytes": 7253
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround022.lean",
+      "sha256": "7ba3389ff42a1ccfafc0132bf353c2cc978cf36afe18ba2dfd8a6d3cfcc6bd9d",
+      "bytes": 2096
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics022.lean",
+      "sha256": "2fb70b475ed0dbb98abc2f435c2c71fa8929baadd3e48de2fe2e29ee3adc38eb",
+      "bytes": 7342
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround023.lean",
+      "sha256": "2db60e105e3707d504c27eb89f943394770f456803cb616ea84eea5e544e3742",
+      "bytes": 2096
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics023.lean",
+      "sha256": "d83cc837db9a9c8b8c80c639bf6cb93bff052f25da207cff278109e71b7e56dd",
+      "bytes": 7870
+    },
+    {
+      "path": "N6/Weighted49/ColumnGround024.lean",
+      "sha256": "80f398b60013643dc9f43176b3010bfe81ab4cdfc58f165fc66f700cad7f0ef8",
+      "bytes": 1176
+    },
+    {
+      "path": "N6/Weighted49/ColumnSemantics024.lean",
+      "sha256": "4555e727b72b156168fa95bedfd90f22073af09a3cddcc0a1995669e935741da",
+      "bytes": 4066
+    },
+    {
+      "path": "N6/Weighted49/Columns.lean",
+      "sha256": "96996ae7e246b424ccb08fcbc9e864830c4f0b896f16e2e959db7a63ead2a26c",
+      "bytes": 9846
+    },
+    {
+      "path": "N6/Weighted49/GateSemanticsHelpers.lean",
+      "sha256": "26dd6003b2f9c9a9217d8f5ce7629f6203feac058a568488be4259a077c6b51e",
+      "bytes": 1084
+    },
+    {
+      "path": "N6/Weighted49/FullColumnListsData.lean",
+      "sha256": "53b5a96269eba412dae6b99994ea981d363787746d86a6a31714e19c9befa9d1",
+      "bytes": 5510
+    },
+    {
+      "path": "N6/Weighted49/GateGround000.lean",
+      "sha256": "bd21697b326fa245d0f5911cd22505aa018cdec64f62afed74783175d3c56e64",
+      "bytes": 7659
+    },
+    {
+      "path": "N6/Weighted49/ArithmeticFoldSemantics.lean",
+      "sha256": "9b5d8d5ed642712a0c29d7583da5750cc864512e6d535442413f27c3f1ea03c3",
+      "bytes": 4255
+    },
+    {
+      "path": "N6/Weighted49/FullColumnLayouts.lean",
+      "sha256": "706470452368594411d49ddbaf3594645a37fbd5e72298524fec75b0e16feda2",
+      "bytes": 640
+    },
+    {
+      "path": "N6/Weighted49/GateTransfer000.lean",
+      "sha256": "bac4c1188d8d5c251067a667e8c5944fb0c71d48936897f2f042b32fb0611173",
+      "bytes": 4984
+    },
+    {
+      "path": "N6/Weighted49/MonomialBase.lean",
+      "sha256": "2bdae82d0c5e1dcca5c064bf00bd151386015ff74940fa5ccb7eb9d936b8e9bf",
+      "bytes": 609
+    },
+    {
+      "path": "N6/Weighted49/MonomialGate000.lean",
+      "sha256": "03521871f45f13e49435c154156aa51ec0e54551facb9d94a70fc951afef9ef5",
+      "bytes": 4367
+    },
+    {
+      "path": "N6/Weighted49/MonomialGate001.lean",
+      "sha256": "38571957d9dfdafce1e9df1d87861f2c5111aed77e9213438f6102cbbb8857f6",
+      "bytes": 4370
+    },
+    {
+      "path": "N6/Weighted49/GateGround001.lean",
+      "sha256": "a93d5abc342948b4d4c803b3c24e43831f7f35b56b156f1d5465c9e53af361fe",
+      "bytes": 7557
+    },
+    {
+      "path": "N6/Weighted49/GateTransfer001.lean",
+      "sha256": "8008bd67b3e16f518fa4c7a60f0a0dfa166fe5765dfb6a4bf342dda66601ff4f",
+      "bytes": 4984
+    },
+    {
+      "path": "N6/Weighted49/MonomialGate002.lean",
+      "sha256": "0f02ea1501c099e4b8e1b7fac61984e4aa79b579b1470965667921539c943853",
+      "bytes": 4370
+    },
+    {
+      "path": "N6/Weighted49/MonomialGate003.lean",
+      "sha256": "77e84c623bab8f50705374f68e203779f25d95efed5926ea053281ddbfda638c",
+      "bytes": 4370
+    },
+    {
+      "path": "N6/Weighted49/GateGround002.lean",
+      "sha256": "8b6a9ed1a3c759d8c9d56e467631f27d955adce38be209195b0a944f7b99bb16",
+      "bytes": 7557
+    },
+    {
+      "path": "N6/Weighted49/GateTransfer002.lean",
+      "sha256": "8671c02ef31336da2838a37f6b75a5336d0958c6752261145fa5a534f41900cb",
+      "bytes": 4984
+    },
+    {
+      "path": "N6/Weighted49/MonomialGate004.lean",
+      "sha256": "5d2bb22b9f4817ad4dcbafee0ac0d25be572d7f6d86598b5637116d5c5ea11f0",
+      "bytes": 4370
+    },
+    {
+      "path": "N6/Weighted49/MonomialGate005.lean",
+      "sha256": "ce39774732530a3a48b6181d08a57ebf8411483dade72d77259164ca078c5388",
+      "bytes": 4370
+    },
+    {
+      "path": "N6/Weighted49/GateGround003.lean",
+      "sha256": "ef3a451eb955ae03e0c67c74751ceaa1a29dff20f95b3e06f6793ab657d0eb50",
+      "bytes": 7557
+    },
+    {
+      "path": "N6/Weighted49/GateTransfer003.lean",
+      "sha256": "c8d7d4ce366540c826f521b74be142bf7d443270cc4e54559a80c623a5b402f5",
+      "bytes": 4984
+    },
+    {
+      "path": "N6/Weighted49/MonomialGate006.lean",
+      "sha256": "8ad1db432824e22435fe512ca889093019edbdc9238175af0d0d7801c35c02c7",
+      "bytes": 4370
+    },
+    {
+      "path": "N6/Weighted49/MonomialGate007.lean",
+      "sha256": "3db629fc536d4074bce6db3112cba58dfaeba653ab932b585a7d43218af82e08",
+      "bytes": 4370
+    },
+    {
+      "path": "N6/Weighted49/GateGround004.lean",
+      "sha256": "0800b74360230d50298f057212cc509790072a9da29f5db5e0e5f4d4675c1854",
+      "bytes": 7557
+    },
+    {
+      "path": "N6/Weighted49/GateTransfer004.lean",
+      "sha256": "9ba890d0aaf795c96c430ac343eecd25374a61ca0a0f91f721ef3a503565b590",
+      "bytes": 4984
+    },
+    {
+      "path": "N6/Weighted49/MonomialGate008.lean",
+      "sha256": "54c984f6bd3c48dfc679b48d37ef5cb2e13bbb9c5613f5f35a7c65a31438d5c6",
+      "bytes": 4370
+    },
+    {
+      "path": "N6/Weighted49/MonomialGate009.lean",
+      "sha256": "3b9540ecd7949f5e3f811760c7c5812d445ed08a9a0db232f3b367f886480068",
+      "bytes": 4370
+    },
+    {
+      "path": "N6/Weighted49/GateGround005.lean",
+      "sha256": "b044313f4ee602af602d98cfcd128531479de0f4e695b21995aa87912fd6f429",
+      "bytes": 7557
+    },
+    {
+      "path": "N6/Weighted49/GateTransfer005.lean",
+      "sha256": "55408d6efcbdaa7119a5b928cab6facd713c1a866a1622bacbd35a6088595219",
+      "bytes": 4984
+    },
+    {
+      "path": "N6/Weighted49/MonomialGate010.lean",
+      "sha256": "4d29eb2a620e04a397d4a2f56e33f88b7d577b5476f0ad37831ebc20a30238e6",
+      "bytes": 4370
+    },
+    {
+      "path": "N6/Weighted49/MonomialGate011.lean",
+      "sha256": "a2c239b8c5abac5e3c6f1141cac99536209dfae775714229016b0d2a38e8b684",
+      "bytes": 4370
+    },
+    {
+      "path": "N6/Weighted49/GateGround006.lean",
+      "sha256": "9356e45a21f2178d57fe9507b53e01ac729e6b5cb84cc8c7e98ccf997ee0a53a",
+      "bytes": 7557
+    },
+    {
+      "path": "N6/Weighted49/GateTransfer006.lean",
+      "sha256": "a35a3c2b04b60451e6468b4f638811a38421fe42f2674e5e04996de2e8901d80",
+      "bytes": 4984
+    },
+    {
+      "path": "N6/Weighted49/MonomialGate012.lean",
+      "sha256": "e5ab4c67e22c2dff67947d57e66c10bb5bd14d42c21c67780cef4c12ae83b03d",
+      "bytes": 4370
+    },
+    {
+      "path": "N6/Weighted49/MonomialGate013.lean",
+      "sha256": "5abaddd4b88eb1c81c369aed27c0c96f9e3b5b125639bfb3280ffb3b5a18f9e8",
+      "bytes": 4370
+    },
+    {
+      "path": "N6/Weighted49/GateGround007.lean",
+      "sha256": "76e65627c3f81b1889f5583493e3f04a7d23133b8071c823688903a3f74b5afd",
+      "bytes": 7557
+    },
+    {
+      "path": "N6/Weighted49/GateTransfer007.lean",
+      "sha256": "7939f9ca1405302483ab4dbc10426cab88e39c2978ed2bc1fd013ec62aae59fe",
+      "bytes": 4984
+    },
+    {
+      "path": "N6/Weighted49/MonomialGate014.lean",
+      "sha256": "31aae948df9cd18e591e8914fbccbf3d3a55c57512f3defbb9893bef109daadc",
+      "bytes": 4370
+    },
+    {
+      "path": "N6/Weighted49/MonomialGate015.lean",
+      "sha256": "5057c8ce17a71b1bb599bb60a5640a6edb9c09c7916475898ec01ac59ac8a532",
+      "bytes": 4370
+    },
+    {
+      "path": "N6/Weighted49/GateGround008.lean",
+      "sha256": "4edf9dbaba9746559fc57a1d9898a21d92409395ebfd88a8217724ea44c65438",
+      "bytes": 6831
+    },
+    {
+      "path": "N6/Weighted49/GateTransfer008.lean",
+      "sha256": "ba515f5fcb71b5f9af5207bc1c8f467eeb5ae534e70837580f3f807e2310f39b",
+      "bytes": 4978
+    },
+    {
+      "path": "N6/Weighted49/MonomialGate016.lean",
+      "sha256": "18245914c6a79fccead7d014857b63087c9bb9793e3f4262de837e78622d57b7",
+      "bytes": 4370
+    },
+    {
+      "path": "N6/Weighted49/InitData.lean",
+      "sha256": "7dad540ccb53634f9dc1ee4ece566912995ff93ffadbf6b7d789bdfe606d6147",
+      "bytes": 7775
+    },
+    {
+      "path": "N6/Weighted49/InitGround.lean",
+      "sha256": "7308781eccd4de7f92e81d4d28789909e1c0895f48d2a642fa17057ce6180ed2",
+      "bytes": 812
+    },
+    {
+      "path": "N6/Weighted49/InitTransfer.lean",
+      "sha256": "ab5942d767b9123820d7c4cc5acf77ad3683fa96cde90720e936fc82ba058faa",
+      "bytes": 792
+    },
+    {
+      "path": "N6/Weighted49/DInitialization.lean",
+      "sha256": "dd25b6eae015147e5c029b0710a2e2281131cbcb568c9f20acb9c6b7e0345cc5",
+      "bytes": 7523
+    },
+    {
+      "path": "N6/Weighted49/GateGround009.lean",
+      "sha256": "65056a976f3ba0b62874deb8f9cac851823b87553b9b3649048bf6597226c9cd",
+      "bytes": 6117
+    },
+    {
+      "path": "N6/Weighted49/GateTransfer009.lean",
+      "sha256": "9b98444ce9bb9a452ca4151ce7e779d7e8de0e366a3a84b086e6b2c5e1422350",
+      "bytes": 4984
+    },
+    {
+      "path": "N6/Weighted49/KrylovGate000.lean",
+      "sha256": "54d69fd414a5d263a94effe5995b3e9cc3444cd06e9389e1345c3de4099532ae",
+      "bytes": 6165
+    },
+    {
+      "path": "N6/Weighted49/KrylovGate001.lean",
+      "sha256": "bdc5f535b6926f4a40857ed30458e8e2e3bcbe49ada9d312e04c42dd4c387ace",
+      "bytes": 6158
+    },
+    {
+      "path": "N6/Weighted49/GateGround010.lean",
+      "sha256": "d58afba45c63198397f730f1ad630f78f8762c1e10b7314d556b1b584af09e65",
+      "bytes": 5389
+    },
+    {
+      "path": "N6/Weighted49/GateTransfer010.lean",
+      "sha256": "155db7a30c1d0a308f1b1830b887b1961f8ba8a9eb479be4317e8200ab988e45",
+      "bytes": 4394
+    },
+    {
+      "path": "N6/Weighted49/KrylovGate002.lean",
+      "sha256": "780b6bf58f1a9c8964083d4f322eaffa70d9ad76e7cd2f10b2397224a59a0200",
+      "bytes": 6206
+    },
+    {
+      "path": "N6/Weighted49/KrylovGate003.lean",
+      "sha256": "5b438610b0e7e10befa40af1611757b4d8b40fdf7402018c5a04a54b9459b63b",
+      "bytes": 6168
+    },
+    {
+      "path": "N6/Weighted49/KrylovGate004.lean",
+      "sha256": "236df53b99168f026ec052acae7f7ced06c8bec121c753f73944fcd2f97803bf",
+      "bytes": 2493
+    },
+    {
+      "path": "N6/Weighted49/WeightedCoordinates.lean",
+      "sha256": "7807fa4d2e0033881e67150a7f23589aeaac0ef0e89a4c19f07157161191fc98",
+      "bytes": 1856
+    },
+    {
+      "path": "N6/Weighted49/RowGround_P35.lean",
+      "sha256": "1eb16ec11406ae7843209d00b0e24ec1d18a59ca050b4c6742424ce5454fb9ed",
+      "bytes": 645
+    },
+    {
+      "path": "N6/Weighted49/RowTransfer_P35.lean",
+      "sha256": "a24064b1372a5f3869c92d0ebe55ee8cbd3863093ffdc2c22ce13baf6ce474ea",
+      "bytes": 886
+    },
+    {
+      "path": "N6/Weighted49/RowGround_c.lean",
+      "sha256": "0d02404b598036510df5cd9f8ee6d2afa86eb15e077a5e6049d72728b3ec2241",
+      "bytes": 814
+    },
+    {
+      "path": "N6/Weighted49/RowTransfer_c.lean",
+      "sha256": "15714bae51e1bc775761bbf7fc0c87be3fb2c5a69d3f3e3a9ee627a959629956",
+      "bytes": 868
+    },
+    {
+      "path": "N6/Weighted49/RowGround_k.lean",
+      "sha256": "8ce01df39fbcc92cd31d4213be9f09535e032fce679e7d566444c1e38ec19bdc",
+      "bytes": 814
+    },
+    {
+      "path": "N6/Weighted49/RowTransfer_k.lean",
+      "sha256": "68be6baedd9681fe0acdc1b04e31a4cb57d6652ba08ad37c92115781f139551d",
+      "bytes": 868
+    },
+    {
+      "path": "N6/Weighted49/RowGround_e.lean",
+      "sha256": "ea4c43d7d2bb294725bfb6e3e50876f4392c9f8e1e3590043cde9f7ffdd18ed7",
+      "bytes": 814
+    },
+    {
+      "path": "N6/Weighted49/RowTransfer_e.lean",
+      "sha256": "71086a45c835d9c2c14475377b61adc9e38614dbe9d49c8773b4365202d4b316",
+      "bytes": 868
+    },
+    {
+      "path": "N6/Weighted49/ActionGround000.lean",
+      "sha256": "63fdc83fed628f59ffc9c2ada1ee2a814cb9810e50b0eb5a4fd1e0189830f2b9",
+      "bytes": 765
+    },
+    {
+      "path": "N6/Weighted49/ActionGround001.lean",
+      "sha256": "75a8029ccb7aa7ff9423c947d1f32addd6869f04684a0a289edd0c348ffe85f5",
+      "bytes": 765
+    },
+    {
+      "path": "N6/Weighted49/ActionGround002.lean",
+      "sha256": "e1df8e1cc45fa5df0f30dd466873808bfac41bb7ba00bc6d218e0891810fcb7b",
+      "bytes": 765
+    },
+    {
+      "path": "N6/Weighted49/ActionGround003.lean",
+      "sha256": "4b0bb784d11e6d4e60fe16aaa55110b84afeeab7287bd3f20efcfc6412b3c3e4",
+      "bytes": 765
+    },
+    {
+      "path": "N6/Weighted49/ActionGround004.lean",
+      "sha256": "c0a94284d4e32d88ae815429375ce95592aa551272a4ed4cd0f7ebfea287e405",
+      "bytes": 765
+    },
+    {
+      "path": "N6/Weighted49/ActionGround005.lean",
+      "sha256": "15a0878f75fc2f19bbfefe66e8f87803972dc60477e4af804e0fa5770a7431cb",
+      "bytes": 765
+    },
+    {
+      "path": "N6/Weighted49/ActionGround006.lean",
+      "sha256": "8623854604a2958faaed8a2956a8858570c1b8b4c58ca198765e56d3630ad118",
+      "bytes": 765
+    },
+    {
+      "path": "N6/Weighted49/ActionGround007.lean",
+      "sha256": "0875448196e111950e3905c30bf93d02dfe5c46847f187a23887ef795d28692a",
+      "bytes": 765
+    },
+    {
+      "path": "N6/Weighted49/ActionGround008.lean",
+      "sha256": "0d01800d0915b74ff61342b11c0d1535dfb26ebddb74a1a79231d4c01c12fb5b",
+      "bytes": 765
+    },
+    {
+      "path": "N6/Weighted49/ActionGround009.lean",
+      "sha256": "f7347dc73e290c86374cdd6095e12741557a866abdd1612fc50e7e0e28be1c7e",
+      "bytes": 765
+    },
+    {
+      "path": "N6/Weighted49/ActionGround010.lean",
+      "sha256": "2b7892c0b00a6d2157dd4d5b1609d105c46db79a3cc9f1c0cb585b659a35c04a",
+      "bytes": 765
+    },
+    {
+      "path": "N6/Weighted49/ActionGround011.lean",
+      "sha256": "ae20980f63792c2e29a43fb97913b4357d2407003d939d348273000ce4f02c0e",
+      "bytes": 765
+    },
+    {
+      "path": "N6/Weighted49/ActionGround012.lean",
+      "sha256": "d2732a87a46c9efc195166f02a79030217e1a0102baf7dd6a104e396b97f38be",
+      "bytes": 357
+    },
+    {
+      "path": "N6/Weighted49/ActionSemantics.lean",
+      "sha256": "b42c93ce282cdf410cccdc53a83b65a6010085245125f937e92fcfb631bef7b3",
+      "bytes": 56414
+    },
+    {
+      "path": "review/Dcolon1Chart.lean",
+      "sha256": "c878ff7a17cd342e62d1ec2ee5b4ea48286aa360033a074d96255eb2ffb9e3df",
+      "bytes": 1419
+    },
+    {
+      "path": "N6/Quartics21/Semantic000.lean",
+      "sha256": "0a8183b15697eecd8c5f605d2f422c5dcd873b722e4ba71f56cccb78703174cf",
+      "bytes": 13436
+    },
+    {
+      "path": "N6/Quartics21/Semantic001.lean",
+      "sha256": "fa6c95a3b27f8322c31cdbc4230ae671385f940854e62c6172775b354f1199e5",
+      "bytes": 13435
+    },
+    {
+      "path": "N6/Quartics21/Semantic002.lean",
+      "sha256": "1fb89922fd78930fe77a391f68d145f7148571b8895125dc35eb32f50a9a7113",
+      "bytes": 13440
+    },
+    {
+      "path": "N6/Quartics21/All.lean",
+      "sha256": "bfb6da22ebb683de84411c6181ae9e1b36832b9743db85c6f25f974fd105f24a",
+      "bytes": 1218
+    },
+    {
+      "path": "N6/Weighted49/ParentLocalData.lean",
+      "sha256": "d425e0fd306e4f29af274c145ae4ab90c7cb6d84c6a42dc3fc6ac1c0c76406f4",
+      "bytes": 328966
+    },
+    {
+      "path": "N6/Weighted49/ParentLocalGround000.lean",
+      "sha256": "3592a727b8b109c9637920d3ffc9c1cb02742c4d6c2b6b69518745a9ce6adcb7",
+      "bytes": 782
+    },
+    {
+      "path": "N6/Weighted49/ParentLocalGround001.lean",
+      "sha256": "f43bb3b7496539f3a4239f4f344af96fe7d940a968ecd1cceb6fa32859b0572c",
+      "bytes": 782
+    },
+    {
+      "path": "N6/Weighted49/ParentLocalGround002.lean",
+      "sha256": "156ca2ad8d35246c8dc0e5d3e2f11754c41178dfb0a54af3e935fb0ebb4e6850",
+      "bytes": 782
+    },
+    {
+      "path": "N6/Weighted49/ParentLocalGround003.lean",
+      "sha256": "bdafb4877199d933d05d5cae254b10e7df2d1f93eefadb2a205277c06b69eb7f",
+      "bytes": 504
+    },
+    {
+      "path": "N6/Weighted49/ParentsFromInputs.lean",
+      "sha256": "c378c274f0a13906c229ca8d7ff8e94867a34f5487b82feee58e0e3666b3fcf2",
+      "bytes": 29014
+    },
+    {
+      "path": "N6/Weighted49/ActionsFromInputs.lean",
+      "sha256": "aa46029e23450d3c4c5db69b9d3b10bfaa484d9d50084b2b7e03f00cb58570f0",
+      "bytes": 738
+    },
+    {
+      "path": "N6/Weighted49/Cover.lean",
+      "sha256": "50d7775b008d6e7bc6302c53fd160691acb088570c081ec512d2785c7d0aff1c",
+      "bytes": 27815
+    },
+    {
+      "path": "N6/BranchEval/B0/Complete.lean",
+      "sha256": "82a466479f466b92bf77c1d5f15665f176f45e279366959335fa24223181f596",
+      "bytes": 1845
+    },
+    {
+      "path": "N6/BranchEval/RealValues.lean",
+      "sha256": "7f07f0032d36248121c0742d68e23ecf61a37f2813a6372d011108e6b7b0887c",
+      "bytes": 2354
+    },
+    {
+      "path": "N6/Univariate/Branch0Checks.lean",
+      "sha256": "ab3ac3cfcf1195704bf41869e91f393204f7b3fe64d05b5da86dce2bb5446d3a",
+      "bytes": 385
+    },
+    {
+      "path": "N6/Univariate/Branch0.lean",
+      "sha256": "8c49e738d38961490348e0aeb6b62c9d1bbb3b0d98167b033db0412ee74deee5",
+      "bytes": 538
+    },
+    {
+      "path": "N6/BranchEval/B0/PhysicalValue.lean",
+      "sha256": "f9934a5ee1f3f9f38c0e402e38d3c24bbb80ca0a9a7070975ea40b0470438956",
+      "bytes": 2701
+    },
+    {
+      "path": "N6/Weighted49/FactorData.lean",
+      "sha256": "94b09ea5dc74d5cd727cee1f42c5ebac2f020f8b7d8c1f2c9792dbbf5d9526b7",
+      "bytes": 7067
+    },
+    {
+      "path": "N6/BranchEval/B0/FactorBindingGround.lean",
+      "sha256": "86fb471d161cc0263573418c71d2eb054a1afab05764c1bb9218d4b560102512",
+      "bytes": 295
+    },
+    {
+      "path": "N6/Weighted49/FromStationarity.lean",
+      "sha256": "ac8064d8583d2990828b5ba84042939a4d4e6546460c3a172bba4af55d7c3078",
+      "bytes": 2670
+    },
+    {
+      "path": "N6/Analysis/SecondMoment.lean",
+      "sha256": "2179750ca8fe80bae23a721b8acaf7f2cf97cbb3d3ce8f4e1ac2cb9743c97f72",
+      "bytes": 3378
+    },
+    {
+      "path": "N6/BranchEval/B0/FromMaximum.lean",
+      "sha256": "74ca06340969e28cc8d7c67eaf9cfad517ae9ce57a49f4843c40f9e3a7ae95ae",
+      "bytes": 2609
+    },
+    {
+      "path": "N6/BranchEval/B1/PublishedData.lean",
+      "sha256": "f8c95d2c527933759fa42646ca9ad49b80da2621bdbfd6d2a69642db7803641b",
+      "bytes": 512
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramInputs.lean",
+      "sha256": "b2a1286f681309eb8b86c84d40b2ef65c7dc2a646929f32e9f389bd9c0a98af9",
+      "bytes": 2314
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramNodes000.lean",
+      "sha256": "5a3d942f60f37f33c5020962a7c104c6ef5a5555230ebf3d7ad7ec7287bbbcfe",
+      "bytes": 36461
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramNodes001.lean",
+      "sha256": "88e4e37accd54fd4294b4386911f4f619968fb899390684cbd4760544ffd6ce1",
+      "bytes": 36656
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramNodes002.lean",
+      "sha256": "f51d35b49cc8130c6bb66110b3ee4272cefb3b5f2403011735430aaebbf92add",
+      "bytes": 36756
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramNodes003.lean",
+      "sha256": "965bfbc297f4b62217af47ce953e6a7ca6de3c5dea03e559632f3a99fa9028ba",
+      "bytes": 36659
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramNodes004.lean",
+      "sha256": "9b2cb04bc0d56d96b154306eacae6ea5c6558db61358a4fcb21acf8240c0b08f",
+      "bytes": 36703
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramNodes005.lean",
+      "sha256": "84c24b82f66b73bbaacb547f93045bf612ff0f01a153f83250f0d55bec3b177f",
+      "bytes": 36705
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramNodes006.lean",
+      "sha256": "da54566551fbf7e2dbd9a817778b57a842152fd09b8d8726e88d37977c9a4469",
+      "bytes": 11603
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramData.lean",
+      "sha256": "805e56bfd11bdfeeea23092c9858f621d1e1246b4d917d0304e2955ca94da60d",
+      "bytes": 10237
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramSourceData.lean",
+      "sha256": "2ea44ac46a6674b8abf40a8644478bd43c9d4095e7e991398d62c62d449c8337",
+      "bytes": 40972
+    },
+    {
+      "path": "N6/BranchEval/B1/PublishedGround.lean",
+      "sha256": "3047349079f0178f33f60e94d9f2042b5979611165730dac958369f2e88f996b",
+      "bytes": 899
+    },
+    {
+      "path": "N6/BranchEval/B1/EndpointDefinitions.lean",
+      "sha256": "b66d9eb60402c77fa2f419289e0e0604350ef51835ad4164fe662798e8785f7a",
+      "bytes": 8417
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramBlock000.lean",
+      "sha256": "5454dfea70b6ce22a74bc4e2195ca920dbbe8a84de23feb26b47de81e1bc391b",
+      "bytes": 389
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramBlock001.lean",
+      "sha256": "e50aa33364d0cc754aca8b1f65e66e87a8c31673ca008f973fedc09708786198",
+      "bytes": 390
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramBlock002.lean",
+      "sha256": "0dbde9e5030036b0d8ebd01cf52335288cb66bed04c5d424ab284cdcf26fda21",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramBlock003.lean",
+      "sha256": "53405115b3209d8b070e65a5456d20be01c0fbc173dc37d37ecbd194f5979137",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramBlock004.lean",
+      "sha256": "547cf070ff3fa515be7d6cd28a837906b650e7a5abb8ed8449de85cada4096c3",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramBlock005.lean",
+      "sha256": "ae8f2c59afd9919cc762d7ea3a02994e51314b5f9d6241ca2883c1c028d7d6e2",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramBlock006.lean",
+      "sha256": "2dd4af10a30d2370fa415d0452a5325e09271ded9cce9b111d38b375d1cb2acf",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramBlock007.lean",
+      "sha256": "bc47f29f2b2c1188f63e830ac14f94fdfc04dbbac6cc018542779849250708b9",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramBlock008.lean",
+      "sha256": "a7c0ec93de0cef1c26ccd1a193d3008c10be3d573f85280278efc03cf10e572d",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramBlock009.lean",
+      "sha256": "0b40577ade1c5792823e764faf87f30a178c83f6cd4c6178be0bebf4a8f1b3b0",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramBlock010.lean",
+      "sha256": "a8b9344bb03af3dd147154840f15aacb764fed52990787327cea31977114d0e8",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramBlock011.lean",
+      "sha256": "d906a503524ce7f49a818d1a4016c806497c2399007b8bbdab4536fe36746fc8",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramBlock012.lean",
+      "sha256": "8d2691fa2eff023204fea2517c6e0487f190989161cbff921381e88a3301f175",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramChecked.lean",
+      "sha256": "076141de5c5cf04a4e5f917f93c7614804ca35d28fc121fb0b0be682eece71ed",
+      "bytes": 1754
+    },
+    {
+      "path": "N6/BranchEval/B1/ProgramBindingProbeGround.lean",
+      "sha256": "9bd269251254413d7f77d7939c7e015c09893f4ff512f6fd6ae3a0abaec1a144",
+      "bytes": 1800
+    },
+    {
+      "path": "N6/BranchEval/B1/EndpointSemantics.lean",
+      "sha256": "156a3bb967c73262993416f0a99546f526e29d1cf23f36e386d3ef8cca459bb7",
+      "bytes": 13455
+    },
+    {
+      "path": "N6/BranchEval/B1/ProjectionData.lean",
+      "sha256": "810ef8848ca3a702e508a8c78b2ccdf97be1151882eb8c1ff9ec4f28f17666c3",
+      "bytes": 116747
+    },
+    {
+      "path": "N6/BranchEval/B1/ProjectionGround.lean",
+      "sha256": "597fac2a37a7e240ab4f737e62d94c4e645d2b1c5db5b764ee8f63e899716f33",
+      "bytes": 1216
+    },
+    {
+      "path": "N6/BranchEval/B1/CoordinateProjection.lean",
+      "sha256": "a9d626181b43a15442d2a90ef16fc816de3e0d40f72764aa8019fa05476ddcdf",
+      "bytes": 4070
+    },
+    {
+      "path": "N6/BranchEval/B1/OriginalBindings.lean",
+      "sha256": "30139326c176efca984813cfdb8847901d063f2d92cb1ed2b90092b65f376a9e",
+      "bytes": 1499
+    },
+    {
+      "path": "N6/BranchEval/B1/Complete.lean",
+      "sha256": "0dfd52ef150eecace48b0f406fc499acac443f72aa1a0e539b18f9e21688140a",
+      "bytes": 1789
+    },
+    {
+      "path": "N6/BranchEval/B1/PhysicalValue.lean",
+      "sha256": "a0b694f8c39cfccf6416c35407ed7644e3ded7f7cb25910163e77e5f025b9390",
+      "bytes": 1252
+    },
+    {
+      "path": "N6/BranchEval/B1/FactorBindingGround.lean",
+      "sha256": "a87ac98c99439a8500ebbb377e6aad640c15fc2a1c4c940cc5f679c2058a9afc",
+      "bytes": 295
+    },
+    {
+      "path": "N6/Analysis/EndpointExclusion.lean",
+      "sha256": "f018152d139e079795535b08f068380e7ec899f1dbf1ca8e0d8d897bc271e673",
+      "bytes": 856
+    },
+    {
+      "path": "N6/BranchEval/B1/FromMaximum.lean",
+      "sha256": "aa8a14ccab7b069011c47a463755b2ccf12dfac82a8bd4de4f8b5b2c7f0d8d0d",
+      "bytes": 2432
+    },
+    {
+      "path": "N6/BranchEval/B2/PublishedData.lean",
+      "sha256": "0d3f0c5489425b64a475d7db4ab499857877790f31279e21c602954d2b539d23",
+      "bytes": 635
+    },
+    {
+      "path": "N6/Univariate/Branch2Data.lean",
+      "sha256": "c693ad2a36eee04aa450e21e8f34648940bdfbd6957362aa647f557116fc790a",
+      "bytes": 651
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramInputs.lean",
+      "sha256": "0de35b35a7f0ec555db1c74fc970fb0c4fd16095bc0acc990b9f9d0374961a10",
+      "bytes": 2514
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramNodes000.lean",
+      "sha256": "2d479f6baabe452fb06a99caec1c405719987faa2815c0c9bbcf2181da5d4153",
+      "bytes": 42666
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramNodes001.lean",
+      "sha256": "4a4a1eaf1cb363880713bdacf245264192cfce2764450f32e9fe61d9949514b1",
+      "bytes": 42956
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramNodes002.lean",
+      "sha256": "fff87ce23950fb5483454f51a68b82b37f58fdd204d02c6686a07c1bbf81fef3",
+      "bytes": 42803
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramNodes003.lean",
+      "sha256": "3f77b805d37beb20c43833072434122d7ce7ec37b29a0d833b308be3b65ba4f0",
+      "bytes": 42904
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramNodes004.lean",
+      "sha256": "ed8a20e64f5d1c569c89c7d2bf26e15d39569d92b67ce022d4aa30e68262546c",
+      "bytes": 42163
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramNodes005.lean",
+      "sha256": "ceae6c23b878ab92d9432d57696d313f6b57581698fd0aa3c49f24c2c462a479",
+      "bytes": 42424
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramNodes006.lean",
+      "sha256": "3554d30b3ab8f141c1c34b5128594446dbd2106d17be0bbdc58f545332a60cfa",
+      "bytes": 20411
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramData.lean",
+      "sha256": "66fd37b6470162aaf413617494cbb37de11d20ffcc7f90d4bd4fcc3528e34fa5",
+      "bytes": 10447
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramSourceData.lean",
+      "sha256": "e5027cc4e5a52860b417d099cc2d6cfe4f92e0acee5ceb551ca25b16ba0c445d",
+      "bytes": 42187
+    },
+    {
+      "path": "N6/BranchEval/B2/PublishedGround.lean",
+      "sha256": "91d13938b3d0eb6b164b2d6d7a05a683b6def1a42ca5cc333ba20e788cfb4151",
+      "bytes": 1155
+    },
+    {
+      "path": "N6/BranchEval/B2/EndpointDefinitions.lean",
+      "sha256": "4b46b07fd934c0f8c095ff34e0c5073a4ecb39b3fd81e37aeb055de47e97d7cd",
+      "bytes": 8545
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramBlock000.lean",
+      "sha256": "5de9d49f167f6a03500ed5b337e3928dc00c1ab138ab11ddf43a1aa57d2b4969",
+      "bytes": 389
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramBlock001.lean",
+      "sha256": "5262960fa301b9221970bf950ec7a806dcabff8ac84783ad030c3963ad4e28aa",
+      "bytes": 390
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramBlock002.lean",
+      "sha256": "74fec9a76a3029c5bcc404a2efc534ce2ebb0b7d9eaa46410aecb351db8221e9",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramBlock003.lean",
+      "sha256": "31541a8aeeb1a44b4e67ce4abdf426aa3aba10d4c8cdf11876376a9006dcc3c5",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramBlock004.lean",
+      "sha256": "3b9fbddeedcd3bcef4dcd5f84d9ff6876e338a71507e5128f182a706e4dc6b41",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramBlock005.lean",
+      "sha256": "4622ec8f39102615bb8d0cf61ceda3b3fa3af26cce344b6c13410fd8d714c123",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramBlock006.lean",
+      "sha256": "52d5e0f360f79d47e8c861ec366bc3c8b8a37e983d3e6691fbf94b6c8ac217de",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramBlock007.lean",
+      "sha256": "ae40901aa3bd962e4cadb6e7f82cb657d3b930c31a44991ee20f255895fb357e",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramBlock008.lean",
+      "sha256": "12a6fe3b586b3aa79e6619141490c1c4ecd88cf736dafe87b882df7005bdecba",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramBlock009.lean",
+      "sha256": "20d2eaa84842798d7ce9687b518c3015f011ea6d1064915b30eb0a9c81cc530f",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramBlock010.lean",
+      "sha256": "47d2bef9b3f9184172e022cd556640bf1a195696c832ee1d98bb6e9c9b1d48e4",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramBlock011.lean",
+      "sha256": "a5e95e27c48a0e3ef44cf9eae3fa2fee6c8903818a273cd6c325e85b112851fc",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramBlock012.lean",
+      "sha256": "6cd717e01bc5afd5a7008611433ab85ae242dec80e2c0f77914c924ee7b7d061",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramChecked.lean",
+      "sha256": "24cb276009631c4cc89ee5a7ac97d10769a9cd06e0de50e9eaf1dbe4377419d4",
+      "bytes": 1754
+    },
+    {
+      "path": "N6/BranchEval/B2/ProgramBindingProbeGround.lean",
+      "sha256": "358e682f36f405bd583942caba9ce75d19f00ac93ca35387154f5b47444f5346",
+      "bytes": 1918
+    },
+    {
+      "path": "N6/BranchEval/B2/EndpointSemantics.lean",
+      "sha256": "30691ed445a057a34ff923d7326bd2baae9c276826f14f652f43ad5e6e0b773b",
+      "bytes": 14276
+    },
+    {
+      "path": "N6/BranchEval/B2/ProjectionData.lean",
+      "sha256": "c4359c75fcf91fdb118bc338cb04777c5248f818bec50736000d3157de610e2f",
+      "bytes": 113298
+    },
+    {
+      "path": "N6/BranchEval/B2/ProjectionGround.lean",
+      "sha256": "4331625a45f9000346b1f57496a7baaac15d9c410b892b3380b59ce38173f615",
+      "bytes": 1216
+    },
+    {
+      "path": "N6/BranchEval/B2/CoordinateProjection.lean",
+      "sha256": "628cceb285d27b9e05f9ba2f410c6c20717c33744c9ef20b392aabee1eb39913",
+      "bytes": 4070
+    },
+    {
+      "path": "N6/BranchEval/B2/OriginalBindings.lean",
+      "sha256": "72dc2729317b0badc1c012f5177b4c04d550fc744b36bdf0d87c60e325a46cb4",
+      "bytes": 1805
+    },
+    {
+      "path": "N6/BranchEval/B2/Complete.lean",
+      "sha256": "1c5ac7bbdd7137810a9e69268af84d0518a9f702665e3f560ca9e2a959f0180f",
+      "bytes": 1845
+    },
+    {
+      "path": "N6/Univariate/Branch2Checks.lean",
+      "sha256": "a3d90cd8bdb33e92a7525044e47c6f765cfec936ca42ba5045e9b920edd517bd",
+      "bytes": 385
+    },
+    {
+      "path": "N6/Univariate/Branch2.lean",
+      "sha256": "ae2bdd29f869d3da698b921a8384079ec6fb12d9e3faa0d276cbd003c3dc5bf7",
+      "bytes": 538
+    },
+    {
+      "path": "N6/BranchEval/B2/PhysicalValue.lean",
+      "sha256": "28ff682183fa60aade0ebee93d490f5ced8685615ddb5abfa7baae44fb22435a",
+      "bytes": 2701
+    },
+    {
+      "path": "N6/BranchEval/B2/FactorBindingGround.lean",
+      "sha256": "14dde36fa991b32f9302ee2b98afb7b3c8c80979f570b69db620fe919d20aaea",
+      "bytes": 295
+    },
+    {
+      "path": "N6/BranchEval/B2/FromMaximum.lean",
+      "sha256": "541c387613d4e8b66e1583b25135f14dcce69ec730a2141344305a9889833aba",
+      "bytes": 2609
+    },
+    {
+      "path": "N6/BranchEval/B3/PublishedData.lean",
+      "sha256": "4f6a0f44832bc88d177851ff5b51dcd055e6243f5669a3ffdcffc311bbc1fa0f",
+      "bytes": 1230
+    },
+    {
+      "path": "N6/Univariate/Branch3Data.lean",
+      "sha256": "450cc618464df7c015bba834361207e597932d2f0812d5f4862dd9a85e8ed6a8",
+      "bytes": 796
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramInputs.lean",
+      "sha256": "db6220e6f824799a26f7a55e1aa29fcb5f99781873a3cd3de40f298611c1e3d3",
+      "bytes": 4380
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramNodes000.lean",
+      "sha256": "2dc01cbe01e360760cdb74a83600d98d747c761b28eaccd2cc876bfc0ef4c092",
+      "bytes": 80195
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramNodes001.lean",
+      "sha256": "f3777f78aa430b1f22b688d2e3222d7d544070cca06b55e48fa4003ae5de097c",
+      "bytes": 83135
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramNodes002.lean",
+      "sha256": "67fb98fb97f29636c46189d336bf7700eaabb8ef0af2bfa5faf05a2401aec538",
+      "bytes": 85603
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramNodes003.lean",
+      "sha256": "20efec39a76da73aea1929f37a0ad4cb8cfd69261d511d53a189c51239180182",
+      "bytes": 81052
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramNodes004.lean",
+      "sha256": "1d4848ade5487a1685657c8cdecee8024822bb0d4b4ee3a24d0904e725514561",
+      "bytes": 77295
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramNodes005.lean",
+      "sha256": "ab60bab214cb214936e8b1f9f77fa71b53ff32e2796d2427d527f641659c34eb",
+      "bytes": 84387
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramNodes006.lean",
+      "sha256": "e9acac3b820f0b4150b3dec330afd2d2fe0a0041642ef5dd16d86121a0e3b6ef",
+      "bytes": 32436
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramData.lean",
+      "sha256": "5c27f43345edfeb48ffe1f8b32ae2134ca87db4420c689b8da69f14911c740ae",
+      "bytes": 10367
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramSourceData.lean",
+      "sha256": "f88affa919acd73a8baa8270fbccf25766ef93a8ba8aeee23d94ee72de6040c8",
+      "bytes": 41583
+    },
+    {
+      "path": "N6/BranchEval/B3/PublishedGround.lean",
+      "sha256": "f2a2b94ceff07301599c6c214b77899c3c0da98f19c1239cd0e1c2f301f90de5",
+      "bytes": 1044
+    },
+    {
+      "path": "N6/BranchEval/B3/EndpointDefinitions.lean",
+      "sha256": "50f37f1e08f399bfa58f513cbd9eaa96894dc291a29f9b8bcbb8154745ddde55",
+      "bytes": 8417
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramBlock000.lean",
+      "sha256": "516dce14197962ff331e9f176bc9ab8a771c0a3d7a6f5b0f53b32f3eae04e3dc",
+      "bytes": 389
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramBlock001.lean",
+      "sha256": "48238d548237c7ef9178e16e513c13c295f0f7ee16111c9e32f0eb5428219886",
+      "bytes": 390
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramBlock002.lean",
+      "sha256": "87371db1fbe2070d73fa6f80a5d769149c4e0ea69651a8daf2217478c97d5fa9",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramBlock003.lean",
+      "sha256": "39f7ac4a2280b57e2dfaae1d60b3798b945bd67f886b0eff76963413c96d8c16",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramBlock004.lean",
+      "sha256": "0045b7a7b5e7f2933e0e789488958a103b666ad2928e5e8ea65cb4656678998c",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramBlock005.lean",
+      "sha256": "1293842df5c2c0435d399f7c4f09981991fb203fc63ff3061033db75284caad8",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramBlock006.lean",
+      "sha256": "715ca90d68a7d89132eeb2d5d790ba85b1a4f6cf22399ab7c42d28431b3f916c",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramBlock007.lean",
+      "sha256": "d8252f7b75542d30b3aa2615e83d63a6737a6374139f48decd56db6268a8feb4",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramBlock008.lean",
+      "sha256": "3cca3ea96adec3d28de3737daef6d63889a81ddd70e0f334d7418675cdcb9793",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramBlock009.lean",
+      "sha256": "8df920b19233d78c180f439f48c7f973ed8eb6f850c581d17200a53c7256e0d9",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramBlock010.lean",
+      "sha256": "823b7ef7e8c47f89d794e4f836c9a3263abf6ca7a78597cd914be0bb6ae133b7",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramBlock011.lean",
+      "sha256": "5fa060e216c90c0d65442be1d522581d31d9afad8cb5ce55b16bfb81be791ea2",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramBlock012.lean",
+      "sha256": "9216a2da3b8556a2fdec69eeda8d72b3012d37ff1b19703c8ed7f3c6dd8f6a11",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramChecked.lean",
+      "sha256": "203edc120acb1c61fdce5752164d4a61288b1e8f9c5103ec819e0c0c37406817",
+      "bytes": 1754
+    },
+    {
+      "path": "N6/BranchEval/B3/ProgramBindingProbeGround.lean",
+      "sha256": "a21fa0fca61eb97fb6ab6a6c11771a810d33b65b0615a7b66cf32e5175573c16",
+      "bytes": 1273
+    },
+    {
+      "path": "N6/BranchEval/B3/EndpointSemantics.lean",
+      "sha256": "eab79cb50a75a5619ab3f1c76679776b571f2e0007038744a4784b2c9cc0633d",
+      "bytes": 12041
+    },
+    {
+      "path": "N6/BranchEval/B3/ProjectionData.lean",
+      "sha256": "6e13efb979f90bd36558dddee1393e8d5c6bb9b8eed258a7246c51c94a624680",
+      "bytes": 101182
+    },
+    {
+      "path": "N6/BranchEval/B3/ProjectionGround.lean",
+      "sha256": "c93b63c56213bb945a39285799db9972fa75e71ac00558ec2c4c9c7025c22d04",
+      "bytes": 1216
+    },
+    {
+      "path": "N6/BranchEval/B3/CoordinateProjection.lean",
+      "sha256": "645691919f705ffe2fb2e5a4a5ec7f263504c28dffe4bc68502e790c154c616a",
+      "bytes": 4070
+    },
+    {
+      "path": "N6/BranchEval/B3/OriginalBindings.lean",
+      "sha256": "be3d9feb0b2badb6624c8dab50ab5e74435cfdadeaee0e80439b550f2e60bc85",
+      "bytes": 1652
+    },
+    {
+      "path": "N6/BranchEval/B3/Complete.lean",
+      "sha256": "97a46c27cd533930d0cec028ff01d5d4cdad39578bb5ae3050e841a944a2e41f",
+      "bytes": 1627
+    },
+    {
+      "path": "N6/Univariate/Branch3NoRootsGround.lean",
+      "sha256": "7d00f61669895b7511f07f73cb8222f91da82a70619fd033923ca61f4ce7a4af",
+      "bytes": 314
+    },
+    {
+      "path": "N6/Univariate/Branch3NoRoots.lean",
+      "sha256": "e4fb6fccba9bb655f274bdf6eaf4b8748d0be5903d517f8dec829ad1c4e1f8c3",
+      "bytes": 472
+    },
+    {
+      "path": "N6/BranchEval/B3/PhysicalValue.lean",
+      "sha256": "46784874de9193e1f2a0387f28f24562507ff045ec48878203271707ac8041de",
+      "bytes": 1501
+    },
+    {
+      "path": "N6/BranchEval/B3/FactorBindingGround.lean",
+      "sha256": "f8f94ac5ad66e6c0ee03d75afce2032ae4ea84547f9b0c3c06ca75c8f22fe7b6",
+      "bytes": 295
+    },
+    {
+      "path": "N6/BranchEval/B3/FromMaximum.lean",
+      "sha256": "64ec4698c3c263f191d19d517f5e22a1f5a484a10263032d3e84655b328a5437",
+      "bytes": 2250
+    },
+    {
+      "path": "N6/BranchEval/B4/PublishedData.lean",
+      "sha256": "616396719f5b9f8369141a401bc223c51a0536a599d80f6f85467589bc3a437d",
+      "bytes": 4246
+    },
+    {
+      "path": "N6/Univariate/Branch4Data.lean",
+      "sha256": "390a11c550790be205a6caf7577d4b3ccfdf863dc75fd6b3bb518c964515c697",
+      "bytes": 39989
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramInputs.lean",
+      "sha256": "aacf0c418b0a937751c19cb8d0c1859f82c1d560fa34bc845b6f908c5a54884f",
+      "bytes": 11947
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramNodes000.lean",
+      "sha256": "61aab859f33f4e6fa5ec4046db90220fb26048a3aaaf825b933ea1f4651b3883",
+      "bytes": 254416
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramNodes001.lean",
+      "sha256": "697103f6d1936bee58ad81977bd387e3b8a85b53be203541332f7ac28fc93594",
+      "bytes": 268552
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramNodes002.lean",
+      "sha256": "dae9ca6647fcfd0c59d0ccccdcc9b0d51c22f13b43cf2a3f20a356b27085fa3a",
+      "bytes": 283124
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramNodes003.lean",
+      "sha256": "56efe23e22e16287798a91cf203ca2f2ec19f60c206e66b28931780c0df5009c",
+      "bytes": 254830
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramNodes004.lean",
+      "sha256": "79d6b40f17f0ada826cb5629b62c961225d1bb13b61a284c5b0cdfc82460ed24",
+      "bytes": 238757
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramNodes005.lean",
+      "sha256": "db4d9e3b0f14a3cdf1689376249d0236cd537b515b3fca813ca3d16658f8e3bd",
+      "bytes": 278477
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramNodes006.lean",
+      "sha256": "a4fcdd801ec4d2d1af97d1c234a570ef98a7c133f5095557602618977698279a",
+      "bytes": 325606
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramNodes007.lean",
+      "sha256": "324890dac5b7ad0e9dcd7569b8e5505c2272f4c8637ea85f375a6555236ed27a",
+      "bytes": 505799
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramNodes008.lean",
+      "sha256": "a9cc537fec5e45a451befce605f117e9d343f4079542f444a45ecffa4bc42540",
+      "bytes": 505419
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramNodes009.lean",
+      "sha256": "ee90da3104274b9fc15e9cdbb82f5e827a77a2e527cb020f5e41ab6544932671",
+      "bytes": 511520
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramNodes010.lean",
+      "sha256": "fae24dc87824575a5496f6fd54ed194f1950605dc2ecc2c7bcc029eea08444e7",
+      "bytes": 510940
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramNodes011.lean",
+      "sha256": "7307befa36f7fe0bf9fe8dfb75e4621035e79d92726618837d717c4d720be6e7",
+      "bytes": 508331
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramNodes012.lean",
+      "sha256": "40754df4baec3fa5af35ee3a0350a00e92c14f355fe907a3838b89e9d17525ca",
+      "bytes": 511544
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramNodes013.lean",
+      "sha256": "5620088c2db2b2fa5549ba2db44d8e90ad1884de259685606d292bbb295aabf6",
+      "bytes": 295027
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramData.lean",
+      "sha256": "70d589e9b20e7357ee57cff79120c7876f623b346ad24730f8060cecb558b5ba",
+      "bytes": 16240
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramSourceData.lean",
+      "sha256": "e1b307a7cce51cd30720cd9b7763003660b8b650bcb86702a16fea499ec617bc",
+      "bytes": 49416
+    },
+    {
+      "path": "N6/BranchEval/B4/PublishedGround.lean",
+      "sha256": "8557dfc30283d2f4f24a77cd6ab744cb9bc6bccfc1355ae4a45dc338fc49596c",
+      "bytes": 1155
+    },
+    {
+      "path": "N6/BranchEval/B4/EndpointDefinitions.lean",
+      "sha256": "4056833bf2caadd1b4329974a31b3ef8257cccf0a9fba06889ac4f6251f8d7a8",
+      "bytes": 8545
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock000.lean",
+      "sha256": "2702a57230ca00837856dfd7ca108cc7a572df877aea6be72383fd31443e470c",
+      "bytes": 389
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock001.lean",
+      "sha256": "3569d3998e108dd6ffde16d8dd745c7d9c353fb95ee47ec64d4a8cbc2868a309",
+      "bytes": 390
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock002.lean",
+      "sha256": "6ac6dccceb71da36e2549ff973feae7893f919103021e2c07642ba4b4020f6cf",
+      "bytes": 390
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock003.lean",
+      "sha256": "7db874086eb8c82d32ee8e57acc395dd5ae81d5c6694bdf3fd7b6261e9e43461",
+      "bytes": 390
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock004.lean",
+      "sha256": "9092d7367b6e38c6890982a73dc5edfa5be4dcd0f5b1147ee2a826a95f731a25",
+      "bytes": 390
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock005.lean",
+      "sha256": "8d5da30e4ed647c1e5c7d8a60b2d288b16095922db08fea0395b9a9fb9843076",
+      "bytes": 390
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock006.lean",
+      "sha256": "5572a39ddacf156f597faf9d56c297d5807cbbd9cff323c0bd703cd2112c52d6",
+      "bytes": 390
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock007.lean",
+      "sha256": "4694f53b98ec612b3c4dc7246f584d51a88aef19be018d9208ea54986a8e865c",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock008.lean",
+      "sha256": "9e9b45b9e4430dff086db87305b7799548fa76a2bf6b2eed0d56d25268bfeea3",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock009.lean",
+      "sha256": "3efcedc32d71db82e186863a0c3c6fc3c3787b96577c2e9444a8175c796f5f56",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock010.lean",
+      "sha256": "7c47794de1c41342d7a28130c6a78a07928488b97e8e14e0450ab273903b64bb",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock011.lean",
+      "sha256": "2337c4d87d93cfe4b1faa1419c00a1641633a9152dc779caf0c5915616d8e8f7",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock012.lean",
+      "sha256": "15c36681e4926b04994ec642e400153a0747e5619a53f87fb4b591a88a686b34",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock013.lean",
+      "sha256": "1db37d2af0b9f3b55b4325954a9e5bd1c6f3ae3b4c9501841fc228993a1d05ce",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock014.lean",
+      "sha256": "d176a446157d12a1a30333b9b1252b878d291c9db0cbbf6d77c0f097c1a85401",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock015.lean",
+      "sha256": "f54c4d1abe38eceeaff1b1ddd733d7f7518c50a07b9bfa33aa9dcda98940bcf6",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock016.lean",
+      "sha256": "efc7cc1149e1debbb36abb1bb9846de72abb655c6f76a5e26f09fff9a8213bf5",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock017.lean",
+      "sha256": "a607ebab64665cde0dea3a78d86ff4519cc0a381db2dd78db0b6e2ce324c7e3e",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock018.lean",
+      "sha256": "2d37609722a5854e42c87a80ad5050c6395e64e508d973fa588bc60d1b2f52bd",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock019.lean",
+      "sha256": "530f4e8155ed02633c8347f5279b535b3d3aca4f977a8013d59cbe99581c9fb1",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock020.lean",
+      "sha256": "466039b4d528130cb2555d4cd3a74c22d82740c8eda4b8b79fa39f43296618f2",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock021.lean",
+      "sha256": "1c6fa6fb34492836237d9240bc45b440378da76b70ff1a098f0fe879705a0646",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock022.lean",
+      "sha256": "6bf2b655722f245f7330392c3bd1d08858a6d68c64ff2525ba9c1466c80bb113",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock023.lean",
+      "sha256": "c1abe93cf91fafc1c9b289371f4f29449acfb9910f512b43d568c582d719b283",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock024.lean",
+      "sha256": "ee872d8be47da9a865acfe3faf90a42b91ccebd5ed016d8d6d906d55f13de261",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock025.lean",
+      "sha256": "ca2566acc3034afb1496d5c0d96c5095bbaa9f63f474da9e8084f0bdbbd3bd84",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock026.lean",
+      "sha256": "dea967bf45d2f06126a49b6d05917abd49760a026f8f44cc7ac35f7244353239",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock027.lean",
+      "sha256": "b7d69b706ae9f7e103cf3983086d216a922c59eb3509a80315ca2d9bfc79479b",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock028.lean",
+      "sha256": "862f4c1efea34d545712a8104e0b4a2c547831862d1c37a8e5ec91cc4f72f743",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock029.lean",
+      "sha256": "6ef79f20a17c1fe9a7ac6ba75f2c8e5b89cdc1e56440e2fb21582b33bb9ca190",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock030.lean",
+      "sha256": "b5cf4afa7348199a3c0da52060f7d2469c8269b2536d7ec87b30220cc553d328",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock031.lean",
+      "sha256": "a9ac72da609cd6ca3b7ada7cd1b862f578e7f06b09f38edd96ddb4be8a900f3b",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock032.lean",
+      "sha256": "b1dde9dd500f31c4828e41f9c47c6898c091aff491388b0781abb3ff4a5dd3fc",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock033.lean",
+      "sha256": "cde219c68d2ef2d9d43d0463a354fce599b4360054e8dee2fd0a55c68b537002",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock034.lean",
+      "sha256": "dbfc5b46754bbee2ad5a433a54d26ec77e6d22ccfa4c28dbdc6b45cf9889ac1c",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock035.lean",
+      "sha256": "6ed658c72a397a1d0966c1ed109866e77e335f2f9d83f7dd010aee6868f71987",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock036.lean",
+      "sha256": "3b08104dc6a1b90270227de4a1c14a9076ef8dfd7b1597f7de52dd20e751c11a",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock037.lean",
+      "sha256": "2d0a611f5e16170e88dfc933e9cc94c05634eac468b046d01106c57f3c098090",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock038.lean",
+      "sha256": "b0669691eda6ee37e489ca2f347ce9646c1a7256e7ae5458ecb6c9a752dd8af4",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock039.lean",
+      "sha256": "14987d72d522ff944100e59474df86000da59de3b9b95d12f68992b03075087b",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock040.lean",
+      "sha256": "446461954702248b389b16ee39f843d0d4719540ca734fb6bf3d078efa8e62e2",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock041.lean",
+      "sha256": "c3c814390425b42136e1f0a71e396064d68a27624d06e8dc45f287e4db64bc4f",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock042.lean",
+      "sha256": "e9cd2dec551bf8eb7b9570174e0e4f2a68bfbdcee277fc954dd1ccdcf6d1aa41",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock043.lean",
+      "sha256": "6f18a2edc032cbd4bc7f98018ab79e409f4a7029fe1bfa4465c9eef1390d8d3f",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock044.lean",
+      "sha256": "86f3cc3a385b3866ecf695f6da8c7b5fa5641cfac92fbd02a8e4ff7d7699172c",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock045.lean",
+      "sha256": "e63ab55c6b5cfc8b4b9d0c96384d17d9adb3a1843f0933b83ed7d5768ae59245",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock046.lean",
+      "sha256": "951c24f0ebe59f9ddb0694c190a5a082761fdf72c4680f521b29322940db57ad",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock047.lean",
+      "sha256": "0f49fed56f54183a0dcb933274964025e37aa0c5796a316d2ca320b9ab302a4f",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock048.lean",
+      "sha256": "9d1cc8c3227f41d8148a9d938bf23d1849f5c6856dc013f19d22e7b2269a56e5",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock049.lean",
+      "sha256": "f8af02dec075aa285632550c7c52973996d0d3ffcd2976f99ac8dd772ad85510",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock050.lean",
+      "sha256": "5d1a07e655d553e66669ec348bbcc9fc1473267544e59abb6a0bea616644c89f",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock051.lean",
+      "sha256": "8c914660c4371726c5b5289ca9973b16416d89338150b145fc4bb3c1bc50292a",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock052.lean",
+      "sha256": "05cffb358a0c321c84a23fb06abb6ebeb2048563158187f9ee4cbb8129261200",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock053.lean",
+      "sha256": "f39afc5c0268d255854c94d3a1b2af24d38c14dd2120b9ed3cd9d5220877d5f1",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock054.lean",
+      "sha256": "b0520986f54aa5053802c3640d6ad15f04345bef1fa9b36fee4c228ceae71e89",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock055.lean",
+      "sha256": "9aef3822d87055172c765fdb50012f6fd05ed9e812e863131767112c9f649aee",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock056.lean",
+      "sha256": "3bb7963241a0d2f7e8c7e1d1229a4674a1ab1bea8f5ac292d9f1aabb9ac73d97",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock057.lean",
+      "sha256": "19625ced84555628850c040f13c3325b9462040e7ca25e4d94edc1a0f05ba165",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock058.lean",
+      "sha256": "0d0c9a562edbc196110747158a0fdd6fdc01acc07956f1466d18511a5fe21e60",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock059.lean",
+      "sha256": "313555da75b6f221dbcfb46c12bfc7678fb3e92ef8a84bbe898c696c469b6853",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock060.lean",
+      "sha256": "66f393aa01a67b5e7fdba032c6ac07474dc19d08e39d4664f22742e25046988d",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock061.lean",
+      "sha256": "7a7fe3117a48d5a93465dd3d6686c77df9d4f7e2dd29c998e878c5a00fdddc38",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock062.lean",
+      "sha256": "b9423f4ade6dff072b6f448282a8a4c01157e079669c05b2d374a2cf9dbbd478",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock063.lean",
+      "sha256": "35fd5f558bcf163b15bdbfad7be4094ebb6bb1a380553a3ff8f566d42ba986c3",
+      "bytes": 392
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock064.lean",
+      "sha256": "cfec8903b1f972eaa49d18fee67ebd8c2813eea2d79249b60296783881049112",
+      "bytes": 392
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock065.lean",
+      "sha256": "ae83803b1bf7d28539d43616b4d752be9d9df525bb753b3688a20eb45122705f",
+      "bytes": 392
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock066.lean",
+      "sha256": "176f8e0e2aa1c707f6185f7d9d5ef94020a7bf33b399c4664fc6ba7523b65edd",
+      "bytes": 392
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock067.lean",
+      "sha256": "b8de89b509f6dbba06ce4f91521d20c6394ed2c078ead8d17c844208e27803d9",
+      "bytes": 392
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock068.lean",
+      "sha256": "dcef113cfd21cc29a109b80e477f2d6193feb456f0e3c3b17660e2917efb58c6",
+      "bytes": 392
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock069.lean",
+      "sha256": "4c62a395d8e52237aefdd161ebab21d21c938c3ac61feee362e99e53ef30a2bf",
+      "bytes": 392
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock070.lean",
+      "sha256": "d24f2d08d068cd69fd1869a36ae0123628ab4da15fff2521806676c7cd2ab11b",
+      "bytes": 392
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock071.lean",
+      "sha256": "73738e34ba514d2427612fe0b4aa60fa07a3c8776aae14d44335957cf637456f",
+      "bytes": 392
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock072.lean",
+      "sha256": "913abcde256bae2aa2d0c679e042e60f6892bbb6661acdd7b04d25abc34c4929",
+      "bytes": 392
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock073.lean",
+      "sha256": "d5a953f1d9cff4e00ba34e1df4099d3e6248dee4f1754ee77ae9df68c6502fa7",
+      "bytes": 392
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock074.lean",
+      "sha256": "3db738d48c8597f1943a6b34bb05567453781bd6b8386057c5898eb85a112eef",
+      "bytes": 392
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock075.lean",
+      "sha256": "87d487fa67dfaa1ca747c1ba459582ace95aba6f2b80c6e337ad4cda1eae2d0a",
+      "bytes": 392
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock076.lean",
+      "sha256": "bfc4c533097cb6b43ebdb8a3b76ca6ecc3c2f21323d4343ee9124baba6d59006",
+      "bytes": 392
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock077.lean",
+      "sha256": "b345d930f2a88d14b9e6591a5bbec857efda4a1177370cd3162fcf2d7b1fe070",
+      "bytes": 392
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock078.lean",
+      "sha256": "5273f29c59557cb143b1c81f8e60efbc0980c5a0fbe234c3aa73a258931313a8",
+      "bytes": 392
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock079.lean",
+      "sha256": "88c1c8975af1a606e1e7a86a7e067547100333fd22fa8a9118ac74530da4412d",
+      "bytes": 392
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock080.lean",
+      "sha256": "41e430873ec6fbc1d4c4786808236f0f9967b19f3b669e0cad0898ce9ea8b42d",
+      "bytes": 392
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBlock081.lean",
+      "sha256": "4b09884faf6acd5b96542e6c0862314e690c12cd8194d87d4137108832e273b1",
+      "bytes": 392
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramChecked.lean",
+      "sha256": "ecd13e768062007c74e2599d376d9b91835ae220059be6030cfd9361f223af34",
+      "bytes": 6587
+    },
+    {
+      "path": "N6/BranchEval/B4/ProgramBindingProbeGround.lean",
+      "sha256": "a379c8993865461da09c09f7c61c2a53d0ffcdf11b8f8384f040cbb8d79a7b2c",
+      "bytes": 2320
+    },
+    {
+      "path": "N6/BranchEval/B4/EndpointSemantics.lean",
+      "sha256": "7d2dc5e5c1d6173baf9fd68e1d32da6eb6e81c17e871b412b35ad65d7f616466",
+      "bytes": 14843
+    },
+    {
+      "path": "N6/BranchEval/B4/ProjectionData.lean",
+      "sha256": "316ab5e6095050dbd5b2c3752d8ea8c3a095a520b3c56d262d9604bfe279c2f2",
+      "bytes": 88434
+    },
+    {
+      "path": "N6/BranchEval/B4/ProjectionGround.lean",
+      "sha256": "eb4aa61d8e150bac3a50b731b692642a7faf3c2187a43c5b4be9d14e5b7490da",
+      "bytes": 1216
+    },
+    {
+      "path": "N6/BranchEval/B4/CoordinateProjection.lean",
+      "sha256": "524e59f947058fb9f46eead2216d25162d4a3cdeb72a353073e3b560558ac137",
+      "bytes": 4070
+    },
+    {
+      "path": "N6/BranchEval/B4/OriginalBindings.lean",
+      "sha256": "1b453e380fdf876dfa200ccda81533952b5a16c8d0be28b3e9c0c7bca87d9aea",
+      "bytes": 1805
+    },
+    {
+      "path": "N6/BranchEval/B4/Complete.lean",
+      "sha256": "5dffb0cb95da81ffad59f780ce0be16e644c603c1f146da7dd169be3cbc75637",
+      "bytes": 1845
+    },
+    {
+      "path": "N6/Univariate/IntegerBranch4Data.lean",
+      "sha256": "72bc8ad4ffa8c560a054e8b0986a0d4bf125ffa1900ac57f4f248b55645b457b",
+      "bytes": 14894
+    },
+    {
+      "path": "N6/Univariate/IntegerBranch4Checks.lean",
+      "sha256": "1150225df32d8e2571baf4a36fefc31e976217212c6b7178c4b4951241b069c8",
+      "bytes": 284
+    },
+    {
+      "path": "N6/Univariate/IntegerBranch4.lean",
+      "sha256": "a3c5eec8225c033c8206733b538c808ea5bcd71b532eeb2b93cbd452a9faa8a3",
+      "bytes": 1387
+    },
+    {
+      "path": "N6/BranchEval/B4/PhysicalValue.lean",
+      "sha256": "bb1e59c734eab7c3ddb0b33f862613068ce45788b44202428f8c0e6b355cdfd1",
+      "bytes": 2710
+    },
+    {
+      "path": "N6/BranchEval/B4/FactorBindingGround.lean",
+      "sha256": "d14f9a79fc569775778c329967524104736860985b7031755554d95d0a00d8ee",
+      "bytes": 287
+    },
+    {
+      "path": "N6/BranchEval/B4/FromMaximum.lean",
+      "sha256": "365b1370654c7a66fe43bed16cc78315caaeb95c935afa7daf2a2da8e43f2c0d",
+      "bytes": 2557
+    },
+    {
+      "path": "N6/BranchEval/B5/PublishedData.lean",
+      "sha256": "eb304511af03138c69eb634bd6bec5024aca58d692486e121dfa4d4e43ccf409",
+      "bytes": 1123
+    },
+    {
+      "path": "N6/Univariate/Branch5Data.lean",
+      "sha256": "d87bb2411b2d63ad0fa0026dccf3ef44e08383974dbe2c8351c3febf1ca1196f",
+      "bytes": 1604
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramInputs.lean",
+      "sha256": "6642b14af8213207a21eabed8bb5e5e51975042015bc5581a8e38302cb9c4cf9",
+      "bytes": 20860
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramNodes000.lean",
+      "sha256": "6b9f482252379237a9b03e2f5148ce1cf147932b2375cbf074cc1e8813b202e7",
+      "bytes": 480472
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramNodes001.lean",
+      "sha256": "2045ffe18722622815bedc96c7d5d26f1032c1b73600c382692e2fdf5b6bfcf0",
+      "bytes": 512785
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramNodes002.lean",
+      "sha256": "0f24ef35236e9f37ff5c5df73f615c05231f02bfd554ce3700efa45eb7d7b4ee",
+      "bytes": 510904
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramNodes003.lean",
+      "sha256": "fb2c7fdb342bc569646ee21968c81dff115e6d5ec2a06bfcd37085b2b26ed879",
+      "bytes": 472576
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramNodes004.lean",
+      "sha256": "55dcfbbf47e8789842e745eab7a56ef052798efc66ca93f6d8d1b8ccbec8e98d",
+      "bytes": 469380
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramNodes005.lean",
+      "sha256": "d9f35dccfa1dd0e0c0029ca86d777bcb77d99d8d8d59901a697b8f482a4a17fa",
+      "bytes": 504842
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramNodes006.lean",
+      "sha256": "06a91e4b402a50840dac4b7ddc66643621031449f2dc73bfabd61c6d6d005767",
+      "bytes": 257398
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramData.lean",
+      "sha256": "ede8ec0c0fd8fa13a329dfee250d4447a3f989121a5cdcf64799dc6e8f835cac",
+      "bytes": 10397
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramSourceData.lean",
+      "sha256": "263d15ffc856177e9986642f93d4a0e6f4c5fdb9736f8874cf04fcc3f6483b44",
+      "bytes": 41748
+    },
+    {
+      "path": "N6/BranchEval/B5/PublishedGround.lean",
+      "sha256": "e28848629e69aac1d6e2f8196528b61b2b8e731e91b03761b79e382f1e57877c",
+      "bytes": 1044
+    },
+    {
+      "path": "N6/BranchEval/B5/EndpointDefinitions.lean",
+      "sha256": "558bae7b43d6da88490d8e3d1d366b78b9635691b0ab91a25bfe1d02c508f842",
+      "bytes": 8417
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramBlock000.lean",
+      "sha256": "3cd8cce6d8bad1fe7a8dc9302a083ce416ddd20460eb71e20d43444f03f9092b",
+      "bytes": 389
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramBlock001.lean",
+      "sha256": "012972efda8754950be082125fbdddfb748d86d30e2799d7dc90a3eddf267473",
+      "bytes": 390
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramBlock002.lean",
+      "sha256": "a65e96cd49a8bcb8b3e502786643d281dbeaabaa11f18739da7f33ed6edc3836",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramBlock003.lean",
+      "sha256": "93a90741b8c237c4d647db9208fbdb3817897e78385e2d89d01300c0026b3686",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramBlock004.lean",
+      "sha256": "0842b5f553d04e42085d19dd07887312c0dfac6868544495a79db36f3b0623cb",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramBlock005.lean",
+      "sha256": "e28dfa5062c94d28c17156aab081b7efd1c4e3f21ee11a023f6b92b6ab137a4b",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramBlock006.lean",
+      "sha256": "0da21d5ae2b43f67fe15309b8b8d3273bdef15559b1bc82580a88ed86212b8a7",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramBlock007.lean",
+      "sha256": "5422f5fe41c867e60bca46aabb1b350f8f78c95ca277d6cdc34d9075542073bf",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramBlock008.lean",
+      "sha256": "5b6521ecff894fb8337029f4c12ba00744328aea7093fbb553212ef5bc5e2f57",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramBlock009.lean",
+      "sha256": "8f54e69c580e1b06a52043b0447cedb799e1e53297e6c028408ceda2716b3f9f",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramBlock010.lean",
+      "sha256": "9599ea598347645cd6815857e8b95cc01732cb83a987a76a8babb7bd2b42aec3",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramBlock011.lean",
+      "sha256": "cf81c271c4f7ca0872fff303ed4671dc66c318d106fcb6b4027a3c8f5b374d64",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramBlock012.lean",
+      "sha256": "e90bb11078911768d2083b33d12bf6fa2d04490f0052283e706222b276bdfb6c",
+      "bytes": 391
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramChecked.lean",
+      "sha256": "45dd8fe596e5ad9b552b8b6fa77fa0f2d5340d21abb0a4a67b429722cd3391d9",
+      "bytes": 1754
+    },
+    {
+      "path": "N6/BranchEval/B5/ProgramBindingProbeGround.lean",
+      "sha256": "cee9641e10722a4b09a9a079a09db9d3171ab81022aedee2787212e2e9a18982",
+      "bytes": 1273
+    },
+    {
+      "path": "N6/BranchEval/B5/EndpointSemantics.lean",
+      "sha256": "337bda75f1675fd3bd5aeaa5720b7942640f0a7ba960b3e652d834ded9c4ad93",
+      "bytes": 12062
+    },
+    {
+      "path": "N6/BranchEval/B5/ProjectionData.lean",
+      "sha256": "447b10e4d9514efb90dc12d8f1ddaaedfc500897e4c0af6c91acf9d0d24a09f0",
+      "bytes": 81832
+    },
+    {
+      "path": "N6/BranchEval/B5/ProjectionGround.lean",
+      "sha256": "e2eba3fb8291b3c427d7c874b08a4745ed4aa55633043a391e8e0127abb17e8f",
+      "bytes": 1216
+    },
+    {
+      "path": "N6/BranchEval/B5/CoordinateProjection.lean",
+      "sha256": "3701cec4cd5fbaa6638f487c856d61a81508eb934d290f4b049cef146074d0e3",
+      "bytes": 4070
+    },
+    {
+      "path": "N6/BranchEval/B5/OriginalBindings.lean",
+      "sha256": "7e6d75b3d37a36dc52602dd01f6fab223409f1a5ccdb2ef0bda719bbad5b536e",
+      "bytes": 1652
+    },
+    {
+      "path": "N6/BranchEval/B5/Complete.lean",
+      "sha256": "45babf6bb841372fcc5b2eff1523fc88e9804f7cabb87c7b9e4fffa18a701abd",
+      "bytes": 1627
+    },
+    {
+      "path": "N6/Univariate/Branch5NoRootsGround.lean",
+      "sha256": "d66bffff6b7919b502605f5033b2894a221f6d0cdb8ba6a6e6168cdfcc76e899",
+      "bytes": 2287
+    },
+    {
+      "path": "N6/Univariate/Branch5NoRoots.lean",
+      "sha256": "3a018973ce7820912a65f2dea27dcefc6bff6586083ccf8f1115ac90cc78835d",
+      "bytes": 472
+    },
+    {
+      "path": "N6/BranchEval/B5/PhysicalValue.lean",
+      "sha256": "c3e01854269bef1f9a6731d1103be0c6876f40ec358373c7e7fa8beaf0825934",
+      "bytes": 1501
+    },
+    {
+      "path": "N6/BranchEval/B5/FactorBindingGround.lean",
+      "sha256": "d138f2f409b58b99eb93dac112da913e1ceebb5b79b885eea7dfcccf3486e2c9",
+      "bytes": 295
+    },
+    {
+      "path": "N6/BranchEval/B5/FromMaximum.lean",
+      "sha256": "3c16ce829efbb1a5968fc3db156affff6a7322dd9b1c2cf42e02bdbde7189af7",
+      "bytes": 2250
+    },
+    {
+      "path": "N6/Weighted49/FactorGround.lean",
+      "sha256": "030f6299be9fcc662f99cd3f784f6bdbfe233a34c3e0a9307f823f06ed81b489",
+      "bytes": 525
+    },
+    {
+      "path": "N6/Weighted49/FactorCover.lean",
+      "sha256": "ebab1264588ad62a7c6a73dd3c8b13727d14ba6924d3bcddb824abc2379bf155",
+      "bytes": 2172
+    },
+    {
+      "path": "N6/BranchEval/GeneralFromMaximum.lean",
+      "sha256": "da881ba94db8379a5fe142550bd54ee9d88c2d95d0ccb14b40421bed5ea91f3d",
+      "bytes": 1561
+    },
+    {
+      "path": "N6/Analysis/MaximumClassification.lean",
+      "sha256": "88ab5d6ed82f4b127e3779dacbe5409b71887545873b577e9e09a2625c031431",
+      "bytes": 1308
+    },
+    {
+      "path": "N6/SharpTheorem.lean",
+      "sha256": "0b7f7e1ff93d585a338987041197e5a6c55a24db9de5b5b73441a02878f9082c",
+      "bytes": 2063
+    },
+    {
+      "path": "N6.lean",
+      "sha256": "69f097885c454a897e3c4f322039a80cf5bd996082a0c08a0aa9f4941fb08e9f",
+      "bytes": 237
+    }
+  ]
+}

@@ -4,7 +4,7 @@
 
 **First public release: 2026-10-29 · [v0.1.0](https://github.com/Jxxxx-2001/mordell-discriminant/releases/tag/v0.1.0).**
 
-**Content updated: 2026-11-02.**
+**Content updated: 2026-11-12.**
 
 ## The problem
 
@@ -43,17 +43,17 @@ for the value of a regular $`(n-1)`$-gon together with its center.
 
 Let $S_n$ consist of the origin and the vertices of a regular $(n-1)$-gon of radius $\sqrt{n/(n-1)}$, and let $C_n=\Delta(S_n)$.
 
-| Points | Result | Maximizing configuration or exclusion | Proof |
-|---:|---|---|---|
-| 2 | $M_2=4=2^2$ | Antipodal points on the unit circle | [Proof](proofs/n2-n5/README.md) |
-| 3 | $M_3=27=3^3$ | Equilateral triangle on the unit circle | [Proof](proofs/n2-n5/README.md) |
-| 4 | $M_4=256=4^4$ | Square on the unit circle | [Proof](proofs/n2-n5/README.md) |
-| 5 | $M_5=3125=5^5$ | Regular pentagon on the unit circle | [Proof](proofs/n2-n5/README.md) |
-| 6 | $M_6=C_6=\frac{6^{15}}{5^{10}}$ | Origin and a regular pentagon | [Proof](proofs/n6/README.md) |
-| 7 | $M_7=C_7=\frac{7^{21}}{6^{15}}$ | Origin and a regular hexagon | [Proof](proofs/n7/README.md) |
-| 8 | $M_8=C_8=\frac{8^{28}}{7^{21}}$ | Origin and a regular heptagon | [Proof](proofs/n8/README.md) |
-| 9 | $M_9=C_9=\frac{9^{36}}{8^{28}}$ | Origin and a regular octagon | [Proof](proofs/n9/README.md) |
-| 10 | $M_{10}>C_{10}=\frac{10^{45}}{9^{36}}$ | The centered nonagon is excluded. The sharp value is undetermined here. | [Proof](proofs/n10/README.md) |
+| Points | Result | Maximizing configuration or exclusion | Proof | Lean formalization |
+|---:|---|---|---|---|
+| 2 | $M_2=4=2^2$ | Antipodal points on the unit circle | [Proof](proofs/n2-n5/README.md) | — |
+| 3 | $M_3=27=3^3$ | Equilateral triangle on the unit circle | [Proof](proofs/n2-n5/README.md) | — |
+| 4 | $M_4=256=4^4$ | Square on the unit circle | [Proof](proofs/n2-n5/README.md) | — |
+| 5 | $M_5=3125=5^5$ | Regular pentagon on the unit circle | [Proof](proofs/n2-n5/README.md) | — |
+| 6 | $M_6=C_6=\frac{6^{15}}{5^{10}}$ | Origin and a regular pentagon | [Proof](proofs/n6/README.md) | [Lean](formalization/n6/N6/SharpTheorem.lean) |
+| 7 | $M_7=C_7=\frac{7^{21}}{6^{15}}$ | Origin and a regular hexagon | [Proof](proofs/n7/README.md) | [Lean](formalization/n7/N7/Kernel/Final.lean) |
+| 8 | $M_8=C_8=\frac{8^{28}}{7^{21}}$ | Origin and a regular heptagon | [Proof](proofs/n8/README.md) | [Lean](formalization/n8/Eight/Final.lean) |
+| 9 | $M_9=C_9=\frac{9^{36}}{8^{28}}$ | Origin and a regular octagon | [Proof](proofs/n9/README.md) | [Lean and certificate assets](formalization/REPRODUCE.md) |
+| 10 | $M_{10}>C_{10}=\frac{10^{45}}{9^{36}}$ | The centered nonagon is excluded. The sharp value is undetermined here. | [Proof](proofs/n10/README.md) | [Lean (all $n\ge10$)](formalization/chalk_ge10/Chalk.lean) |
 
 For two through nine points the listed maximizer is unique up to rotation and relabeling. For every $n\ge10$, one has $M_n>C_n$, by an explicit comparison at ten points and an instability theorem for every $n\ge11$. [General conclusion](proofs/n10/README.md)
 
@@ -63,6 +63,8 @@ For two through nine points the listed maximizer is unique up to rotation and re
 </p>
 
 The six-point proof uses algebraic elimination and a recorded exact dimension computation. For seven points we use the complete [Faugère–Svartz classification](https://doi.org/10.1145/2442829.2442856) and compare twelve equilibrium classes. A [related public manuscript](https://github.com/harrykane8816627373-cell/mordell-research/tree/631e0feacf197f5c96f092bafbf17bc8cbd0ef32/earlier-results) also treats six and seven points. For eight and nine points a certified inequality for pairs gives a global bound after summation. The equality conditions recover the radii and the regular outer polygon.
+
+See also the [seven-point pair-domain proof](proofs/n7/PAIR_BOUND.md).
 
 ## Quick verification
 
@@ -82,6 +84,8 @@ python verify.py --level check --case n7
 
 Complete covers can be replayed when needed; see [verification](verification/README.md). The default command launches neither searches nor full covers.
 
+**Lean verification.** See the [Lean reproduction guide](formalization/REPRODUCE.md) for the toolchain, theorem entry points, certificate assets, builds, and axiom audits.
+
 ## Relation to an Erdős problem on minimum diameter
 
 Bateman and Erdős asked how small the diameter of $n$ planar points can be if every pair is at least one unit apart. Rescaling the shortest distance to one turns the diameter into the ratio of the largest to the smallest pairwise distance. They proved the seven-point minimum, and Bezdek and Fodor determined the eight-point minimum. [Bateman–Erdős (1951)](https://renyi.hu/~p_erdos/1951-03.pdf) · [Bezdek–Fodor (1999)](https://doi.org/10.1006/jcta.1998.2889)
@@ -90,4 +94,8 @@ For each $2\le n\le8$ the two problems have a common optimal shape. At eight poi
 
 ## Citation
 
-Manuscript: Xiang Ji, Tiancheng Xu and Wensheng Yu, *Optimal Configurations for Mordell’s Problem*. For the software, cite the release or commit used. [Citation metadata](CITATION.cff)
+Xiang Ji, Tiancheng Xu, and Wensheng Yu, [*Optimal Configurations for Mordell’s Problem*](https://arxiv.org/abs/2611.03088v1).
+
+Project affiliation: Intelligent Information Processing Laboratory, Beijing University of Posts and Telecommunications (北京邮电大学 智能信息处理实验室).
+
+To reproduce arXiv v1, use the [paper’s pinned revision](https://github.com/Jxxxx-2001/mordell-discriminant/tree/31cc934b7dfa0ef2308566a1bce48cbfb2e01559). For the software, cite the release or commit used. [Citation metadata](CITATION.cff)
